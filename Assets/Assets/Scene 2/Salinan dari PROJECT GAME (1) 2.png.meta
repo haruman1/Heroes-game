@@ -1,0 +1,442 @@
+fileFormatVersion: 2
+guid: cf593656c9149b142aa8d6eaccdeb540
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3692606327815481915
+    second: Salinan dari PROJECT GAME (1) 2_0
+  - first:
+      213: 362490547329520085
+    second: Salinan dari PROJECT GAME (1) 2_1
+  - first:
+      213: 4603996374891351711
+    second: Salinan dari PROJECT GAME (1) 2_2
+  - first:
+      213: -8767446095517429682
+    second: Salinan dari PROJECT GAME (1) 2_3
+  - first:
+      213: -4398612289920963133
+    second: Salinan dari PROJECT GAME (1) 2_4
+  - first:
+      213: 333641019045344170
+    second: Salinan dari PROJECT GAME (1) 2_5
+  - first:
+      213: 5472570328537358429
+    second: Salinan dari PROJECT GAME (1) 2_6
+  - first:
+      213: -4323952757746929371
+    second: Salinan dari PROJECT GAME (1) 2_7
+  - first:
+      213: 2839797954165044528
+    second: Salinan dari PROJECT GAME (1) 2_8
+  - first:
+      213: 1114098258733615873
+    second: Salinan dari PROJECT GAME (1) 2_9
+  - first:
+      213: 90381538948646546
+    second: Salinan dari PROJECT GAME (1) 2_10
+  - first:
+      213: 5488884179821704631
+    second: Salinan dari PROJECT GAME (1) 2_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Salinan dari PROJECT GAME (1) 2_0
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 30
+        width: 3566
+        height: 422
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3a2dc014e5ce3330800000000000000
+      internalID: 3692606327815481915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salinan dari PROJECT GAME (1) 2_1
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 444
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d153047b33d70500800000000000000
+      internalID: 362490547329520085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salinan dari PROJECT GAME (1) 2_2
+      rect:
+        serializedVersion: 2
+        x: 1422
+        y: 452
+        width: 1050
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9ec5985f4ea4ef30800000000000000
+      internalID: 4603996374891351711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salinan dari PROJECT GAME (1) 2_3
+      rect:
+        serializedVersion: 2
+        x: 2588
+        y: 444
+        width: 42
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e405c416a36c35680800000000000000
+      internalID: -8767446095517429682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salinan dari PROJECT GAME (1) 2_4
+      rect:
+        serializedVersion: 2
+        x: 2639
+        y: 444
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cde79a5d6df4f2c0800000000000000
+      internalID: -4398612289920963133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salinan dari PROJECT GAME (1) 2_5
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 33
+        width: 24
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa372b63db451a400800000000000000
+      internalID: 333641019045344170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salinan dari PROJECT GAME (1) 2_6
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 33
+        width: 24
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d50efc808b972fb40800000000000000
+      internalID: 5472570328537358429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salinan dari PROJECT GAME (1) 2_7
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 34
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5217ce840eb3ef3c0800000000000000
+      internalID: -4323952757746929371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salinan dari PROJECT GAME (1) 2_8
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 33
+        width: 46
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03573e3813df86720800000000000000
+      internalID: 2839797954165044528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salinan dari PROJECT GAME (1) 2_9
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 33
+        width: 24
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10bc2bca672167f00800000000000000
+      internalID: 1114098258733615873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salinan dari PROJECT GAME (1) 2_10
+      rect:
+        serializedVersion: 2
+        x: 3393
+        y: 33
+        width: 35
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2968943e789114100800000000000000
+      internalID: 90381538948646546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salinan dari PROJECT GAME (1) 2_11
+      rect:
+        serializedVersion: 2
+        x: 3427
+        y: 33
+        width: 57
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b5b887841f6c2c40800000000000000
+      internalID: 5488884179821704631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Salinan dari PROJECT GAME (1) 2_0: 3692606327815481915
+      Salinan dari PROJECT GAME (1) 2_1: 362490547329520085
+      Salinan dari PROJECT GAME (1) 2_10: 90381538948646546
+      Salinan dari PROJECT GAME (1) 2_11: 5488884179821704631
+      Salinan dari PROJECT GAME (1) 2_2: 4603996374891351711
+      Salinan dari PROJECT GAME (1) 2_3: -8767446095517429682
+      Salinan dari PROJECT GAME (1) 2_4: -4398612289920963133
+      Salinan dari PROJECT GAME (1) 2_5: 333641019045344170
+      Salinan dari PROJECT GAME (1) 2_6: 5472570328537358429
+      Salinan dari PROJECT GAME (1) 2_7: -4323952757746929371
+      Salinan dari PROJECT GAME (1) 2_8: 2839797954165044528
+      Salinan dari PROJECT GAME (1) 2_9: 1114098258733615873
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
