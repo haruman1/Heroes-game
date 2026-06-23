@@ -7,6 +7,8 @@ public class playerJ : MonoBehaviour
     public float walkSpeed = 5f;
     public float runSpeed = 8f;
     public float jumpForce = 10f;
+    public int extraJumpsValues = 1;
+    public int extraJumps;
 
     [Header("Ground Check")]
     public Transform groundCheck;
@@ -30,6 +32,8 @@ public class playerJ : MonoBehaviour
         body = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
+
+        extraJumps = extraJumpsValues;
     }
 
     void Update()
@@ -49,6 +53,7 @@ public class playerJ : MonoBehaviour
     private void HandleInput()
     {
         moveInput = 0f;
+        //extra jumps
 
         // Keyboard
         if (Keyboard.current != null)
@@ -64,7 +69,7 @@ public class playerJ : MonoBehaviour
 
             isRunning = Keyboard.current.leftShiftKey.isPressed;
 
-            if (Keyboard.current.spaceKey.wasPressedThisFrame && isGrounded)
+            if (Keyboard.current.spaceKey.wasPressedThisFrame)
             {
                 jumpRequested = true;
             }
@@ -83,7 +88,7 @@ public class playerJ : MonoBehaviour
             // RT = Run
             isRunning = Gamepad.current.rightTrigger.ReadValue() > 0.5f;
 
-            if (Gamepad.current.buttonSouth.wasPressedThisFrame && isGrounded)
+            if (Gamepad.current.buttonSouth.wasPressedThisFrame)
             {
                 jumpRequested = true;
             }
@@ -93,6 +98,11 @@ public class playerJ : MonoBehaviour
     private void GroundCheck()
     {
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
+
+        if (isGrounded)
+        {
+            extraJumps = extraJumpsValues;
+        }
     }
 
     private void MovePlayer()
@@ -107,7 +117,15 @@ public class playerJ : MonoBehaviour
         if (!jumpRequested)
             return;
 
-        body.linearVelocity = new Vector2(body.linearVelocity.x, jumpForce);
+        if (isGrounded)
+        {
+            body.linearVelocity = new Vector2(body.linearVelocity.x, jumpForce);
+        }
+        else if (extraJumps > 0)
+        {
+            body.linearVelocity = new Vector2(body.linearVelocity.x, jumpForce);
+            extraJumps--;
+        }
 
         jumpRequested = false;
     }
