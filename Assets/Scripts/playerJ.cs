@@ -1,88 +1,177 @@
 using UnityEngine;
-using UnityEngine.InputSystem; // Wajib ditambahkan
+using UnityEngine.InputSystem;
 
 public class playerJ : MonoBehaviour
 {
-    public float speed;
-    public float jumpForce;
+    [Header("Movement")]
+    public float walkSpeed = 5f;
+    public float runSpeed = 8f;
+    public float jumpForce = 10f;
+
+    [Header("Ground Check")]
     public Transform groundCheck;
-    public float groundCheckRadius;
+    public float groundCheckRadius = 0.2f;
     public LayerMask groundLayer;
+
     private Rigidbody2D body;
-    private bool isGrounded;
     private SpriteRenderer spriteRenderer;
+    private Animator animator;
+
+    private bool isGrounded;
+    private bool jumpRequested;
 
     private float moveInput;
-    private bool jumpRequested;
+    private bool isRunning;
+
+    private string currentAnimation = "";
 
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
     }
 
     void Update()
     {
-        // ========================================================
-        // 1. MEMBACA INPUT HORIZONTAL (Jalan Kanan/Kiri)
-        // ========================================================
-        if (Keyboard.current != null)
-        {
-            // Mendukung Panah Kanan/Kiri dan A/D di PC
-            moveInput =
-                Keyboard.current.dKey.isPressed || Keyboard.current.rightArrowKey.isPressed
-                    ? 1f
-                    : (
-                        Keyboard.current.aKey.isPressed || Keyboard.current.leftArrowKey.isPressed
-                            ? -1f
-                            : 0f
-                    );
-        }
-
-        if (Gamepad.current != null)
-        {
-            // Mendukung Analog / Virtual Joystick di Android
-            moveInput = Gamepad.current.leftStick.x.ReadValue();
-        }
-
-        // ========================================================
-        // 2. MEMBACA INPUT LOMPAT (Menggunakan .wasPressedThisFrame)
-        // ========================================================
-        // Catatan: wasPressedThisFrame memastikan lompat hanya terpicu 1x saat tombol BARU ditekan
-        if (
-            (Keyboard.current != null && Keyboard.current.spaceKey.wasPressedThisFrame)
-                && isGrounded
-            || (Gamepad.current != null && Gamepad.current.buttonSouth.wasPressedThisFrame)
-                && isGrounded
-        )
-        {
-            jumpRequested = true;
-        }
-
-        // ========================================================
-        // 3. MENGATUR ARAH SPRITE (FLIP)
-        // ==================   ======================================
-        if (moveInput > 0)
-            spriteRenderer.flipX = false;
-        else if (moveInput < 0)
-            spriteRenderer.flipX = true;
+        HandleInput();
+        HandleFlip();
+        SetAnimation();
     }
 
-    // Untuk urusan pergerakan Fisika (Rigidbody), wajib ditaruh di FixedUpdate agar stabil
     void FixedUpdate()
     {
-        // ========================================================
-        // 4. PERGERAKAN OBJEK
-        // ========================================================
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
-        // Terapkan kecepatan jalan tanpa merusak kecepatan vertikal (Y) saat ini
-        body.linearVelocity = new Vector2(moveInput * speed, body.linearVelocity.y);
+        GroundCheck();
+        MovePlayer();
+        JumpPlayer();
+    }
 
-        // Eksekusi lompat jika tombol sudah ditekan
-        if (jumpRequested)
+    private void HandleInput()
+    {
+        moveInput = 0f;
+
+        // Keyboard
+        if (Keyboard.current != null)
         {
-            body.linearVelocity = new Vector2(body.linearVelocity.x, jumpForce);
-            jumpRequested = false; // Reset request setelah melompat
+            if (Keyboard.current.dKey.isPressed || Keyboard.current.rightArrowKey.isPressed)
+            {
+                moveInput = 1f;
+            }
+            else if (Keyboard.current.aKey.isPressed || Keyboard.current.leftArrowKey.isPressed)
+            {
+                moveInput = -1f;
+            }
+
+            isRunning = Keyboard.current.leftShiftKey.isPressed;
+
+            if (Keyboard.current.spaceKey.wasPressedThisFrame && isGrounded)
+            {
+                jumpRequested = true;
+            }
         }
+
+        // Gamepad
+        if (Gamepad.current != null)
+        {
+            float stick = Gamepad.current.leftStick.x.ReadValue();
+
+            if (Mathf.Abs(stick) > 0.1f)
+            {
+                moveInput = stick;
+            }
+
+            // RT = Run
+            isRunning = Gamepad.current.rightTrigger.ReadValue() > 0.5f;
+
+            if (Gamepad.current.buttonSouth.wasPressedThisFrame && isGrounded)
+            {
+                jumpRequested = true;
+            }
+        }
+    }
+
+    private void GroundCheck()
+    {
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
+    }
+
+    private void MovePlayer()
+    {
+        float currentSpeed = isRunning ? runSpeed : walkSpeed;
+
+        body.linearVelocity = new Vector2(moveInput * currentSpeed, body.linearVelocity.y);
+    }
+
+    private void JumpPlayer()
+    {
+        if (!jumpRequested)
+            return;
+
+        body.linearVelocity = new Vector2(body.linearVelocity.x, jumpForce);
+
+        jumpRequested = false;
+    }
+
+    private void HandleFlip()
+    {
+        if (moveInput > 0)
+        {
+            spriteRenderer.flipX = false;
+        }
+        else if (moveInput < 0)
+        {
+            spriteRenderer.flipX = true;
+        }
+    }
+
+    private void SetAnimation()
+    {
+        if (!isGrounded)
+        {
+            if (body.linearVelocity.y > 0.1f)
+            {
+                ChangeAnimation("Jump");
+            }
+            else
+            {
+                ChangeAnimation("Fall");
+            }
+
+            return;
+        }
+
+        if (Mathf.Abs(moveInput) < 0.1f)
+        {
+            ChangeAnimation("PlayerIdle");
+        }
+        else
+        {
+            if (isRunning)
+            {
+                ChangeAnimation("Run");
+            }
+            else
+            {
+                ChangeAnimation("Walk");
+            }
+        }
+    }
+
+    private void ChangeAnimation(string animationName)
+    {
+        if (currentAnimation == animationName)
+            return;
+
+        currentAnimation = animationName;
+        animator.Play(animationName);
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        if (groundCheck == null)
+            return;
+
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
     }
 }
