@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 86b8c2abae4d60149afa0620271632b0
+guid: 0ce9b48643668714ea02857f5eb1a020
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8399011212269539787
-    second: Stone_0
+      213: 4450632592911644775
+    second: Pixel-art_2D_game_sprite_sheet_202606231318 9_0
+  - first:
+      213: -2541196216529885494
+    second: Pixel-art_2D_game_sprite_sheet_202606231318 9_1
+  - first:
+      213: -1771647493394966739
+    second: Pixel-art_2D_game_sprite_sheet_202606231318 9_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +57,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 40
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Stone_0
+      name: Pixel-art_2D_game_sprite_sheet_202606231318 9_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 90
-        height: 54
+        x: 9
+        y: 37
+        width: 542
+        height: 472
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +134,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bc159db92384f8470800000000000000
-      internalID: 8399011212269539787
+      spriteID: 768364643c2d3cd30800000000000000
+      internalID: 4450632592911644775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel-art_2D_game_sprite_sheet_202606231318 9_1
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 200
+        width: 246
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac66b21418bdbbcd0800000000000000
+      internalID: -2541196216529885494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel-art_2D_game_sprite_sheet_202606231318 9_2
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 356
+        width: 24
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d275bf8cdf7d967e0800000000000000
+      internalID: -1771647493394966739
       vertices: []
       indices: 
       edges: []
@@ -148,7 +198,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Stone_0: 8399011212269539787
+      Pixel-art_2D_game_sprite_sheet_202606231318 9_0: 4450632592911644775
+      Pixel-art_2D_game_sprite_sheet_202606231318 9_1: -2541196216529885494
+      Pixel-art_2D_game_sprite_sheet_202606231318 9_2: -1771647493394966739
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

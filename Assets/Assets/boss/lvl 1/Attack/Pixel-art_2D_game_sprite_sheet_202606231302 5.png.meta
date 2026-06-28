@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 86b8c2abae4d60149afa0620271632b0
+guid: 540a0ff356bed594a887cbebcfb9cc39
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8399011212269539787
-    second: Stone_0
+      213: 8348957144014266739
+    second: Pixel-art_2D_game_sprite_sheet_202606231302 5_0
+  - first:
+      213: 6746737672341225212
+    second: Pixel-art_2D_game_sprite_sheet_202606231302 5_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +54,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 40
+  spritePixelsToUnits: 256
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Stone_0
+      name: Pixel-art_2D_game_sprite_sheet_202606231302 5_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 90
-        height: 54
+        x: 10
+        y: 11
+        width: 43
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +131,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bc159db92384f8470800000000000000
-      internalID: 8399011212269539787
+      spriteID: 3712eeda9447dd370800000000000000
+      internalID: 8348957144014266739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel-art_2D_game_sprite_sheet_202606231302 5_1
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 11
+        width: 834
+        height: 426
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfef4a0da2a31ad50800000000000000
+      internalID: 6746737672341225212
       vertices: []
       indices: 
       edges: []
@@ -148,7 +173,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Stone_0: 8399011212269539787
+      Pixel-art_2D_game_sprite_sheet_202606231302 5_0: 8348957144014266739
+      Pixel-art_2D_game_sprite_sheet_202606231302 5_1: 6746737672341225212
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

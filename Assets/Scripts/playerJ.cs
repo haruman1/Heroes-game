@@ -1,3 +1,4 @@
+﻿using System.Collections; // Required for IEnumerator
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -9,6 +10,9 @@ public class playerJ : MonoBehaviour
     public float jumpForce = 10f;
     public int extraJumpsValues = 1;
     public int extraJumps;
+
+    [Header("Damage")]
+    public int maxHealth = 100;
 
     [Header("Ground Check")]
     public Transform groundCheck;
@@ -191,5 +195,40 @@ public class playerJ : MonoBehaviour
 
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Damage")
+        {
+            maxHealth -= 25; // Reduce health by 25 when colliding with a damage object
+            Debug.Log("Player Health: " + maxHealth);
+            body.linearVelocity = new Vector2(body.linearVelocity.x, jumpForce); // Apply a small upward force when taking damage
+            StartCoroutine(BlinkRed());
+            if (maxHealth <= 0)
+            {
+                Debug.Log("Player is dead!");
+                // Handle player death (e.g., reload scene, show game over screen, etc.)
+                Die();
+            }
+        }
+    }
+
+    private IEnumerator BlinkRed()
+    {
+        spriteRenderer.color = Color.red;
+        yield return new WaitForSeconds(0.1f);
+        spriteRenderer.color = Color.white;
+    }
+
+    private void Die()
+    {
+        // Implement player death logic here
+        // For example, you can reload the scene or show a game over screen
+        Debug.Log("Player has died. Implement death logic here.");
+        // Reload the current scene
+        UnityEngine.SceneManagement.SceneManager.LoadScene(
+            UnityEngine.SceneManagement.SceneManager.GetActiveScene().name
+        );
     }
 }
