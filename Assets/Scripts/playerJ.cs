@@ -1,9 +1,13 @@
 ﻿using System.Collections; // Required for IEnumerator
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class playerJ : MonoBehaviour
 {
+    [Header("Coins")]
+    public int coinCount = 0;
+
     [Header("Movement")]
     public float walkSpeed = 5f;
     public float runSpeed = 8f;
@@ -13,6 +17,13 @@ public class playerJ : MonoBehaviour
 
     [Header("Damage")]
     public int maxHealth = 100;
+    public int currentHealth;
+    public int maxLives = 3;
+    public int currentLives;
+    public Image healthImage;
+    public Image[] lifeImages;
+    public Sprite fullLifeSprite;
+    public Sprite emptyLifeSprite;
 
     [Header("Ground Check")]
     public Transform groundCheck;
@@ -37,6 +48,8 @@ public class playerJ : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
 
+        currentHealth = maxHealth;
+        currentLives = maxLives;
         extraJumps = extraJumpsValues;
     }
 
@@ -45,6 +58,7 @@ public class playerJ : MonoBehaviour
         HandleInput();
         HandleFlip();
         SetAnimation();
+        UpdateUI();
     }
 
     void FixedUpdate()
@@ -201,16 +215,49 @@ public class playerJ : MonoBehaviour
     {
         if (collision.gameObject.tag == "Damage")
         {
-            maxHealth -= 25; // Reduce health by 25 when colliding with a damage object
-            Debug.Log("Player Health: " + maxHealth);
-            body.linearVelocity = new Vector2(body.linearVelocity.x, jumpForce); // Apply a small upward force when taking damage
+            TakeDamage(25);
             StartCoroutine(BlinkRed());
-            if (maxHealth <= 0)
-            {
-                Debug.Log("Player is dead!");
-                // Handle player death (e.g., reload scene, show game over screen, etc.)
-                Die();
-            }
+        }
+    }
+
+    private void TakeDamage(int damage)
+    {
+        currentHealth -= damage;
+        Debug.Log("Player Health: " + currentHealth);
+        body.linearVelocity = new Vector2(body.linearVelocity.x, jumpForce);
+
+        if (currentHealth > 0)
+            return;
+
+        currentLives--;
+
+        if (currentLives <= 0)
+        {
+            currentHealth = 0;
+            Debug.Log("Player is dead!");
+            Die();
+            return;
+        }
+
+        currentHealth = maxHealth;
+    }
+
+    private void UpdateUI()
+    {
+        if (healthImage != null)
+        {
+            healthImage.fillAmount = Mathf.Clamp01(currentHealth / (float)maxHealth);
+        }
+
+        if (lifeImages == null)
+            return;
+
+        for (int i = 0; i < lifeImages.Length; i++)
+        {
+            if (lifeImages[i] == null)
+                continue;
+
+            lifeImages[i].sprite = i < currentLives ? fullLifeSprite : emptyLifeSprite;
         }
     }
 
