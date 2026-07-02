@@ -7,6 +7,7 @@ public class MenuManager : MonoBehaviour
 
     public void LoadScene(string sceneName)
     {
+        Time.timeScale = 1f;
         UnityEngine.SceneManagement.SceneManager.LoadScene(sceneName);
     }
 

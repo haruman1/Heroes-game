@@ -1,13 +1,21 @@
-﻿using System.Collections; // Required for IEnumerator
+using System.Collections; // Required for IEnumerator
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class playerJ : MonoBehaviour
 {
     [Header("Coins")]
     public int coinCount = 0;
-
+    
+    [Header("Audio")]
+    public AudioClip jumpSound;
+    public AudioClip doubleJumpSound;
+    public AudioClip coinSound;
+    public AudioClip damageSound;
+    public AudioClip deathSound;
+    public AudioSource audioSource;
     [Header("Movement")]
     public float walkSpeed = 5f;
     public float runSpeed = 8f;
@@ -47,10 +55,12 @@ public class playerJ : MonoBehaviour
         body = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
-
+        audioSource = GetComponent<AudioSource>();
         currentHealth = maxHealth;
         currentLives = maxLives;
         extraJumps = extraJumpsValues;
+
+        LoadPlayerFromDatabase();
     }
 
     void Update()
@@ -143,6 +153,14 @@ public class playerJ : MonoBehaviour
         {
             body.linearVelocity = new Vector2(body.linearVelocity.x, jumpForce);
             extraJumps--;
+            if (extraJumps > 0)
+            {
+                PlaySFX(doubleJumpSound);
+            }
+            else
+            {
+                PlaySFX(jumpSound);
+            }
         }
 
         jumpRequested = false;
@@ -216,6 +234,7 @@ public class playerJ : MonoBehaviour
         if (collision.gameObject.tag == "Damage")
         {
             TakeDamage(25);
+            PlaySFX(damageSound);
             StartCoroutine(BlinkRed());
         }
     }
@@ -240,6 +259,7 @@ public class playerJ : MonoBehaviour
         }
 
         currentHealth = maxHealth;
+        SaveProgress();
     }
 
     private void UpdateUI()
@@ -267,15 +287,74 @@ public class playerJ : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
         spriteRenderer.color = Color.white;
     }
-
+    public void PlaySFX(AudioClip clip, float volume = 1f){
+        audioSource.clip = clip;
+        float sfxVolume = 1f;
+        GameSettingsData settings = DatabaseManager.GetOrCreateInstance().GetSettingsData();
+        if (settings != null) sfxVolume = settings.SfxVolume;
+        
+        audioSource.volume = Mathf.Clamp01(volume) * sfxVolume;
+        audioSource.Play();
+    }
     private void Die()
     {
-        // Implement player death logic here
-        // For example, you can reload the scene or show a game over screen
-        Debug.Log("Player has died. Implement death logic here.");
-        // Reload the current scene
-        UnityEngine.SceneManagement.SceneManager.LoadScene(
-            UnityEngine.SceneManagement.SceneManager.GetActiveScene().name
-        );
+        PlaySFX(deathSound);
+        Debug.Log("Player has died. Reset HP/nyawa lalu reload scene.");
+
+        currentHealth = maxHealth;
+        currentLives = maxLives;
+        SaveProgress();
+
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void AddCoin(int amount)
+    {
+
+        coinCount = Mathf.Max(0, coinCount + amount);
+
+        DatabaseManager dbManager = DatabaseManager.GetOrCreateInstance();
+        if (dbManager == null)
+            return;
+
+        dbManager.AddCoin(amount);
+    }
+
+    private void LoadPlayerFromDatabase()
+    {
+        DatabaseManager dbManager = DatabaseManager.GetOrCreateInstance();
+        if (dbManager == null)
+            return;
+
+        PlayerData data = dbManager.GetPlayerData();
+        if (data == null)
+            return;
+
+        coinCount = Mathf.Max(0, data.Coin);
+        currentHealth = data.HP > 0 ? data.HP : maxHealth;
+        currentLives = data.Heart > 0 ? data.Heart : maxLives;
+    }
+
+    private void SaveProgress()
+    {
+        DatabaseManager dbManager = DatabaseManager.GetOrCreateInstance();
+        if (dbManager == null)
+            return;
+
+        int currentLevel = SceneManager.GetActiveScene().buildIndex + 1;
+        dbManager.SavePlayerState(coinCount, currentLevel, currentHealth, currentLives);
+    }
+
+    private void OnApplicationPause(bool pauseStatus)
+    {
+        if (pauseStatus)
+        {
+            SaveProgress();
+        }
+    }
+
+    private void OnApplicationQuit()
+    {
+        SaveProgress();
     }
 }
