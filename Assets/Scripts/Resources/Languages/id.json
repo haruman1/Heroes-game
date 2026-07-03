@@ -1,0 +1,18 @@
+{
+  "translations": [
+    { "key": "menu_title", "value": "Petualangan Pahlawan" },
+    { "key": "menu_play", "value": "Mulai Main" },
+    { "key": "menu_settings", "value": "Pengaturan" },
+    { "key": "menu_exit", "value": "Keluar Game" },
+    { "key": "settings_title", "value": "Panel Pengaturan" },
+    { "key": "settings_audio", "value": "Volume Suara" },
+    { "key": "settings_master", "value": "Volume Utama" },
+    { "key": "settings_music", "value": "Volume Musik" },
+    { "key": "settings_sfx", "value": "Volume Efek Suara" },
+    { "key": "settings_fps", "value": "Batas FPS" },
+    { "key": "settings_zoom", "value": "Skala Zoom" },
+    { "key": "settings_language", "value": "Bahasa" },
+    { "key": "settings_save", "value": "Simpan" },
+    { "key": "settings_cancel", "value": "Batal" }
+  ]
+}

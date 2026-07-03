@@ -4,9 +4,19 @@ using TMPro;
 public class Fps : MonoBehaviour
 {
     public TextMeshProUGUI fpsText;
-
+    public static Fps Instance;
     private readonly int[] fpsLimits = { 30, 60, 120 };
+    void Awake()
+    {
+        if (Instance != null)
+        {
+            Destroy(gameObject);
+            return;
+        }
 
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
+    }
     public void NextFPS()
     {
         CycleFpsLimit(1);
@@ -25,30 +35,29 @@ public class Fps : MonoBehaviour
     }
 
     private void CycleFpsLimit(int direction)
-    {
-        GameSettingsData settings = DatabaseManager.GetOrCreateInstance().GetSettingsData();
-        if (settings == null) return;
+{
+    int currentFps = SettingManager.Instance.GetPendingFPS();
 
-        int currentIndex = System.Array.IndexOf(fpsLimits, settings.FpsLimit);
-        if (currentIndex == -1) currentIndex = 1; // Default to 60 FPS
+    int currentIndex = System.Array.IndexOf(fpsLimits, currentFps);
 
-        currentIndex += direction;
-        if (currentIndex >= fpsLimits.Length) currentIndex = 0;
-        if (currentIndex < 0) currentIndex = fpsLimits.Length - 1;
+    if (currentIndex == -1)
+        currentIndex = 1;
 
-        settings.FpsLimit = fpsLimits[currentIndex];
-        DatabaseManager.GetOrCreateInstance().SaveSettings(settings);
-    }
+    currentIndex += direction;
 
-    void RefreshLabel()
-    {
-        if (fpsText == null)
-            return;
+    if (currentIndex >= fpsLimits.Length)
+        currentIndex = 0;
 
-        GameSettingsData settings = DatabaseManager.GetOrCreateInstance().GetSettingsData();
-        int currentFps = settings != null ? settings.FpsLimit : 60;
-        
-        fpsText.text = currentFps + " FPS";
-        Application.targetFrameRate = currentFps;
-    }
+    if (currentIndex < 0)
+        currentIndex = fpsLimits.Length - 1;
+
+    SettingManager.Instance.SetFPS(fpsLimits[currentIndex]);
+
+    RefreshLabel();
+}
+  public void RefreshLabel()
+{
+    fpsText.text =
+        SettingManager.Instance.GetPendingFPS() + " FPS";
+}
 }

@@ -20,6 +20,7 @@ public class playerJ : MonoBehaviour
     public float walkSpeed = 5f;
     public float runSpeed = 8f;
     public float jumpForce = 10f;
+    public float jumpContinuousForce = 5f;
     public int extraJumpsValues = 1;
     public int extraJumps;
 
@@ -49,7 +50,9 @@ public class playerJ : MonoBehaviour
     private bool isRunning;
 
     private string currentAnimation = "";
-
+    [Header("coyote Time")]
+    public float coyoteTime = 0.2f;
+    private float coyoteTimeCounter;
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
@@ -69,6 +72,7 @@ public class playerJ : MonoBehaviour
         HandleFlip();
         SetAnimation();
         UpdateUI();
+        OfftoGround();
     }
 
     void FixedUpdate()
@@ -77,7 +81,13 @@ public class playerJ : MonoBehaviour
         MovePlayer();
         JumpPlayer();
     }
-
+    private void OfftoGround()
+    {
+        if(transform.position.y < -10f)
+        {
+            Die();
+        }
+    }
     private void HandleInput()
     {
         moveInput = 0f;
@@ -129,7 +139,10 @@ public class playerJ : MonoBehaviour
 
         if (isGrounded)
         {
+            coyoteTimeCounter = coyoteTime;
             extraJumps = extraJumpsValues;
+        }else{
+            coyoteTimeCounter -= Time.deltaTime;
         }
     }
 
@@ -145,14 +158,19 @@ public class playerJ : MonoBehaviour
         if (!jumpRequested)
             return;
 
-        if (isGrounded)
+        if (coyoteTimeCounter > 0f)
         {
             body.linearVelocity = new Vector2(body.linearVelocity.x, jumpForce);
+            coyoteTimeCounter = 0f;
         }
         else if (extraJumps > 0)
         {
             body.linearVelocity = new Vector2(body.linearVelocity.x, jumpForce);
             extraJumps--;
+            if(Input.GetKey(KeyCode.Space) && body.linearVelocity.y > 0f || (Gamepad.current != null && Gamepad.current.buttonSouth.isPressed)   && body.linearVelocity.y > 0f)
+            {
+                body.AddForceY(jumpContinuousForce );
+            }
             if (extraJumps > 0)
             {
                 PlaySFX(doubleJumpSound);

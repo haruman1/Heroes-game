@@ -4,12 +4,13 @@ using UnityEngine.UI;
 public class SettingManager : MonoBehaviour
 {
     public static SettingManager Instance;
-public Slider masterSlider;
-public Slider musicSlider;
-public Slider sfxSlider;
+    public GameSettingsData CurrentSettings => currentSettings;
+    private GameSettingsData pendingSettings;   // data yang sedang diedit
+    [Header("Development")]
+    [SerializeField]
+    private bool enableShortLogs = true;
     private GameSettingsData currentSettings;
     private bool pendingSave = false;
-
     void Awake()
     {
         if (Instance != null)
@@ -26,19 +27,78 @@ public Slider sfxSlider;
     {
         LoadSettings();
     }
+public GameSettingsData Clone(GameSettingsData source)
+{
+    return new GameSettingsData
+    {
+        Id = source.Id,
+        FpsLimit = source.FpsLimit,
+        MasterVolume = source.MasterVolume,
+        MusicVolume = source.MusicVolume,
+        SfxVolume = source.SfxVolume,
+        CameraZoom = source.CameraZoom,
+        Fullscreen = source.Fullscreen,
+        ResolutionWidth = source.ResolutionWidth,
+        ResolutionHeight = source.ResolutionHeight,
+        Language = source.Language
+    };
+}
+public int GetPendingFPS()
+{
+    return pendingSettings.FpsLimit;
+}
 
+public string GetPendingLanguage()
+{
+    return pendingSettings != null ? pendingSettings.Language : "id";
+}
+
+public void SetFPS(int fps)
+{
+    pendingSettings.FpsLimit = fps;
+
+    Application.targetFrameRate = fps;
+}
+
+public void SetZoom(float value)
+{
+    pendingSettings.CameraZoom = value;
+
+    if (CameraZoom.Instance != null)
+    {
+        CameraZoom.Instance.SetZoom(value);
+    }
+}
+private void ApplySettings(GameSettingsData data)
+{
+    if (AudioManager.Instance != null)
+    {
+        AudioManager.Instance.SetMasterVolume(data.MasterVolume);
+        AudioManager.Instance.SetMusicVolume(data.MusicVolume);
+        AudioManager.Instance.SetSFXVolume(data.SfxVolume);
+    }
+
+    Application.targetFrameRate = data.FpsLimit;
+
+    if (LanguageManager.Instance != null)
+    {
+        LanguageManager.Instance.SetLanguage(data.Language);
+    }
+
+    if (CameraZoom.Instance != null)
+    {
+        CameraZoom.Instance.SetZoom(data.CameraZoom);
+    }
+}
    void LoadSettings()
 {
     currentSettings = DatabaseManager.GetOrCreateInstance().GetSettingsData();
+    pendingSettings = Clone(currentSettings);
 
+    ApplySettings(currentSettings);
     if (currentSettings == null)
         return;
-
-    // Isi slider
-    masterSlider.SetValueWithoutNotify(currentSettings.MasterVolume);
-    musicSlider.SetValueWithoutNotify(currentSettings.MusicVolume);
-    sfxSlider.SetValueWithoutNotify(currentSettings.SfxVolume);
-
+    
     // Terapkan ke AudioMixer
     if (AudioManager.Instance != null)
     {
@@ -46,22 +106,45 @@ public Slider sfxSlider;
         AudioManager.Instance.SetMusicVolume(currentSettings.MusicVolume);
         AudioManager.Instance.SetSFXVolume(currentSettings.SfxVolume);
     }
+    // FPS
+    Application.targetFrameRate = currentSettings.FpsLimit;
+
+    // Bahasa
+   LanguageManager.Instance.SetLanguage(currentSettings.Language);
 }
+public void SetLanguage(int index)
+{
+    string language = index == 0 ? "id" : "en";
 
-    private void ScheduleSave()
+    pendingSettings.Language = language;
+
+    if (LanguageManager.Instance != null)
     {
-         Debug.Log("ScheduleSave");
-        if (pendingSave)
-        {
-            CancelInvoke(nameof(ExecuteSave));
-        }
-        pendingSave = true;
-        Invoke(nameof(ExecuteSave), 0.5f);
+        LanguageManager.Instance.SetLanguage(language);
     }
+}
+   public void SaveSettings()
+{
+    if (pendingSettings == null)
+        return;
 
+    currentSettings = Clone(pendingSettings);
+
+    DatabaseManager.GetOrCreateInstance().SaveSettings(currentSettings);
+    SettingsPanelUI.Instance.RefreshUI(currentSettings);
+    LogShort("Settings berhasil disimpan.");
+}
+public void CancelSettings()
+{
+    pendingSettings = Clone(currentSettings);
+
+    ApplySettings(currentSettings);
+    SettingsPanelUI.Instance.RefreshUI(currentSettings);
+   LogShort("Settings dibatalkan, kembali ke pengaturan sebelumnya.");
+}
     private void ExecuteSave()
     {
-         Debug.Log("ExecuteSave");
+        LogShort("ExecuteSave");
         pendingSave = false;
         if (currentSettings != null)
         {
@@ -69,42 +152,30 @@ public Slider sfxSlider;
         }
     }
 
-    public void SetMaster(float value)
-    {
-        Debug.Log("SetMaster dipanggil : " + value);
-        if (AudioManager.Instance != null) AudioManager.Instance.SetMasterVolume(value);
+public void SetMaster(float value)
+{
+    LogShort("SetMaster : " + value);
+    AudioManager.Instance.SetMasterVolume(value);
 
-        if (currentSettings != null)
-        {
-            currentSettings.MasterVolume = value;
-            ScheduleSave();
-        }
-    }
+    pendingSettings.MasterVolume = value; // ✅ BENAR
+}
 
-    public void SetMusic(float value)
-    {
-        Debug.Log("SetMusic dipanggil : " + value);
-        if (AudioManager.Instance != null) AudioManager.Instance.SetMusicVolume(value);
+public void SetMusic(float value)
+{
+    LogShort("SetMusic : " + value);
 
-        if (currentSettings != null)
-        {
-            currentSettings.MusicVolume = value;
-            ScheduleSave();
-        }
-    }
+  AudioManager.Instance.SetMusicVolume(value);
 
-    public void SetSFX(float value)
-    {
-        Debug.Log("SetSFX dipanggil : " + value);
-        if (AudioManager.Instance != null) AudioManager.Instance.SetSFXVolume(value);
+    pendingSettings.MusicVolume = value; // ✅ BENAR
+}
 
-        if (currentSettings != null)
-        {
-            currentSettings.SfxVolume = value;
-            ScheduleSave();
-        }
-    }
+   public void SetSFX(float value)
+{
+    LogShort("SetSFX : " + value);
+    AudioManager.Instance.SetSFXVolume(value);
 
+    pendingSettings.SfxVolume = value; // ✅ BENAR
+}
     void OnApplicationQuit()
     {
         if (pendingSave)
@@ -112,5 +183,12 @@ public Slider sfxSlider;
             CancelInvoke(nameof(ExecuteSave));
             ExecuteSave();
         }
+    }
+     private void LogShort(string message)
+    {
+        if (!enableShortLogs)
+            return;
+
+        Debug.Log($"[DB] {message}");
     }
 }

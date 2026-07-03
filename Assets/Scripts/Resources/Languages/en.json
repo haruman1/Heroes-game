@@ -1,0 +1,18 @@
+{
+  "translations": [
+    { "key": "menu_title", "value": "Heroes Adventure" },
+    { "key": "menu_play", "value": "Start Game" },
+    { "key": "menu_settings", "value": "Settings" },
+    { "key": "menu_exit", "value": "Exit Game" },
+    { "key": "settings_title", "value": "Settings Panel" },
+    { "key": "settings_audio", "value": "Audio Volume" },
+    { "key": "settings_master", "value": "Master Volume" },
+    { "key": "settings_music", "value": "Music Volume" },
+    { "key": "settings_sfx", "value": "SFX Volume" },
+    { "key": "settings_fps", "value": "FPS Limit" },
+    { "key": "settings_zoom", "value": "Zoom Scale" },
+    { "key": "settings_language", "value": "Language" },
+    { "key": "settings_save", "value": "Save" },
+    { "key": "settings_cancel", "value": "Cancel" }
+  ]
+}
