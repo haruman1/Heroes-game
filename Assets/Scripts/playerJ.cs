@@ -6,8 +6,16 @@ using UnityEngine.UI;
 
 public class playerJ : MonoBehaviour
 {
-    [Header("Coins")]
-    public int coinCount = 0;
+    [Header("Books")]
+    public int bookCount = 0;
+    public int booksRequiredPerLevel = 10;
+    public TMPro.TMP_Text bookText;
+    [HideInInspector]
+    public int coinCount = 0; // Legacy variable
+
+    [Header("Character Animators")]
+    public RuntimeAnimatorController character1Animator; // Raka
+    public RuntimeAnimatorController character2Animator; // Wanita (Rini)
     
     [Header("Audio")]
     public AudioClip jumpSound;
@@ -251,7 +259,7 @@ public class playerJ : MonoBehaviour
     {
         if (collision.gameObject.tag == "Damage")
         {
-            TakeDamage(25);
+            TakeDamage(1); // Set to 1 damage instead of 25
             PlaySFX(damageSound);
             StartCoroutine(BlinkRed());
         }
@@ -285,6 +293,11 @@ public class playerJ : MonoBehaviour
         if (healthImage != null)
         {
             healthImage.fillAmount = Mathf.Clamp01(currentHealth / (float)maxHealth);
+        }
+
+        if (bookText != null)
+        {
+            bookText.text = "Buku: " + bookCount + " / " + booksRequiredPerLevel;
         }
 
         if (lifeImages == null)
@@ -326,16 +339,34 @@ public class playerJ : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
+    public void AddBook(int amount)
+    {
+        bookCount = Mathf.Max(0, bookCount + amount);
+        UpdateUI();
+    }
+
     public void AddCoin(int amount)
     {
+        AddBook(amount);
+    }
 
-        coinCount = Mathf.Max(0, coinCount + amount);
-
-        DatabaseManager dbManager = DatabaseManager.GetOrCreateInstance();
-        if (dbManager == null)
-            return;
-
-        dbManager.AddCoin(amount);
+    public int GetCurrentLevelNumber()
+    {
+        string sceneName = SceneManager.GetActiveScene().name;
+        string numberString = "";
+        foreach (char c in sceneName)
+        {
+            if (char.IsDigit(c))
+            {
+                numberString += c;
+            }
+        }
+        if (int.TryParse(numberString, out int level))
+        {
+            return level;
+        }
+        int index = SceneManager.GetActiveScene().buildIndex;
+        return index > 0 ? index : 1;
     }
 
     private void LoadPlayerFromDatabase()
@@ -348,9 +379,41 @@ public class playerJ : MonoBehaviour
         if (data == null)
             return;
 
-        coinCount = Mathf.Max(0, data.Coin);
-        currentHealth = data.HP > 0 ? data.HP : maxHealth;
+        // Reset bookCount untuk level ini
+        bookCount = 0;
+
+        // Atur HP maks berdasarkan nomor level
+        int levelNum = GetCurrentLevelNumber();
+        maxHealth = levelNum;
+        currentHealth = maxHealth;
+
         currentLives = data.Heart > 0 ? data.Heart : maxLives;
+
+        // Terapkan visual karakter terpilih
+        string selectedChar = data.SelectedCharacter;
+        if (string.IsNullOrEmpty(selectedChar))
+        {
+            selectedChar = "Raka";
+        }
+
+        Animator anim = GetComponent<Animator>();
+        if (anim != null)
+        {
+            if (selectedChar == "Raka" || selectedChar == "Satria")
+            {
+                if (character1Animator != null)
+                {
+                    anim.runtimeAnimatorController = character1Animator;
+                }
+            }
+            else
+            {
+                if (character2Animator != null)
+                {
+                    anim.runtimeAnimatorController = character2Animator;
+                }
+            }
+        }
     }
 
     private void SaveProgress()

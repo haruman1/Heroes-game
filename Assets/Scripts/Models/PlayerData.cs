@@ -12,4 +12,8 @@ public class PlayerData
     public int HP { get; set; }
 
     public int Heart { get; set; }
+
+    public string SelectedCharacter { get; set; }
+
+    public int SelectedAge { get; set; }
 }

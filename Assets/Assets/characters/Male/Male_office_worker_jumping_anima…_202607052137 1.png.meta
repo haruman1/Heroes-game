@@ -1,0 +1,442 @@
+fileFormatVersion: 2
+guid: 03aab584103400c4eae3ca5cac3d5c42
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2390560587496046753
+    second: "Male_office_worker_jumping_anima\u2026_202607052137 1_0"
+  - first:
+      213: -3461653370145917193
+    second: "Male_office_worker_jumping_anima\u2026_202607052137 1_1"
+  - first:
+      213: -1785504623873621514
+    second: "Male_office_worker_jumping_anima\u2026_202607052137 1_2"
+  - first:
+      213: -5947597529573573844
+    second: "Male_office_worker_jumping_anima\u2026_202607052137 1_3"
+  - first:
+      213: 1022439693032166361
+    second: "Male_office_worker_jumping_anima\u2026_202607052137 1_4"
+  - first:
+      213: 7954227328796205013
+    second: "Male_office_worker_jumping_anima\u2026_202607052137 1_5"
+  - first:
+      213: -8182592905837916198
+    second: "Male_office_worker_jumping_anima\u2026_202607052137 1_6"
+  - first:
+      213: 2194513149634832025
+    second: "Male_office_worker_jumping_anima\u2026_202607052137 1_7"
+  - first:
+      213: -5690890089642680853
+    second: "Male_office_worker_jumping_anima\u2026_202607052137 1_8"
+  - first:
+      213: 1045089508525664836
+    second: "Male_office_worker_jumping_anima\u2026_202607052137 1_9"
+  - first:
+      213: 1601508232297512087
+    second: "Male_office_worker_jumping_anima\u2026_202607052137 1_10"
+  - first:
+      213: 3030541524335566103
+    second: "Male_office_worker_jumping_anima\u2026_202607052137 1_11"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "Male_office_worker_jumping_anima\u2026_202607052137 1_0"
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 796
+        width: 264
+        height: 554
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5fbf38bfc503ded0800000000000000
+      internalID: -2390560587496046753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Male_office_worker_jumping_anima\u2026_202607052137 1_1"
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 795
+        width: 322
+        height: 522
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f63be8b99cb5ffc0800000000000000
+      internalID: -3461653370145917193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Male_office_worker_jumping_anima\u2026_202607052137 1_2"
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 787
+        width: 302
+        height: 564
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f1023d210d9837e0800000000000000
+      internalID: -1785504623873621514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Male_office_worker_jumping_anima\u2026_202607052137 1_3"
+      rect:
+        serializedVersion: 2
+        x: 1441
+        y: 802
+        width: 336
+        height: 564
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2bb6cefe83e57da0800000000000000
+      internalID: -5947597529573573844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Male_office_worker_jumping_anima\u2026_202607052137 1_4"
+      rect:
+        serializedVersion: 2
+        x: 1848
+        y: 826
+        width: 380
+        height: 531
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d31173db7f603e00800000000000000
+      internalID: 1022439693032166361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Male_office_worker_jumping_anima\u2026_202607052137 1_5"
+      rect:
+        serializedVersion: 2
+        x: 2303
+        y: 789
+        width: 328
+        height: 558
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5df1a9bbc97136e60800000000000000
+      internalID: 7954227328796205013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Male_office_worker_jumping_anima\u2026_202607052137 1_6"
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 138
+        width: 267
+        height: 581
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adf46e9fa17917e80800000000000000
+      internalID: -8182592905837916198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Male_office_worker_jumping_anima\u2026_202607052137 1_7"
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 138
+        width: 316
+        height: 581
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99668e2251a747e10800000000000000
+      internalID: 2194513149634832025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Male_office_worker_jumping_anima\u2026_202607052137 1_8"
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 166
+        width: 327
+        height: 556
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bed9e077d95e501b0800000000000000
+      internalID: -5690890089642680853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Male_office_worker_jumping_anima\u2026_202607052137 1_9"
+      rect:
+        serializedVersion: 2
+        x: 1438
+        y: 171
+        width: 321
+        height: 552
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44ae822fe57e08e00800000000000000
+      internalID: 1045089508525664836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Male_office_worker_jumping_anima\u2026_202607052137 1_10"
+      rect:
+        serializedVersion: 2
+        x: 1903
+        y: 145
+        width: 298
+        height: 573
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79cf4fa8043b93610800000000000000
+      internalID: 1601508232297512087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Male_office_worker_jumping_anima\u2026_202607052137 1_11"
+      rect:
+        serializedVersion: 2
+        x: 2299
+        y: 137
+        width: 320
+        height: 544
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71d971bb575ae0a20800000000000000
+      internalID: 3030541524335566103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      "Male_office_worker_jumping_anima\u2026_202607052137 1_0": -2390560587496046753
+      "Male_office_worker_jumping_anima\u2026_202607052137 1_1": -3461653370145917193
+      "Male_office_worker_jumping_anima\u2026_202607052137 1_10": 1601508232297512087
+      "Male_office_worker_jumping_anima\u2026_202607052137 1_11": 3030541524335566103
+      "Male_office_worker_jumping_anima\u2026_202607052137 1_2": -1785504623873621514
+      "Male_office_worker_jumping_anima\u2026_202607052137 1_3": -5947597529573573844
+      "Male_office_worker_jumping_anima\u2026_202607052137 1_4": 1022439693032166361
+      "Male_office_worker_jumping_anima\u2026_202607052137 1_5": 7954227328796205013
+      "Male_office_worker_jumping_anima\u2026_202607052137 1_6": -8182592905837916198
+      "Male_office_worker_jumping_anima\u2026_202607052137 1_7": 2194513149634832025
+      "Male_office_worker_jumping_anima\u2026_202607052137 1_8": -5690890089642680853
+      "Male_office_worker_jumping_anima\u2026_202607052137 1_9": 1045089508525664836
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

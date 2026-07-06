@@ -10,10 +10,10 @@ public class Coins_duit : MonoBehaviour
             playerJ player = collision.GetComponent<playerJ>();
             if (player != null)
             {
-                player.AddCoin(1);
+                player.AddBook(1);
                 player.PlaySFX(player.coinSound, 0.5f); // Play coin sound effect at half volume
                 Destroy(gameObject);
-                Debug.Log("Player collected coin. Coin count: " + player.coinCount);
+                Debug.Log("Player collected book. Book count: " + player.bookCount);
             }
         }
     }

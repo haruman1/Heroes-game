@@ -1,0 +1,832 @@
+fileFormatVersion: 2
+guid: af6650cae9261d748a45eda072ffda34
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6345431839282338761
+    second: City_Park_terrain_tileset_2K_202607060235 1_0
+  - first:
+      213: 4339692551047342523
+    second: City_Park_terrain_tileset_2K_202607060235 1_1
+  - first:
+      213: -3758516698178672457
+    second: City_Park_terrain_tileset_2K_202607060235 1_2
+  - first:
+      213: 7923470913275856494
+    second: City_Park_terrain_tileset_2K_202607060235 1_3
+  - first:
+      213: 1407908769941384589
+    second: City_Park_terrain_tileset_2K_202607060235 1_4
+  - first:
+      213: 232616113302693499
+    second: City_Park_terrain_tileset_2K_202607060235 1_5
+  - first:
+      213: -501877455306418941
+    second: City_Park_terrain_tileset_2K_202607060235 1_6
+  - first:
+      213: -7475749595598089206
+    second: City_Park_terrain_tileset_2K_202607060235 1_7
+  - first:
+      213: -7731174024253302436
+    second: City_Park_terrain_tileset_2K_202607060235 1_8
+  - first:
+      213: -137527111444197390
+    second: City_Park_terrain_tileset_2K_202607060235 1_9
+  - first:
+      213: 2893216543342852448
+    second: City_Park_terrain_tileset_2K_202607060235 1_10
+  - first:
+      213: -5477497072962832886
+    second: City_Park_terrain_tileset_2K_202607060235 1_11
+  - first:
+      213: 3681561938903181624
+    second: City_Park_terrain_tileset_2K_202607060235 1_12
+  - first:
+      213: 7800329582614179196
+    second: City_Park_terrain_tileset_2K_202607060235 1_13
+  - first:
+      213: 9222186785261209423
+    second: City_Park_terrain_tileset_2K_202607060235 1_14
+  - first:
+      213: 1692042545687305584
+    second: City_Park_terrain_tileset_2K_202607060235 1_15
+  - first:
+      213: 2054079438810872877
+    second: City_Park_terrain_tileset_2K_202607060235 1_16
+  - first:
+      213: -1945953913225537118
+    second: City_Park_terrain_tileset_2K_202607060235 1_17
+  - first:
+      213: -3519309994321895485
+    second: City_Park_terrain_tileset_2K_202607060235 1_18
+  - first:
+      213: 1625078600835904674
+    second: City_Park_terrain_tileset_2K_202607060235 1_19
+  - first:
+      213: -8962953369308607296
+    second: City_Park_terrain_tileset_2K_202607060235 1_20
+  - first:
+      213: 6826498474480012275
+    second: City_Park_terrain_tileset_2K_202607060235 1_21
+  - first:
+      213: -8003779839515189989
+    second: City_Park_terrain_tileset_2K_202607060235 1_22
+  - first:
+      213: -2174262715813361155
+    second: City_Park_terrain_tileset_2K_202607060235 1_23
+  - first:
+      213: 2761796384159104329
+    second: City_Park_terrain_tileset_2K_202607060235 1_24
+  - first:
+      213: -5914701238268442043
+    second: City_Park_terrain_tileset_2K_202607060235 1_25
+  - first:
+      213: 3872364119512847321
+    second: City_Park_terrain_tileset_2K_202607060235 1_26
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: City_Park_terrain_tileset_2K_202607060235 1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 575
+        width: 2752
+        height: 961
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cb90e663a08f0850800000000000000
+      internalID: 6345431839282338761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: City_Park_terrain_tileset_2K_202607060235 1_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 575
+        width: 6
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb9e59be16fa93c30800000000000000
+      internalID: 4339692551047342523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: City_Park_terrain_tileset_2K_202607060235 1_2
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 574
+        width: 67
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b8afaaf9f017dbc0800000000000000
+      internalID: -3758516698178672457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: City_Park_terrain_tileset_2K_202607060235 1_3
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 573
+        width: 365
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6682f5b0d2d5fd60800000000000000
+      internalID: 7923470913275856494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: City_Park_terrain_tileset_2K_202607060235 1_4
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 573
+        width: 181
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8d638c1195e98310800000000000000
+      internalID: 1407908769941384589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: City_Park_terrain_tileset_2K_202607060235 1_5
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 572
+        width: 151
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7660726f1b6a3300800000000000000
+      internalID: 232616113302693499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: City_Park_terrain_tileset_2K_202607060235 1_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1398
+        height: 567
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3051fab0d19f809f0800000000000000
+      internalID: -501877455306418941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: City_Park_terrain_tileset_2K_202607060235 1_7
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 420
+        width: 588
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a041b9cd95dc04890800000000000000
+      internalID: -7475749595598089206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: City_Park_terrain_tileset_2K_202607060235 1_8
+      rect:
+        serializedVersion: 2
+        x: 1975
+        y: 417
+        width: 171
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5997abbf2a55b490800000000000000
+      internalID: -7731174024253302436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: City_Park_terrain_tileset_2K_202607060235 1_9
+      rect:
+        serializedVersion: 2
+        x: 2174
+        y: 418
+        width: 540
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ff026f12d7671ef0800000000000000
+      internalID: -137527111444197390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: City_Park_terrain_tileset_2K_202607060235 1_10
+      rect:
+        serializedVersion: 2
+        x: 1398
+        y: 187
+        width: 157
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 069fb340e15c62820800000000000000
+      internalID: 2893216543342852448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: City_Park_terrain_tileset_2K_202607060235 1_11
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 214
+        width: 158
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a06fec3ee650cf3b0800000000000000
+      internalID: -5477497072962832886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: City_Park_terrain_tileset_2K_202607060235 1_12
+      rect:
+        serializedVersion: 2
+        x: 1796
+        y: 220
+        width: 149
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8392ce2e319871330800000000000000
+      internalID: 3681561938903181624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: City_Park_terrain_tileset_2K_202607060235 1_13
+      rect:
+        serializedVersion: 2
+        x: 1971
+        y: 226
+        width: 186
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7d60be6d66504c60800000000000000
+      internalID: 7800329582614179196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: City_Park_terrain_tileset_2K_202607060235 1_14
+      rect:
+        serializedVersion: 2
+        x: 2179
+        y: 223
+        width: 153
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f47cbcb150acbff70800000000000000
+      internalID: 9222186785261209423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: City_Park_terrain_tileset_2K_202607060235 1_15
+      rect:
+        serializedVersion: 2
+        x: 2416
+        y: 263
+        width: 67
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07d1a800bb75b7710800000000000000
+      internalID: 1692042545687305584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: City_Park_terrain_tileset_2K_202607060235 1_16
+      rect:
+        serializedVersion: 2
+        x: 2438
+        y: 237
+        width: 72
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2c71cadd5e818c10800000000000000
+      internalID: 2054079438810872877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: City_Park_terrain_tileset_2K_202607060235 1_17
+      rect:
+        serializedVersion: 2
+        x: 2609
+        y: 263
+        width: 44
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a919ecd9359ef4e0800000000000000
+      internalID: -1945953913225537118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: City_Park_terrain_tileset_2K_202607060235 1_18
+      rect:
+        serializedVersion: 2
+        x: 2651
+        y: 264
+        width: 38
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cf16fdc436e82fc0800000000000000
+      internalID: -3519309994321895485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: City_Park_terrain_tileset_2K_202607060235 1_19
+      rect:
+        serializedVersion: 2
+        x: 1880
+        y: 216
+        width: 22
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a4b9ee90607d8610800000000000000
+      internalID: 1625078600835904674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: City_Park_terrain_tileset_2K_202607060235 1_20
+      rect:
+        serializedVersion: 2
+        x: 1390
+        y: 37
+        width: 168
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cc48fbf5613d9380800000000000000
+      internalID: -8962953369308607296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: City_Park_terrain_tileset_2K_202607060235 1_21
+      rect:
+        serializedVersion: 2
+        x: 1581
+        y: 35
+        width: 178
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fb8027b1389cbe50800000000000000
+      internalID: 6826498474480012275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: City_Park_terrain_tileset_2K_202607060235 1_22
+      rect:
+        serializedVersion: 2
+        x: 1819
+        y: 26
+        width: 88
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1d934d44acdce090800000000000000
+      internalID: -8003779839515189989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: City_Park_terrain_tileset_2K_202607060235 1_23
+      rect:
+        serializedVersion: 2
+        x: 1972
+        y: 36
+        width: 173
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df98197649773d1e0800000000000000
+      internalID: -2174262715813361155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: City_Park_terrain_tileset_2K_202607060235 1_24
+      rect:
+        serializedVersion: 2
+        x: 2171
+        y: 35
+        width: 179
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94df2c3cd2fd35620800000000000000
+      internalID: 2761796384159104329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: City_Park_terrain_tileset_2K_202607060235 1_25
+      rect:
+        serializedVersion: 2
+        x: 2410
+        y: 41
+        width: 149
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54a427caf82caeda0800000000000000
+      internalID: -5914701238268442043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: City_Park_terrain_tileset_2K_202607060235 1_26
+      rect:
+        serializedVersion: 2
+        x: 2609
+        y: 0
+        width: 143
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d3188866a66db530800000000000000
+      internalID: 3872364119512847321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      City_Park_terrain_tileset_2K_202607060235 1_0: 6345431839282338761
+      City_Park_terrain_tileset_2K_202607060235 1_1: 4339692551047342523
+      City_Park_terrain_tileset_2K_202607060235 1_10: 2893216543342852448
+      City_Park_terrain_tileset_2K_202607060235 1_11: -5477497072962832886
+      City_Park_terrain_tileset_2K_202607060235 1_12: 3681561938903181624
+      City_Park_terrain_tileset_2K_202607060235 1_13: 7800329582614179196
+      City_Park_terrain_tileset_2K_202607060235 1_14: 9222186785261209423
+      City_Park_terrain_tileset_2K_202607060235 1_15: 1692042545687305584
+      City_Park_terrain_tileset_2K_202607060235 1_16: 2054079438810872877
+      City_Park_terrain_tileset_2K_202607060235 1_17: -1945953913225537118
+      City_Park_terrain_tileset_2K_202607060235 1_18: -3519309994321895485
+      City_Park_terrain_tileset_2K_202607060235 1_19: 1625078600835904674
+      City_Park_terrain_tileset_2K_202607060235 1_2: -3758516698178672457
+      City_Park_terrain_tileset_2K_202607060235 1_20: -8962953369308607296
+      City_Park_terrain_tileset_2K_202607060235 1_21: 6826498474480012275
+      City_Park_terrain_tileset_2K_202607060235 1_22: -8003779839515189989
+      City_Park_terrain_tileset_2K_202607060235 1_23: -2174262715813361155
+      City_Park_terrain_tileset_2K_202607060235 1_24: 2761796384159104329
+      City_Park_terrain_tileset_2K_202607060235 1_25: -5914701238268442043
+      City_Park_terrain_tileset_2K_202607060235 1_26: 3872364119512847321
+      City_Park_terrain_tileset_2K_202607060235 1_3: 7923470913275856494
+      City_Park_terrain_tileset_2K_202607060235 1_4: 1407908769941384589
+      City_Park_terrain_tileset_2K_202607060235 1_5: 232616113302693499
+      City_Park_terrain_tileset_2K_202607060235 1_6: -501877455306418941
+      City_Park_terrain_tileset_2K_202607060235 1_7: -7475749595598089206
+      City_Park_terrain_tileset_2K_202607060235 1_8: -7731174024253302436
+      City_Park_terrain_tileset_2K_202607060235 1_9: -137527111444197390
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

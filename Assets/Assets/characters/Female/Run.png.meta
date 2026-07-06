@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: 8508e4f72592a7e4a8e6800633039d71
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 884456356405780844
+    second: "Female_office_worker_running_ani\u2026_202607060157 1 (1)_0"
+  - first:
+      213: -480538617542530971
+    second: "Female_office_worker_running_ani\u2026_202607060157 1 (1)_1"
+  - first:
+      213: -8398167616931967278
+    second: "Female_office_worker_running_ani\u2026_202607060157 1 (1)_2"
+  - first:
+      213: -334031296775640667
+    second: "Female_office_worker_running_ani\u2026_202607060157 1 (1)_3"
+  - first:
+      213: -3019402494092847333
+    second: "Female_office_worker_running_ani\u2026_202607060157 1 (1)_4"
+  - first:
+      213: -5051420425427302421
+    second: "Female_office_worker_running_ani\u2026_202607060157 1 (1)_5"
+  - first:
+      213: -7177538739684548758
+    second: "Female_office_worker_running_ani\u2026_202607060157 1 (1)_6"
+  - first:
+      213: 5603574537689688988
+    second: "Female_office_worker_running_ani\u2026_202607060157 1 (1)_7"
+  - first:
+      213: 5103809703845430958
+    second: "Female_office_worker_running_ani\u2026_202607060157 1 (1)_8"
+  - first:
+      213: -4846417594511895389
+    second: "Female_office_worker_running_ani\u2026_202607060157 1 (1)_9"
+  - first:
+      213: -7583669019441851592
+    second: "Female_office_worker_running_ani\u2026_202607060157 1 (1)_10"
+  - first:
+      213: -2597187054769183591
+    second: "Female_office_worker_running_ani\u2026_202607060157 1 (1)_11"
+  - first:
+      213: -4856957890719255044
+    second: "Female_office_worker_running_ani\u2026_202607060157 1 (1)_12"
+  - first:
+      213: -5024694623691481519
+    second: "Female_office_worker_running_ani\u2026_202607060157 1 (1)_13"
+  - first:
+      213: -8893791938942053952
+    second: "Female_office_worker_running_ani\u2026_202607060157 1 (1)_14"
+  - first:
+      213: 5931813317967472796
+    second: "Female_office_worker_running_ani\u2026_202607060157 1 (1)_15"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "Female_office_worker_running_ani\u2026_202607060157 1 (1)_0"
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 789
+        width: 300
+        height: 565
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6127eebe58364c00800000000000000
+      internalID: 884456356405780844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Female_office_worker_running_ani\u2026_202607060157 1 (1)_1"
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 790
+        width: 304
+        height: 564
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56825806ca8c459f0800000000000000
+      internalID: -480538617542530971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Female_office_worker_running_ani\u2026_202607060157 1 (1)_2"
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 804
+        width: 291
+        height: 552
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dec49c3c07b37b80800000000000000
+      internalID: -8398167616931967278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Female_office_worker_running_ani\u2026_202607060157 1 (1)_3"
+      rect:
+        serializedVersion: 2
+        x: 1070
+        y: 807
+        width: 295
+        height: 549
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a923db2e484d5bf0800000000000000
+      internalID: -334031296775640667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Female_office_worker_running_ani\u2026_202607060157 1 (1)_4"
+      rect:
+        serializedVersion: 2
+        x: 1407
+        y: 789
+        width: 275
+        height: 565
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b17daa9dd6de816d0800000000000000
+      internalID: -3019402494092847333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Female_office_worker_running_ani\u2026_202607060157 1 (1)_5"
+      rect:
+        serializedVersion: 2
+        x: 1719
+        y: 791
+        width: 298
+        height: 563
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be7c04bf2efb5e9b0800000000000000
+      internalID: -5051420425427302421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Female_office_worker_running_ani\u2026_202607060157 1 (1)_6"
+      rect:
+        serializedVersion: 2
+        x: 2041
+        y: 791
+        width: 293
+        height: 564
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6f5f736b82446c90800000000000000
+      internalID: -7177538739684548758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Female_office_worker_running_ani\u2026_202607060157 1 (1)_7"
+      rect:
+        serializedVersion: 2
+        x: 2369
+        y: 790
+        width: 289
+        height: 564
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9bea6f5a55e3cd40800000000000000
+      internalID: 5603574537689688988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Female_office_worker_running_ani\u2026_202607060157 1 (1)_8"
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 148
+        width: 291
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea606ee62ef54d640800000000000000
+      internalID: 5103809703845430958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Female_office_worker_running_ani\u2026_202607060157 1 (1)_9"
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 148
+        width: 288
+        height: 586
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a45aed00e01ebcb0800000000000000
+      internalID: -4846417594511895389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Female_office_worker_running_ani\u2026_202607060157 1 (1)_10"
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 152
+        width: 291
+        height: 582
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8339802f43561c690800000000000000
+      internalID: -7583669019441851592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Female_office_worker_running_ani\u2026_202607060157 1 (1)_11"
+      rect:
+        serializedVersion: 2
+        x: 1081
+        y: 160
+        width: 289
+        height: 574
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9946d395220f4fbd0800000000000000
+      internalID: -2597187054769183591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Female_office_worker_running_ani\u2026_202607060157 1 (1)_12"
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 148
+        width: 288
+        height: 586
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf5f5aa188e989cb0800000000000000
+      internalID: -4856957890719255044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Female_office_worker_running_ani\u2026_202607060157 1 (1)_13"
+      rect:
+        serializedVersion: 2
+        x: 1731
+        y: 150
+        width: 284
+        height: 584
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15edd0a9cd2b44ab0800000000000000
+      internalID: -5024694623691481519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Female_office_worker_running_ani\u2026_202607060157 1 (1)_14"
+      rect:
+        serializedVersion: 2
+        x: 2056
+        y: 153
+        width: 282
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c150255a57e29480800000000000000
+      internalID: -8893791938942053952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Female_office_worker_running_ani\u2026_202607060157 1 (1)_15"
+      rect:
+        serializedVersion: 2
+        x: 2378
+        y: 148
+        width: 286
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c98e16bd8c8025250800000000000000
+      internalID: 5931813317967472796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      "Female_office_worker_running_ani\u2026_202607060157 1 (1)_0": 884456356405780844
+      "Female_office_worker_running_ani\u2026_202607060157 1 (1)_1": -480538617542530971
+      "Female_office_worker_running_ani\u2026_202607060157 1 (1)_10": -7583669019441851592
+      "Female_office_worker_running_ani\u2026_202607060157 1 (1)_11": -2597187054769183591
+      "Female_office_worker_running_ani\u2026_202607060157 1 (1)_12": -4856957890719255044
+      "Female_office_worker_running_ani\u2026_202607060157 1 (1)_13": -5024694623691481519
+      "Female_office_worker_running_ani\u2026_202607060157 1 (1)_14": -8893791938942053952
+      "Female_office_worker_running_ani\u2026_202607060157 1 (1)_15": 5931813317967472796
+      "Female_office_worker_running_ani\u2026_202607060157 1 (1)_2": -8398167616931967278
+      "Female_office_worker_running_ani\u2026_202607060157 1 (1)_3": -334031296775640667
+      "Female_office_worker_running_ani\u2026_202607060157 1 (1)_4": -3019402494092847333
+      "Female_office_worker_running_ani\u2026_202607060157 1 (1)_5": -5051420425427302421
+      "Female_office_worker_running_ani\u2026_202607060157 1 (1)_6": -7177538739684548758
+      "Female_office_worker_running_ani\u2026_202607060157 1 (1)_7": 5603574537689688988
+      "Female_office_worker_running_ani\u2026_202607060157 1 (1)_8": 5103809703845430958
+      "Female_office_worker_running_ani\u2026_202607060157 1 (1)_9": -4846417594511895389
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LEVEL 2.unity
     guid: fc99521d4113b73459e51d6bce6f4eda
+  - enabled: 1
+    path: Assets/Scenes/LobbySelectionScene.unity
+    guid: 0a552ec0533fd894f993b39d52ae15b1
   m_configObjects:
     com.unity.dt.app-ui: {fileID: 11400000, guid: 1b1c20d82303e4b5781c3ef50ac1449f, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

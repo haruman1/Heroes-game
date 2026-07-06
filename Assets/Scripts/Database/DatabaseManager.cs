@@ -106,11 +106,31 @@ public class DatabaseManager : MonoBehaviour
                     Level = DefaultLevel,
                     HP = DefaultHp,
                     Heart = DefaultHeart,
+                    SelectedCharacter = "Raka",
+                    SelectedAge = 10,
                 }
             );
 
             LogShort("CREATE default-player");
         }
+    }
+
+    public void SaveCharacterSelection(string character, int age)
+    {
+        EnsureDatabaseReady();
+
+        if (db == null)
+            return;
+
+        PlayerData player = GetPlayerData();
+        if (player == null)
+            return;
+
+        player.SelectedCharacter = character;
+        player.SelectedAge = age;
+
+        db.Update(player);
+        LogShort($"SAVE SELECTION char={character}, age={age}");
     }
 
     private void CreateDefaultSettings()

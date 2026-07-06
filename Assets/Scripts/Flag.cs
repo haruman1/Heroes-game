@@ -10,6 +10,16 @@ public class Flag : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            playerJ player = collision.GetComponent<playerJ>();
+            if (player != null)
+            {
+                if (player.bookCount < player.booksRequiredPerLevel)
+                {
+                    Debug.LogWarning($"Belum cukup buku! Kumpulkan {player.booksRequiredPerLevel} buku. Baru terkumpul {player.bookCount}.");
+                    return; // Jangan selesaikan level jika buku belum cukup
+                }
+            }
+
             DatabaseManager dbManager = DatabaseManager.GetOrCreateInstance();
             if (dbManager != null)
             {

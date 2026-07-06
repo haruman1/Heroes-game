@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: f6da2768d16243a47bfb45fe658726bd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2547311934331022456
+    second: Female_office_worker_idle_animation_202607060156 1_0
+  - first:
+      213: -5463149120166678621
+    second: Female_office_worker_idle_animation_202607060156 1_1
+  - first:
+      213: 8966410573404172049
+    second: Female_office_worker_idle_animation_202607060156 1_2
+  - first:
+      213: -2930463636257282156
+    second: Female_office_worker_idle_animation_202607060156 1_3
+  - first:
+      213: -4742977852500182135
+    second: Female_office_worker_idle_animation_202607060156 1_4
+  - first:
+      213: -3116659739647699135
+    second: Female_office_worker_idle_animation_202607060156 1_5
+  - first:
+      213: 7674887458154621445
+    second: Female_office_worker_idle_animation_202607060156 1_6
+  - first:
+      213: 1749786033375136112
+    second: Female_office_worker_idle_animation_202607060156 1_7
+  - first:
+      213: 1263004988283776278
+    second: Female_office_worker_idle_animation_202607060156 1_8
+  - first:
+      213: 7020137692618129694
+    second: Female_office_worker_idle_animation_202607060156 1_9
+  - first:
+      213: 1995185839386359803
+    second: Female_office_worker_idle_animation_202607060156 1_10
+  - first:
+      213: 3699719373440398869
+    second: Female_office_worker_idle_animation_202607060156 1_11
+  - first:
+      213: 6613359697962668927
+    second: Female_office_worker_idle_animation_202607060156 1_12
+  - first:
+      213: 292533855839206041
+    second: Female_office_worker_idle_animation_202607060156 1_13
+  - first:
+      213: -2899202303086343155
+    second: Female_office_worker_idle_animation_202607060156 1_14
+  - first:
+      213: -6022888761876710559
+    second: Female_office_worker_idle_animation_202607060156 1_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Female_office_worker_idle_animation_202607060156 1_0
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 788
+        width: 234
+        height: 570
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 883161eba4126acd0800000000000000
+      internalID: -2547311934331022456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female_office_worker_idle_animation_202607060156 1_1
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 788
+        width: 234
+        height: 570
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3af2a79f1defe24b0800000000000000
+      internalID: -5463149120166678621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female_office_worker_idle_animation_202607060156 1_2
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 788
+        width: 237
+        height: 572
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11fef0219e61f6c70800000000000000
+      internalID: 8966410573404172049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female_office_worker_idle_animation_202607060156 1_3
+      rect:
+        serializedVersion: 2
+        x: 1097
+        y: 788
+        width: 235
+        height: 570
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4976fad59d6e457d0800000000000000
+      internalID: -2930463636257282156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female_office_worker_idle_animation_202607060156 1_4
+      rect:
+        serializedVersion: 2
+        x: 1418
+        y: 788
+        width: 233
+        height: 570
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98b7e24c5ce8d2eb0800000000000000
+      internalID: -4742977852500182135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female_office_worker_idle_animation_202607060156 1_5
+      rect:
+        serializedVersion: 2
+        x: 1744
+        y: 788
+        width: 235
+        height: 570
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1479984ca766fb4d0800000000000000
+      internalID: -3116659739647699135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female_office_worker_idle_animation_202607060156 1_6
+      rect:
+        serializedVersion: 2
+        x: 2072
+        y: 788
+        width: 231
+        height: 569
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50a286ada7da28a60800000000000000
+      internalID: 7674887458154621445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female_office_worker_idle_animation_202607060156 1_7
+      rect:
+        serializedVersion: 2
+        x: 2398
+        y: 788
+        width: 232
+        height: 569
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 079c348602d784810800000000000000
+      internalID: 1749786033375136112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female_office_worker_idle_animation_202607060156 1_8
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 135
+        width: 230
+        height: 606
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61d633c5858178110800000000000000
+      internalID: 1263004988283776278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female_office_worker_idle_animation_202607060156 1_9
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 136
+        width: 232
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1185d2890a8c6160800000000000000
+      internalID: 7020137692618129694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female_office_worker_idle_animation_202607060156 1_10
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 135
+        width: 232
+        height: 606
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf7738133f250bb10800000000000000
+      internalID: 1995185839386359803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female_office_worker_idle_animation_202607060156 1_11
+      rect:
+        serializedVersion: 2
+        x: 1101
+        y: 135
+        width: 231
+        height: 606
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 516bb8e0b2b085330800000000000000
+      internalID: 3699719373440398869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female_office_worker_idle_animation_202607060156 1_12
+      rect:
+        serializedVersion: 2
+        x: 1418
+        y: 135
+        width: 232
+        height: 606
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7313f03b9f57cb50800000000000000
+      internalID: 6613359697962668927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female_office_worker_idle_animation_202607060156 1_13
+      rect:
+        serializedVersion: 2
+        x: 1753
+        y: 135
+        width: 232
+        height: 606
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99a3212fdf94f0400800000000000000
+      internalID: 292533855839206041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female_office_worker_idle_animation_202607060156 1_14
+      rect:
+        serializedVersion: 2
+        x: 2077
+        y: 135
+        width: 232
+        height: 606
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0c4b80bdd6f3c7d0800000000000000
+      internalID: -2899202303086343155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female_office_worker_idle_animation_202607060156 1_15
+      rect:
+        serializedVersion: 2
+        x: 2401
+        y: 0
+        width: 351
+        height: 741
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16b75aae4966a6ca0800000000000000
+      internalID: -6022888761876710559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Female_office_worker_idle_animation_202607060156 1_0: -2547311934331022456
+      Female_office_worker_idle_animation_202607060156 1_1: -5463149120166678621
+      Female_office_worker_idle_animation_202607060156 1_10: 1995185839386359803
+      Female_office_worker_idle_animation_202607060156 1_11: 3699719373440398869
+      Female_office_worker_idle_animation_202607060156 1_12: 6613359697962668927
+      Female_office_worker_idle_animation_202607060156 1_13: 292533855839206041
+      Female_office_worker_idle_animation_202607060156 1_14: -2899202303086343155
+      Female_office_worker_idle_animation_202607060156 1_15: -6022888761876710559
+      Female_office_worker_idle_animation_202607060156 1_2: 8966410573404172049
+      Female_office_worker_idle_animation_202607060156 1_3: -2930463636257282156
+      Female_office_worker_idle_animation_202607060156 1_4: -4742977852500182135
+      Female_office_worker_idle_animation_202607060156 1_5: -3116659739647699135
+      Female_office_worker_idle_animation_202607060156 1_6: 7674887458154621445
+      Female_office_worker_idle_animation_202607060156 1_7: 1749786033375136112
+      Female_office_worker_idle_animation_202607060156 1_8: 1263004988283776278
+      Female_office_worker_idle_animation_202607060156 1_9: 7020137692618129694
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
