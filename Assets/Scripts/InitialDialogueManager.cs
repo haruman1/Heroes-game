@@ -75,60 +75,60 @@ public class InitialDialogueManager : MonoBehaviour
 
         if (isMale)
         {
-            characterNameText.text = "Raka";
+            characterNameText.text = charName;
             if (age >= 18 && age <= 24)
             {
                 finalDialogue = !string.IsNullOrEmpty(maleDialogue18_24)
                     ? maleDialogue18_24.Replace("{age}", age.ToString())
-                    : $"Halo Raka! Di usiamu yang ke-{age} tahun ini (Dewasa Awal), kamu baru saja memulai langkahmu di dunia IT. Kumpulkan 10 buku dasar IT di level ini untuk mengasah kemampuan teknismu!";
+                    : $"Halo {charName}! Di usiamu yang ke-{age} tahun ini (Dewasa Awal), kamu baru saja memulai langkahmu di dunia IT. Kumpulkan 10 buku dasar IT di level ini untuk mengasah kemampuan teknismu!";
             }
             else if (age >= 25 && age <= 34)
             {
                 finalDialogue = !string.IsNullOrEmpty(maleDialogue25_34)
                     ? maleDialogue25_34.Replace("{age}", age.ToString())
-                    : $"Salam Raka! Di usiamu yang ke-{age} tahun ini (Fokus Karier), kamu sedang fokus membangun kariermu. Kumpulkan 10 buku referensi sistem di level ini agar bisa menyelesaikan proyek server tepat waktu!";
+                    : $"Salam {charName}! Di usiamu yang ke-{age} tahun ini (Fokus Karier), kamu sedang fokus membangun kariermu. Kumpulkan 10 buku referensi sistem di level ini agar bisa menyelesaikan proyek server tepat waktu!";
             }
             else if (age >= 35 && age <= 44)
             {
                 finalDialogue = !string.IsNullOrEmpty(maleDialogue35_44)
                     ? maleDialogue35_44.Replace("{age}", age.ToString())
-                    : $"Halo Raka! Di usiamu yang ke-{age} tahun (Karier & Keluarga), kariermu mulai stabil dan kini fokus mengurus keluarga. Kumpulkan 10 buku manajemen waktu di level ini demi keseimbangan kerja dan keluarga!";
+                    : $"Halo {charName}! Di usiamu yang ke-{age} tahun (Karier & Keluarga), kariermu mulai stabil dan kini fokus mengurus keluarga. Kumpulkan 10 buku manajemen waktu di level ini demi keseimbangan kerja dan keluarga!";
             }
             else
             {
                 // 45-59 tahun atau lainnya (Dewasa Madya)
                 finalDialogue = !string.IsNullOrEmpty(maleDialogue45_59)
                     ? maleDialogue45_59.Replace("{age}", age.ToString())
-                    : $"Selamat datang, Raka! Di usiamu yang ke-{age} tahun (Dewasa Madya), kamu adalah senior IT dengan segudang pengalaman. Kumpulkan 10 buku arsip legendaris di level ini untuk mewariskan ilmumu!";
+                    : $"Selamat datang, {charName}! Di usiamu yang ke-{age} tahun (Dewasa Madya), kamu adalah senior IT dengan segudang pengalaman. Kumpulkan 10 buku arsip legendaris di level ini untuk mewariskan ilmumu!";
             }
         }
         else
         {
-            characterNameText.text = "Rini";
+            characterNameText.text = charName;
             if (age >= 18 && age <= 24)
             {
                 finalDialogue = !string.IsNullOrEmpty(femaleDialogue18_24)
                     ? femaleDialogue18_24.Replace("{age}", age.ToString())
-                    : $"Halo Rini! Di usiamu yang ke-{age} tahun ini (Dewasa Awal), langkah pertamamu di administrasi kantor baru saja dimulai. Kumpulkan 10 buku panduan admin di level ini untuk membiasakan dirimu!";
+                    : $"Halo {charName}! Di usiamu yang ke-{age} tahun ini (Dewasa Awal), langkah pertamamu di administrasi kantor baru saja dimulai. Kumpulkan 10 buku panduan admin di level ini untuk membiasakan dirimu!";
             }
             else if (age >= 25 && age <= 34)
             {
                 finalDialogue = !string.IsNullOrEmpty(femaleDialogue25_34)
                     ? femaleDialogue25_34.Replace("{age}", age.ToString())
-                    : $"Salam Rini! Di usiamu yang ke-{age} tahun ini (Fokus Karier), kamu berfokus penuh membangun kariermu. Kumpulkan 10 buku berkas arsip di level ini agar efisiensi kerja kantormu meningkat pesat!";
+                    : $"Salam {charName}! Di usiamu yang ke-{age} tahun ini (Fokus Karier), kamu berfokus penuh membangun kariermu. Kumpulkan 10 buku berkas arsip di level ini agar efisiensi kerja kantormu meningkat pesat!";
             }
             else if (age >= 35 && age <= 44)
             {
                 finalDialogue = !string.IsNullOrEmpty(femaleDialogue35_44)
                     ? femaleDialogue35_44.Replace("{age}", age.ToString())
-                    : $"Halo Rini! Di usiamu yang ke-{age} tahun (Karier & Keluarga), kariermu mulai stabil dan fokusmu beralih mengurus keluarga. Kumpulkan 10 buku panduan keluarga di level ini demi kebahagiaan di rumah!";
+                    : $"Halo {charName}! Di usiamu yang ke-{age} tahun (Karier & Keluarga), kariermu mulai stabil dan fokusmu beralih mengurus keluarga. Kumpulkan 10 buku panduan keluarga di level ini demi kebahagiaan di rumah!";
             }
             else
             {
                 // 45-59 tahun atau lainnya (Dewasa Madya)
                 finalDialogue = !string.IsNullOrEmpty(femaleDialogue45_59)
                     ? femaleDialogue45_59.Replace("{age}", age.ToString())
-                    : $"Selamat datang, Rini! Di usiamu yang ke-{age} tahun (Dewasa Madya), pengalaman adminmu sangat berharga bagi perusahaan. Kumpulkan 10 buku dokumen bersejarah di level ini untuk diselesaikan!";
+                    : $"Selamat datang, {charName}! Di usiamu yang ke-{age} tahun (Dewasa Madya), pengalaman adminmu sangat berharga bagi perusahaan. Kumpulkan 10 buku dokumen bersejarah di level ini untuk diselesaikan!";
             }
         }
 
