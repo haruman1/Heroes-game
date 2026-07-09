@@ -14,8 +14,8 @@ public class playerJ : MonoBehaviour
     public int coinCount = 0; // Legacy variable
 
     [Header("Character Animators")]
-    public RuntimeAnimatorController character1Animator; // Raka
-    public RuntimeAnimatorController character2Animator; // Wanita (Rini)
+    public RuntimeAnimatorController character1Animator; // Raden
+    public RuntimeAnimatorController character2Animator; // Wanita (Rena)
     
     [Header("Audio")]
     public AudioClip jumpSound;
@@ -91,7 +91,7 @@ public class playerJ : MonoBehaviour
     }
     private void OfftoGround()
     {
-        if(transform.position.y < -10f)
+        if(transform.position.y < -3f)
         {
             Die();
         }
@@ -393,13 +393,13 @@ public class playerJ : MonoBehaviour
         string selectedChar = data.SelectedCharacter;
         if (string.IsNullOrEmpty(selectedChar))
         {
-            selectedChar = "Raka";
+            selectedChar = "Raden";
         }
 
         Animator anim = GetComponent<Animator>();
         if (anim != null)
         {
-            if (selectedChar == "Raka" || selectedChar == "Satria")
+            if (selectedChar == "Raden" || selectedChar == "Satria")
             {
                 if (character1Animator != null)
                 {

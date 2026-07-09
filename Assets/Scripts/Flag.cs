@@ -1,9 +1,12 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Events;
 
 public class Flag : MonoBehaviour
 {
     public GameObject WinFlag;
+    public FinishLineDialogueManager finishLineDialogue;
+    public UnityEvent onFinishLevel;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void OnTriggerEnter2D(Collider2D collision)
@@ -27,8 +30,19 @@ public class Flag : MonoBehaviour
                 dbManager.UnlockLevel(nextLevel);
             }
 
-            Time.timeScale = 0f; // Pause the game
-            WinFlag.SetActive(true);
+            // Jika ada dialog, jalankan dialog terlebih dahulu
+            if (finishLineDialogue != null)
+            {
+                finishLineDialogue.TriggerFinishLineDialogue();
+            }
+            else
+            {
+                // Fallback jika tidak ada dialog
+                Time.timeScale = 0f; // Pause the game
+                if (WinFlag != null) WinFlag.SetActive(true);
+            }
+            
+            onFinishLevel?.Invoke();
         }
     }
 }

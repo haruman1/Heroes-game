@@ -20,6 +20,10 @@ public class RPGCharacterSelection : MonoBehaviour
         public Transform walkTarget;
         public Sprite portraitSprite;
         public GameObject characterCard;
+        public TMP_Text characterCardName;
+        public TMP_Text characterDescriptionText;
+        [TextArea(2, 5)]
+        public string characterDescription;
         public GameObject glowHighlight;
         [TextArea(2, 5)]
         public string[] introDialogues;
@@ -75,6 +79,23 @@ public class RPGCharacterSelection : MonoBehaviour
     public TMP_Text summaryJobText;
     public Button summaryContinueButton;
 
+    [Header("Back & Cancellation Buttons")]
+    public Button characterSelectionBackButton; // Used as "Ubah Usia" button in lobby
+    public Button summaryBackButton;
+
+    [Header("Prolog UI & GameObjects")]
+    public GameObject prologPanel;
+    public TMP_Text prologTitleText; 
+    public GameObject prologMaleObject; // Karakter pria yang duduk
+    public GameObject prologFemaleObject; // Karakter wanita yang duduk
+    public TMP_Text prologSpeakerText;
+    public TMP_Text prologDialogueText;
+    public Button prologNextButton;
+
+    [Header("Button Highlighting Colors")]
+    public Color selectedButtonColor = new Color(0f, 0.7f, 1f, 1f); // Sky blue
+    public Color normalButtonColor = Color.white;
+
     [Header("Fade UI")]
     public CanvasGroup fadeOverlay;
     public float fadeDuration = 1f;
@@ -82,12 +103,6 @@ public class RPGCharacterSelection : MonoBehaviour
     [Header("Gameplay Scene settings")]
     public string gameSceneName = "Level 1";
 
-    // Keep old fields for backward compatibility to avoid scene reference breaks
-    [Header("Deprecated (Backward Compatibility)")]
-    public GameObject agePanel;
-    public TMP_InputField ageInputField;
-    public Button startGameButton;
-    public TMP_Text ageWarningText;
 
     private CharacterData selectedCharacter;
     private CharacterData unselectedCharacter;
@@ -97,22 +112,30 @@ public class RPGCharacterSelection : MonoBehaviour
     
     private enum SelectionState
     {
+        AgeSelection,
         LobbyChatting,
         CharacterMoving,
         CharacterNeaten,
         CharacterSmile,
         CharacterIntro,
-        AgeSelection,
         SelectionSummary,
+        Prolog,
         Fading
     }
-    private SelectionState currentState = SelectionState.LobbyChatting;
+    private SelectionState currentState = SelectionState.AgeSelection;
 
     private Coroutine lobbyChatCoroutine;
     private Coroutine typingCoroutine;
     private int chosenAge = 21;
     private string chosenAgeRangeLabel = "";
     private Vector3 targetScale;
+    private string chosenGender = "";
+
+    // Store initial transform configurations to allow canceling selection
+    private Vector3 maleInitialPosition;
+    private Vector3 maleInitialScale;
+    private Vector3 femaleInitialPosition;
+    private Vector3 femaleInitialScale;
 
     private void Awake()
     {
@@ -128,16 +151,37 @@ public class RPGCharacterSelection : MonoBehaviour
 
     private void Start()
     {
+        // Store initial positions and scales of characters
+        if (characterMale.characterObject != null)
+        {
+            maleInitialPosition = characterMale.characterObject.transform.position;
+            maleInitialScale = characterMale.characterObject.transform.localScale;
+        }
+        if (characterFemale.characterObject != null)
+        {
+            femaleInitialPosition = characterFemale.characterObject.transform.position;
+            femaleInitialScale = characterFemale.characterObject.transform.localScale;
+        }
+
         // Menyembunyikan panel-panel yang tidak diperlukan di awal secara aman
         if (dialoguePanel != null) dialoguePanel.SetActive(false);
-        if (ageRangePanel != null) ageRangePanel.SetActive(false);
         if (summaryPanel != null) summaryPanel.SetActive(false);
-        
-        // Deprecated panels
-        if (agePanel != null) agePanel.SetActive(false);
+        if (prologPanel != null) prologPanel.SetActive(false);
+       
+        // Menampilkan panel pemilihan umur di awal
+        currentState = SelectionState.AgeSelection;
+        if (ageRangePanel != null)
+        {
+            ageRangePanel.SetActive(true);
+        }
+
+        // Sembunyikan karakter di awal saat sedang milih usia
+        if (characterMale.characterObject != null) characterMale.characterObject.SetActive(false);
+        if (characterFemale.characterObject != null) characterFemale.characterObject.SetActive(false);
+
+        // Sembunyikan chat bubble di awal
         if (maleChatBubble != null) maleChatBubble.SetActive(false);
         if (femaleChatBubble != null) femaleChatBubble.SetActive(false);
-        if (ageWarningText != null) ageWarningText.text = "";
 
         // Matikan efek gravitasi/fisika pada karakter di lobby agar tidak jatuh
         DisablePhysics(characterMale.characterObject);
@@ -157,12 +201,12 @@ public class RPGCharacterSelection : MonoBehaviour
         if (characterMale.glowHighlight != null) characterMale.glowHighlight.SetActive(false);
         if (characterFemale.glowHighlight != null) characterFemale.glowHighlight.SetActive(false);
 
-        // Pastikan kartu karakter lobby aktif di awal
-        if (characterMale.characterCard != null) characterMale.characterCard.SetActive(true);
-        if (characterFemale.characterCard != null) characterFemale.characterCard.SetActive(true);
-
-        // Pastikan petunjuk pemilihan aktif di awal
-        if (selectionHintUI != null) selectionHintUI.SetActive(true);
+        // Sembunyikan kartu karakter di awal saat sedang milih usia
+        if (characterMale.characterCard != null) characterMale.characterCard.SetActive(false);
+        if (characterFemale.characterCard != null) characterFemale.characterCard.SetActive(false);
+        
+        // Petunjuk pemilihan tidak aktif saat mengisi panel umur
+        if (selectionHintUI != null) selectionHintUI.SetActive(false);
 
         // Pastikan overlay fade transparan di awal
         if (fadeOverlay != null)
@@ -171,8 +215,8 @@ public class RPGCharacterSelection : MonoBehaviour
             fadeOverlay.blocksRaycasts = false;
         }
 
-        // Mulai obrolan lobby berkala
-        lobbyChatCoroutine = StartCoroutine(LobbyChatRoutine());
+        // Jangan mulai obrolan lobby dulu, baru dimulai setelah umur diisi
+        lobbyChatCoroutine = null;
 
         // Daftarkan listener tombol secara bersih
         if (nextDialogueButton != null)
@@ -201,6 +245,20 @@ public class RPGCharacterSelection : MonoBehaviour
         {
             ageButton45_plus.onClick.RemoveAllListeners();
             ageButton45_plus.onClick.AddListener(() => OnAgeRangeSelected(50, "45+ Tahun"));
+        }
+
+        // Setup back/cancel buttons
+        if (characterSelectionBackButton != null)
+        {
+            characterSelectionBackButton.onClick.RemoveAllListeners();
+            characterSelectionBackButton.onClick.AddListener(OnBackToAgeSelection);
+            characterSelectionBackButton.gameObject.SetActive(false);
+        }
+
+        if (summaryBackButton != null)
+        {
+            summaryBackButton.onClick.RemoveAllListeners();
+            summaryBackButton.onClick.AddListener(ResetCharactersToInitialState);
         }
 
         // Setup summary continue button
@@ -338,6 +396,11 @@ public class RPGCharacterSelection : MonoBehaviour
         }
     }
 
+    public string GetChosenGender()
+    {
+        return chosenGender;
+    }
+
     private bool IsCharacterObject(GameObject hitObj, GameObject charObj)
     {
         if (charObj == null) return false;
@@ -391,23 +454,12 @@ public class RPGCharacterSelection : MonoBehaviour
         }
     }
 
-    // Dipanggil ketika player mengklik Karakter Laki-laki (Raka)
-    public void ClickMaleCharacter()
-    {
-        if (isCharacterSelected) return;
-        SelectCharacter(characterMale, characterFemale);
-    }
 
-    // Dipanggil ketika player mengklik Karakter Wanita (Nadia)
-    public void ClickFemaleCharacter()
-    {
-        if (isCharacterSelected) return;
-        SelectCharacter(characterFemale, characterMale);
-    }
 
     // Menangani aksi seleksi karakter
     private void SelectCharacter(CharacterData selected, CharacterData unselected)
-    {
+    {   
+        
         isCharacterSelected = true;
         currentState = SelectionState.CharacterMoving;
         selectedCharacter = selected;
@@ -431,8 +483,11 @@ public class RPGCharacterSelection : MonoBehaviour
         // Sembunyikan petunjuk pemilihan
         if (selectionHintUI != null) selectionHintUI.SetActive(false);
 
-        // Aktifkan glow highlight pada karakter terpilih
-        if (selected.glowHighlight != null) selected.glowHighlight.SetActive(true);
+        // Sembunyikan tombol kembali
+        if (characterSelectionBackButton != null) characterSelectionBackButton.gameObject.SetActive(false);
+
+        // // Aktifkan glow highlight pada karakter terpilih
+        // if (selected.glowHighlight != null) selected.glowHighlight.SetActive(true);
 
         // Beri efek dim/redup untuk karakter yang tidak dipilih
         if (unselected.spriteRenderer != null)
@@ -567,8 +622,8 @@ public class RPGCharacterSelection : MonoBehaviour
         }
         else
         {
-            // Selesai dialog, langsung masuk pilihan umur
-            TransitionToAgeSelection();
+            // Selesai dialog, langsung masuk ringkasan
+            TransitionToSummary();
         }
     }
 
@@ -598,20 +653,26 @@ public class RPGCharacterSelection : MonoBehaviour
         }
         else
         {
-            // Selesai dialog perkenalan, masuk ke pemilihan rentang usia
-            TransitionToAgeSelection();
+            // Selesai dialog perkenalan, masuk ke ringkasan
+            TransitionToSummary();
         }
     }
 
-    // Masuk ke fase pemilihan rentang usia
-    private void TransitionToAgeSelection()
+    // Selesai dialog perkenalan, langsung masuk ke ringkasan (summary)
+    private void TransitionToSummary()
     {
         if (dialoguePanel != null) dialoguePanel.SetActive(false);
-        currentState = SelectionState.AgeSelection;
-        if (ageRangePanel != null) ageRangePanel.SetActive(true);
+        
+        // Sembunyikan tombol kembali lobby
+        if (characterSelectionBackButton != null) characterSelectionBackButton.gameObject.SetActive(false);
+
+        currentState = SelectionState.SelectionSummary;
+        ShowSummaryScreen();
     }
 
-    // Dipanggil ketika salah satu rentang usia dipilih
+
+
+    // Dipanggil ketika salah satu rentang usia dipilih di panel input
     private void OnAgeRangeSelected(int representativeAge, string label)
     {
         chosenAge = representativeAge;
@@ -619,9 +680,163 @@ public class RPGCharacterSelection : MonoBehaviour
 
         if (ageRangePanel != null) ageRangePanel.SetActive(false);
 
-        // Masuk ke Fase Ringkasan (Summary)
-        currentState = SelectionState.SelectionSummary;
-        ShowSummaryScreen();
+        // Memunculkan karakter kembali saat masuk lobby
+        if (characterMale.characterObject != null) characterMale.characterObject.SetActive(true);
+        if (characterFemale.characterObject != null) characterFemale.characterObject.SetActive(true);
+
+        // Menampilkan dan mengatur info kartu karakter
+        if (characterMale.characterCard != null) characterMale.characterCard.SetActive(true);
+        if (characterMale.characterCardName != null) characterMale.characterCardName.text = characterMale.name;
+        if (characterMale.characterDescriptionText != null) characterMale.characterDescriptionText.text = characterMale.characterDescription;
+
+        if (characterFemale.characterCard != null) characterFemale.characterCard.SetActive(true);
+        if (characterFemale.characterCardName != null) characterFemale.characterCardName.text = characterFemale.name;
+        if (characterFemale.characterDescriptionText != null) characterFemale.characterDescriptionText.text = characterFemale.characterDescription;
+
+        // Masuk ke fase obrolan/pemilihan di lobby
+        currentState = SelectionState.LobbyChatting;
+
+        // Tampilkan petunjuk pemilihan
+        if (selectionHintUI != null) selectionHintUI.SetActive(true);
+
+        // Tampilkan tombol kembali ("Ubah Usia")
+        if (characterSelectionBackButton != null)
+        {
+            characterSelectionBackButton.gameObject.SetActive(true);
+            TMP_Text buttonText = characterSelectionBackButton.GetComponentInChildren<TMP_Text>();
+            if (buttonText != null) buttonText.text = "Ubah Usia";
+        }
+
+        // Mulai obrolan lobby berkala
+        if (lobbyChatCoroutine == null)
+        {
+            lobbyChatCoroutine = StartCoroutine(LobbyChatRoutine());
+        }
+    }
+
+    // Dipanggil ketika klik tombol kembali ke panel pemilihan umur ("Ubah Usia")
+    private void OnBackToAgeSelection()
+    {
+        currentState = SelectionState.AgeSelection;
+        
+        if (ageRangePanel != null) ageRangePanel.SetActive(true);
+        if (characterSelectionBackButton != null) characterSelectionBackButton.gameObject.SetActive(false);
+        if (selectionHintUI != null) selectionHintUI.SetActive(false);
+        
+        // Sembunyikan karakter lagi karena kembali ke menu usia
+        if (characterMale.characterObject != null) characterMale.characterObject.SetActive(false);
+        if (characterFemale.characterObject != null) characterFemale.characterObject.SetActive(false);
+
+        // Sembunyikan kartu karakter
+        if (characterMale.characterCard != null) characterMale.characterCard.SetActive(false);
+        if (characterFemale.characterCard != null) characterFemale.characterCard.SetActive(false);
+
+        if (lobbyChatCoroutine != null)
+        {
+            StopCoroutine(lobbyChatCoroutine);
+            lobbyChatCoroutine = null;
+        }
+    }
+
+    // Dipanggil ketika player mengklik Karakter Laki-laki (Raka)
+    public void ClickMaleCharacter()
+    {
+        if (isCharacterSelected) return;
+        chosenGender = "Male";
+        SelectCharacter(characterMale, characterFemale);
+    }
+
+    // Dipanggil ketika player mengklik Karakter Wanita (Nadia)
+    public void ClickFemaleCharacter()
+    {
+        if (isCharacterSelected) return;
+        chosenGender = "Female";
+        SelectCharacter(characterFemale, characterMale);
+    }
+
+    // Dipanggil untuk membatalkan pilihan karakter dan merestore ke posisi semula
+    private void ResetCharactersToInitialState()
+    {
+        isCharacterSelected = false;
+        isWalking = false;
+        chosenGender = "";
+        
+        if (lobbyChatCoroutine != null)
+        {
+            StopCoroutine(lobbyChatCoroutine);
+            lobbyChatCoroutine = null;
+        }
+
+        if (typingCoroutine != null)
+        {
+            StopCoroutine(typingCoroutine);
+            typingCoroutine = null;
+        }
+
+        // Kembalikan posisi, skala, dan status animator Raka (Male)
+        if (characterMale.characterObject != null)
+        {
+            characterMale.characterObject.transform.position = maleInitialPosition;
+            characterMale.characterObject.transform.localScale = maleInitialScale;
+            if (characterMale.spriteRenderer != null)
+            {
+                Color c = characterMale.spriteRenderer.color;
+                c.a = 1f;
+                characterMale.spriteRenderer.color = c;
+                if (characterMale.idleSprite != null) characterMale.spriteRenderer.sprite = characterMale.idleSprite;
+            }
+            if (characterMale.animator != null)
+            {
+                characterMale.animator.enabled = true;
+                if (HasParameter(characterMale.animator, walkParamName)) characterMale.animator.SetBool(walkParamName, false);
+            }
+        }
+
+        // Kembalikan posisi, skala, dan status animator Nadia (Female)
+        if (characterFemale.characterObject != null)
+        {
+            characterFemale.characterObject.transform.position = femaleInitialPosition;
+            characterFemale.characterObject.transform.localScale = femaleInitialScale;
+            if (characterFemale.spriteRenderer != null)
+            {
+                Color c = characterFemale.spriteRenderer.color;
+                c.a = 1f;
+                characterFemale.spriteRenderer.color = c;
+                if (characterFemale.idleSprite != null) characterFemale.spriteRenderer.sprite = characterFemale.idleSprite;
+            }
+            if (characterFemale.animator != null)
+            {
+                characterFemale.animator.enabled = true;
+                if (HasParameter(characterFemale.animator, walkParamName)) characterFemale.animator.SetBool(walkParamName, false);
+            }
+        }
+
+        if (maleChatBubble != null) maleChatBubble.SetActive(false);
+        if (femaleChatBubble != null) femaleChatBubble.SetActive(false);
+        if (dialoguePanel != null) dialoguePanel.SetActive(false);
+        if (summaryPanel != null) summaryPanel.SetActive(false);
+        if (prologPanel != null) prologPanel.SetActive(false);
+        
+        currentState = SelectionState.LobbyChatting;
+
+        if (selectionHintUI != null) selectionHintUI.SetActive(true);
+        if (characterSelectionBackButton != null) characterSelectionBackButton.gameObject.SetActive(true);
+
+        if (lobbyChatCoroutine == null)
+        {
+            lobbyChatCoroutine = StartCoroutine(LobbyChatRoutine());
+        }
+    }
+
+    // Helper untuk mengubah warna tombol pilihan (keep for references/compatibility)
+    private void HighlightButton(Button button, bool highlight)
+    {
+        if (button == null) return;
+        ColorBlock colors = button.colors;
+        colors.normalColor = highlight ? selectedButtonColor : normalButtonColor;
+        colors.selectedColor = colors.normalColor;
+        colors.highlightedColor = colors.normalColor;
+        button.colors = colors;
     }
 
     // Menampilkan layar ringkasan profil
@@ -655,11 +870,130 @@ public class RPGCharacterSelection : MonoBehaviour
 
         Debug.Log($"Pilihan Disimpan. Karakter: {selectedCharacter.name}, Usia Representatif: {chosenAge} ({chosenAgeRangeLabel})");
         
-        // Memulai proses transisi fade out dan load scene
-        StartCoroutine(FadeAndLoadScene());
+        StartProlog();
     }
 
-    private IEnumerator FadeAndLoadScene()
+    [System.Serializable]
+    public struct PrologDialogueLine
+    {
+        public string speaker;
+        [TextArea(2, 5)]
+        public string dialogueText;
+    }
+
+    private PrologDialogueLine[] prologDialogueLines;
+    private int currentPrologIndex = 0;
+    private Coroutine prologTypingCoroutine;
+
+    private void StartProlog()
+    {
+        if (summaryPanel != null) summaryPanel.SetActive(false);
+        
+        currentState = SelectionState.Prolog;
+        
+        if (prologPanel != null)
+        {
+            prologPanel.SetActive(true);
+        }
+        else
+        {
+            // Fallback langsung load scene jika prologPanel tidak diassign
+            StartCoroutine(FadeAndLoadSceneToMap());
+            return;
+        }
+
+        // Sembunyikan SEMUA karakter yang berdiri di lobby
+        if (characterMale.characterObject != null) characterMale.characterObject.SetActive(false);
+        if (characterFemale.characterObject != null) characterFemale.characterObject.SetActive(false);
+
+        // Aktifkan GameObject karakter yang duduk sesuai pilihan, sembunyikan yang tidak dipilih
+        if (chosenGender == "Male")
+        {
+            if (prologMaleObject != null) prologMaleObject.SetActive(true);
+            if (prologFemaleObject != null) prologFemaleObject.SetActive(false);
+        }
+        else
+        {
+            if (prologFemaleObject != null) prologFemaleObject.SetActive(true);
+            if (prologMaleObject != null) prologMaleObject.SetActive(false);
+        }
+
+        // Siapkan dialog prolog
+        string characterName = selectedCharacter.name;
+        prologDialogueLines = new PrologDialogueLine[]
+        {
+            new PrologDialogueLine { speaker = "Dokter", dialogueText = "Selamat! Hasil pemeriksaan kesehatan Anda menunjukkan hasil positif (sangat sehat dan fit)." },
+            new PrologDialogueLine { speaker = characterName, dialogueText = "Terima kasih, Dokter. Apakah itu berarti saya sudah bisa langsung bertugas?" },
+            new PrologDialogueLine { speaker = "Dokter", dialogueText = "Tentu saja, semua indikator kondisi fisik Anda prima. Sekarang silakan tentukan peta wilayah tugas Anda." },
+            new PrologDialogueLine { speaker = characterName, dialogueText = "Baik, Dokter. Saya akan melihat dan memilih wilayah tugas sekarang." }
+        };
+
+        currentPrologIndex = 0;
+
+        if (prologNextButton != null)
+        {
+            prologNextButton.onClick.RemoveAllListeners();
+            prologNextButton.onClick.AddListener(OnPrologNextClick);
+        }
+
+        ShowPrologDialogue();
+    }
+
+    private void ShowPrologDialogue()
+    {
+        if (prologDialogueLines == null || currentPrologIndex >= prologDialogueLines.Length)
+        {
+            StartCoroutine(FadeAndLoadSceneToMap());
+            return;
+        }
+
+        PrologDialogueLine line = prologDialogueLines[currentPrologIndex];
+        
+        // Update teks pembicara ke kedua field yang mungkin dipakai (Speaker atau Title)
+        if (prologSpeakerText != null)
+        {
+            prologSpeakerText.text = line.speaker;
+        }
+        if (prologTitleText != null)
+        {
+            prologTitleText.text = line.speaker;
+        }
+
+        if (prologTypingCoroutine != null)
+        {
+            StopCoroutine(prologTypingCoroutine);
+        }
+        prologTypingCoroutine = StartCoroutine(TypePrologText(line.dialogueText));
+    }
+
+    private IEnumerator TypePrologText(string targetText)
+    {
+        if (prologDialogueText != null) prologDialogueText.text = "";
+        if (prologNextButton != null) prologNextButton.interactable = false;
+
+        foreach (char c in targetText)
+        {
+            if (prologDialogueText != null) prologDialogueText.text += c;
+            yield return new WaitForSeconds(0.03f);
+        }
+
+        if (prologNextButton != null) prologNextButton.interactable = true;
+    }
+
+    private void OnPrologNextClick()
+    {
+        currentPrologIndex++;
+        if (currentPrologIndex < prologDialogueLines.Length)
+        {
+            ShowPrologDialogue();
+        }
+        else
+        {
+            StartCoroutine(FadeAndLoadSceneToMap());
+        }
+    }
+
+    private IEnumerator FadeAndLoadSceneToMap()
     {
         currentState = SelectionState.Fading;
 
@@ -675,9 +1009,9 @@ public class RPGCharacterSelection : MonoBehaviour
             }
         }
 
-        // Pindah ke level permainan pertama
+        // Pindah ke Pilih Maps scene
         Time.timeScale = 1f;
-        SceneManager.LoadScene(gameSceneName);
+        SceneManager.LoadScene("Pilih Maps");
     }
 
     // Helper untuk mendeteksi parameter Animator
