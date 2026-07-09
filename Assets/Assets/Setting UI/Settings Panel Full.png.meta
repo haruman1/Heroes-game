@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: 413052327fad0cd41b8b8c5f8fc1c388
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7289106564176222638
+    second: Settings Panel Full_0
+  - first:
+      213: -1397480015096550349
+    second: Settings Panel Full_1
+  - first:
+      213: 7578289589780233340
+    second: Settings Panel Full_2
+  - first:
+      213: 6263916182833584821
+    second: Settings Panel Full_3
+  - first:
+      213: 1223730440478394804
+    second: Settings Panel Full_4
+  - first:
+      213: 5650815204201729542
+    second: Settings Panel Full_5
+  - first:
+      213: -4796556197960595793
+    second: Settings Panel Full_6
+  - first:
+      213: -8110723054994977775
+    second: Settings Panel Full_7
+  - first:
+      213: -8153591405933994089
+    second: Settings Panel Full_8
+  - first:
+      213: -723812894746304097
+    second: Settings Panel Full_9
+  - first:
+      213: -1772711589397758722
+    second: Settings Panel Full_10
+  - first:
+      213: -3305258855150710328
+    second: Settings Panel Full_11
+  - first:
+      213: 2563367393605947190
+    second: Settings Panel Full_12
+  - first:
+      213: 7671314076668854189
+    second: Settings Panel Full_13
+  - first:
+      213: -955852266147381131
+    second: Settings Panel Full_14
+  - first:
+      213: -6753702992816408596
+    second: Settings Panel Full_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Settings Panel Full_0
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 1962
+        width: 2817
+        height: 1485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea911bffccb182560800000000000000
+      internalID: 7289106564176222638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Settings Panel Full_1
+      rect:
+        serializedVersion: 2
+        x: 2972
+        y: 1880
+        width: 3535
+        height: 1676
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33c667794572b9ce0800000000000000
+      internalID: -1397480015096550349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Settings Panel Full_2
+      rect:
+        serializedVersion: 2
+        x: 7193
+        y: 1906
+        width: 2462
+        height: 1588
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7c34ebfa3e7b2960800000000000000
+      internalID: 7578289589780233340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Settings Panel Full_3
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 359
+        width: 2689
+        height: 1483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5badd94a496ede650800000000000000
+      internalID: 6263916182833584821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Settings Panel Full_4
+      rect:
+        serializedVersion: 2
+        x: 2972
+        y: 904
+        width: 1634
+        height: 869
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b90c8d1a509bf010800000000000000
+      internalID: 1223730440478394804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Settings Panel Full_5
+      rect:
+        serializedVersion: 2
+        x: 4883
+        y: 1557
+        width: 1519
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60e02d92d7abb6e40800000000000000
+      internalID: 5650815204201729542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Settings Panel Full_6
+      rect:
+        serializedVersion: 2
+        x: 7853
+        y: 545
+        width: 1896
+        height: 1109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa64c5b1d853f6db0800000000000000
+      internalID: -4796556197960595793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Settings Panel Full_7
+      rect:
+        serializedVersion: 2
+        x: 4896
+        y: 1322
+        width: 1496
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11c047b9a5ce07f80800000000000000
+      internalID: -8110723054994977775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Settings Panel Full_8
+      rect:
+        serializedVersion: 2
+        x: 6699
+        y: 1101
+        width: 992
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79f50add0df98de80800000000000000
+      internalID: -8153591405933994089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Settings Panel Full_9
+      rect:
+        serializedVersion: 2
+        x: 4896
+        y: 1123
+        width: 1496
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f91acc4d10084f5f0800000000000000
+      internalID: -723812894746304097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Settings Panel Full_10
+      rect:
+        serializedVersion: 2
+        x: 4894
+        y: 921
+        width: 1498
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efc7ab0a3301667e0800000000000000
+      internalID: -1772711589397758722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Settings Panel Full_11
+      rect:
+        serializedVersion: 2
+        x: 3086
+        y: 412
+        width: 798
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c11700559c5122d0800000000000000
+      internalID: -3305258855150710328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Settings Panel Full_12
+      rect:
+        serializedVersion: 2
+        x: 3959
+        y: 412
+        width: 805
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63f83bc2019e29320800000000000000
+      internalID: 2563367393605947190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Settings Panel Full_13
+      rect:
+        serializedVersion: 2
+        x: 4847
+        y: 217
+        width: 689
+        height: 664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daffc44228bf57a60800000000000000
+      internalID: 7671314076668854189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Settings Panel Full_14
+      rect:
+        serializedVersion: 2
+        x: 5935
+        y: 546
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5708882ad612cb2f0800000000000000
+      internalID: -955852266147381131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Settings Panel Full_15
+      rect:
+        serializedVersion: 2
+        x: 6085
+        y: 375
+        width: 1567
+        height: 339
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce77fa229e60642a0800000000000000
+      internalID: -6753702992816408596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Settings Panel Full_0: 7289106564176222638
+      Settings Panel Full_1: -1397480015096550349
+      Settings Panel Full_10: -1772711589397758722
+      Settings Panel Full_11: -3305258855150710328
+      Settings Panel Full_12: 2563367393605947190
+      Settings Panel Full_13: 7671314076668854189
+      Settings Panel Full_14: -955852266147381131
+      Settings Panel Full_15: -6753702992816408596
+      Settings Panel Full_2: 7578289589780233340
+      Settings Panel Full_3: 6263916182833584821
+      Settings Panel Full_4: 1223730440478394804
+      Settings Panel Full_5: 5650815204201729542
+      Settings Panel Full_6: -4796556197960595793
+      Settings Panel Full_7: -8110723054994977775
+      Settings Panel Full_8: -8153591405933994089
+      Settings Panel Full_9: -723812894746304097
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
