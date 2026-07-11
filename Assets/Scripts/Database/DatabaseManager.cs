@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.IO;
 using SQLite;
 using UnityEngine;
@@ -89,8 +90,10 @@ public class DatabaseManager : MonoBehaviour
         db = new SQLiteConnection(dbPath);
         db.CreateTable<PlayerData>();
         db.CreateTable<GameSettingsData>();
+        db.CreateTable<LevelProgressData>();
         CreateDefaultPlayer();
         CreateDefaultSettings();
+        InitializeDefaultLevels();
         LogShort($"INIT path={dbPath}");
     }
 
@@ -275,6 +278,139 @@ public class DatabaseManager : MonoBehaviour
         LogShort($"UNLOCK level={player.Level}");
     }
 
+    // =========================================================
+    //  LEVEL PROGRESS — Journey System
+    // =========================================================
+
+    private const int TotalLevels = 6;
+    private const int DefaultBooksRequired = 10;
+
+    /// <summary>
+    /// Buat 6 baris default di tabel LevelProgressData.
+    /// Level 1 langsung terbuka, Level 2-6 terkunci.
+    /// Dipanggil sekali saat database pertama dibuat.
+    /// </summary>
+    private void InitializeDefaultLevels()
+    {
+        EnsureDatabaseReady();
+        if (db == null) return;
+
+        if (db.Table<LevelProgressData>().Count() > 0) return;
+
+        for (int i = 1; i <= TotalLevels; i++)
+        {
+            db.Insert(new LevelProgressData
+            {
+                LevelNumber   = i,
+                IsUnlocked    = i == 1 ? 1 : 0,
+                IsCompleted   = 0,
+                CollectedBooksMask = 0,
+                BooksCollected = 0,
+                BooksRequired  = DefaultBooksRequired,
+                Stars          = 0,
+                BestTime       = 0f,
+                TotalDeaths    = 0,
+            });
+        }
+        LogShort($"CREATE default-levels (1–{TotalLevels})");
+    }
+
+    /// <summary>Ambil data progress satu level. Null jika belum ada.</summary>
+    public LevelProgressData GetLevelProgress(int levelNumber)
+    {
+        EnsureDatabaseReady();
+        if (db == null) return null;
+        return db.Find<LevelProgressData>(levelNumber);
+    }
+
+    /// <summary>Ambil semua data progress (6 level).</summary>
+    public List<LevelProgressData> GetAllLevelProgress()
+    {
+        EnsureDatabaseReady();
+        if (db == null) return new List<LevelProgressData>();
+        return db.Table<LevelProgressData>().ToList();
+    }
+
+    /// <summary>
+    /// Simpan progress level ke database.
+    /// Hanya update jika data baru lebih baik:
+    /// – Stars tidak turun
+    /// – BooksCollected tidak turun
+    /// – BestTime diambil nilai terkecil (waktu lebih cepat)
+    /// </summary>
+    public void SaveLevelProgress(int levelNumber, int booksMask, int stars, float time, int sessionDeaths)
+    {
+        EnsureDatabaseReady();
+        if (db == null) return;
+
+        LevelProgressData data = db.Find<LevelProgressData>(levelNumber);
+        if (data == null)
+        {
+            data = new LevelProgressData
+            {
+                LevelNumber   = levelNumber,
+                BooksRequired = DefaultBooksRequired,
+            };
+        }
+
+        // Gabungkan bitmask (ambil terbaik dari semua sesi)
+        int bestMask = data.CollectedBooksMask | booksMask;
+        int bestBooks = LevelProgressData.CountBits(bestMask);
+
+        data.IsCompleted       = 1;
+        data.CollectedBooksMask = bestMask;
+        data.BooksCollected    = bestBooks;
+        data.Stars             = Mathf.Max(data.Stars, stars);
+        data.TotalDeaths       += sessionDeaths;
+
+        // Waktu terbaik: simpan yang lebih kecil (lebih cepat), abaikan 0
+        if (time > 0f)
+            data.BestTime = data.BestTime <= 0f ? time : Mathf.Min(data.BestTime, time);
+
+        db.InsertOrReplace(data);
+        LogShort($"SAVE level={levelNumber} books={bestBooks} stars={data.Stars} time={data.BestTime:F1}s deaths={data.TotalDeaths}");
+    }
+
+    /// <summary>Buka level berikutnya di tabel LevelProgressData.</summary>
+    public void UnlockLevelProgress(int levelNumber)
+    {
+        EnsureDatabaseReady();
+        if (db == null) return;
+
+        LevelProgressData data = db.Find<LevelProgressData>(levelNumber);
+        if (data == null)
+        {
+            data = new LevelProgressData
+            {
+                LevelNumber   = levelNumber,
+                BooksRequired = DefaultBooksRequired,
+            };
+        }
+
+        if (data.IsUnlocked == 1) return; // Sudah terbuka
+        data.IsUnlocked = 1;
+        db.InsertOrReplace(data);
+        LogShort($"UNLOCK level-progress level={levelNumber}");
+    }
+
+    /// <summary>Tambah kematian permanen di level tertentu.</summary>
+    public void IncrementDeaths(int levelNumber)
+    {
+        EnsureDatabaseReady();
+        if (db == null) return;
+
+        LevelProgressData data = db.Find<LevelProgressData>(levelNumber);
+        if (data == null) return;
+
+        data.TotalDeaths++;
+        db.Update(data);
+        LogShort($"DEATH level={levelNumber} total={data.TotalDeaths}");
+    }
+
+    // =========================================================
+    //  PLAYER DATA (existing)
+    // =========================================================
+
     [ContextMenu("Reset Player Data")]
     public void ResetPlayerData()
     {
@@ -294,6 +430,18 @@ public class DatabaseManager : MonoBehaviour
 
         db.Update(player);
         LogShort("RESET player-data");
+    }
+
+    /// <summary>Reset semua progress level ke kondisi awal (level 1 terbuka, lainnya terkunci).</summary>
+    [ContextMenu("Reset Level Progress")]
+    public void ResetLevelProgress()
+    {
+        EnsureDatabaseReady();
+        if (db == null) return;
+
+        db.DeleteAll<LevelProgressData>();
+        InitializeDefaultLevels();
+        LogShort("RESET level-progress");
     }
 
     // Public wrapper for Unity UI Button OnClick.

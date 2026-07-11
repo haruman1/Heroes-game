@@ -46,6 +46,7 @@ GameObject:
   - component: {fileID: 8713005321847518498}
   - component: {fileID: 6251849117857464864}
   - component: {fileID: 972238562493683578}
+  - component: {fileID: 40975469071004141}
   m_Layer: 0
   m_Name: player
   m_TagString: Player
@@ -367,3 +368,15 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &40975469071004141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6247188106248930088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f392bc38e5f7cf440b0d28920a2e8d90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SwitchCamera

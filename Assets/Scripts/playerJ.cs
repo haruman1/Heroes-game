@@ -1,4 +1,5 @@
 using System.Collections; // Required for IEnumerator
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -12,6 +13,19 @@ public class playerJ : MonoBehaviour
     public TMPro.TMP_Text bookText;
     [HideInInspector]
     public int coinCount = 0; // Legacy variable
+
+    // ----- Pelacakan Sesi (per-level, persisten antar reload scene akibat kematian) -----
+    // Menggunakan static agar tetap ada saat scene di-reload.
+    private static float  s_sessionStartTime    = -1f;
+    private static int    s_sessionSceneBuildIdx = -1;
+    private static int    s_sessionDeaths        = 0;
+
+    // Buku mana saja yang sudah dikumpulkan di sesi ini (di-reset saat masuk level baru)
+    private static HashSet<int> s_collectedBookNumbers = new HashSet<int>();
+
+    // Expose read-only untuk Flag.cs
+    [HideInInspector] public HashSet<int> CollectedBookNumbers => s_collectedBookNumbers;
+    public bool IsGrounded => isGrounded;
 
     [Header("Character Animators")]
     public RuntimeAnimatorController character1Animator; // Raden
@@ -61,6 +75,10 @@ public class playerJ : MonoBehaviour
     [Header("coyote Time")]
     public float coyoteTime = 0.2f;
     private float coyoteTimeCounter;
+
+    [Header("Input Settings")]
+    public bool inputEnabled = true;
+
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
@@ -72,6 +90,27 @@ public class playerJ : MonoBehaviour
         extraJumps = extraJumpsValues;
 
         LoadPlayerFromDatabase();
+        InitSessionTracking();
+
+        // Add landing indicator to show falling target and guide line when airborne
+        gameObject.AddComponent<PlayerLandingIndicator>();
+    }
+
+    /// <summary>
+    /// Inisialisasi pelacak waktu dan kematian sesi.
+    /// Hanya di-reset saat scene benar-benar berbeda (level baru),
+    /// bukan saat reload akibat kematian.
+    /// </summary>
+    private void InitSessionTracking()
+    {
+        int sceneIdx = SceneManager.GetActiveScene().buildIndex;
+        if (s_sessionSceneBuildIdx != sceneIdx)
+        {
+            s_sessionStartTime     = Time.realtimeSinceStartup;
+            s_sessionSceneBuildIdx = sceneIdx;
+            s_sessionDeaths        = 0;
+            s_collectedBookNumbers.Clear();
+        }
     }
 
     void Update()
@@ -99,6 +138,11 @@ public class playerJ : MonoBehaviour
     private void HandleInput()
     {
         moveInput = 0f;
+        if (!inputEnabled)
+        {
+            jumpRequested = false;
+            return;
+        }
         //extra jumps
 
         // Keyboard
@@ -262,6 +306,8 @@ public class playerJ : MonoBehaviour
             TakeDamage(1); // Set to 1 damage instead of 25
             PlaySFX(damageSound);
             StartCoroutine(BlinkRed());
+        }else if (collision.gameObject.tag == "BouncePad"){
+            body.linearVelocity = new Vector2(body.linearVelocity.x, jumpForce * 3.5f); // Adjust bounce force as needed
         }
     }
 
@@ -330,7 +376,8 @@ public class playerJ : MonoBehaviour
     private void Die()
     {
         PlaySFX(deathSound);
-        Debug.Log("Player has died. Reset HP/nyawa lalu reload scene.");
+        s_sessionDeaths++;
+        Debug.Log($"Player has died (sesi #{s_sessionDeaths}). Reset HP/nyawa lalu reload scene.");
 
         currentHealth = maxHealth;
         currentLives = maxLives;
@@ -338,6 +385,23 @@ public class playerJ : MonoBehaviour
 
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+
+    /// <summary>Tandai buku nomor tertentu sebagai sudah dikumpulkan di sesi ini.</summary>
+    public void MarkBookCollected(int bookNumber)
+    {
+        s_collectedBookNumbers.Add(bookNumber);
+    }
+
+    /// <summary>Waktu berjalan sejak awal masuk level (dalam detik).</summary>
+    public float GetSessionTime()
+    {
+        return s_sessionStartTime >= 0f
+            ? Time.realtimeSinceStartup - s_sessionStartTime
+            : 0f;
+    }
+
+    /// <summary>Jumlah kematian di sesi level ini.</summary>
+    public int GetSessionDeaths() => s_sessionDeaths;
 
     public void AddBook(int amount)
     {

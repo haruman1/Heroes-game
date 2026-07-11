@@ -20,6 +20,12 @@ public class CameraZoom : MonoBehaviour
     [SerializeField] private float keyboardSensitivity = 10f;
     [SerializeField] private float smoothSpeed = 10f;
 
+    [Header("Dynamic Airborne Zoom")]
+    [SerializeField] private bool enableDynamicZoom = true;
+    [SerializeField] private float velocityThreshold = 8f;
+    [SerializeField] private float zoomPerVelocityUnit = 0.15f;
+    [SerializeField] private float maxDynamicZoomOffset = 5f;
+
     private Camera cam;
     private float targetZoom;
     private bool isOrthographic;
@@ -27,6 +33,7 @@ public class CameraZoom : MonoBehaviour
     private float saveCooldown = 1f;
     private float lastScrollTime;
     private bool needsSaving = false;
+    private Rigidbody2D playerRigidbody;
 
     private void Awake()
     {
@@ -81,6 +88,12 @@ public class CameraZoom : MonoBehaviour
 
     private void Start()
     {
+        // Safety check to prevent Unity Inspector serialization from overriding defaults to 0/false
+        if (velocityThreshold <= 0.1f) velocityThreshold = 8f;
+        if (zoomPerVelocityUnit <= 0.001f) zoomPerVelocityUnit = 0.15f;
+        if (maxDynamicZoomOffset <= 0.1f) maxDynamicZoomOffset = 5f;
+        enableDynamicZoom = true;
+
         LoadZoomFromDatabase();
     }
 
@@ -110,9 +123,16 @@ public class CameraZoom : MonoBehaviour
         else
         {
             // Default fallback based on current values
-            if (virtualCamera != null)
+            CinemachineCamera currentCam = (CameraManager.ActiveCamera != null) ? CameraManager.ActiveCamera : virtualCamera;
+            if (currentCam == null)
             {
-                targetZoom = isOrthographic ? virtualCamera.Lens.OrthographicSize : virtualCamera.Lens.FieldOfView;
+                currentCam = FindFirstObjectByType<CinemachineCamera>();
+                virtualCamera = currentCam;
+            }
+
+            if (currentCam != null)
+            {
+                targetZoom = isOrthographic ? currentCam.Lens.OrthographicSize : currentCam.Lens.FieldOfView;
             }
             else if (cam != null)
             {
@@ -123,15 +143,22 @@ public class CameraZoom : MonoBehaviour
 
     private void ApplyZoomImmediate(float zoomValue)
     {
-        if (virtualCamera != null)
+        CinemachineCamera currentCam = (CameraManager.ActiveCamera != null) ? CameraManager.ActiveCamera : virtualCamera;
+        if (currentCam == null)
+        {
+            currentCam = FindFirstObjectByType<CinemachineCamera>();
+            virtualCamera = currentCam;
+        }
+
+        if (currentCam != null)
         {
             if (isOrthographic)
             {
-                virtualCamera.Lens.OrthographicSize = zoomValue;
+                currentCam.Lens.OrthographicSize = zoomValue;
             }
             else
             {
-                virtualCamera.Lens.FieldOfView = zoomValue;
+                currentCam.Lens.FieldOfView = zoomValue;
             }
         }
         else if (cam != null)
@@ -188,28 +215,69 @@ public class CameraZoom : MonoBehaviour
 
     private void ApplySmoothing()
     {
-        if (virtualCamera != null)
+        float dynamicTargetZoom = targetZoom + GetDynamicZoomOffset();
+
+        CinemachineCamera currentCam = (CameraManager.ActiveCamera != null) ? CameraManager.ActiveCamera : virtualCamera;
+        if (currentCam == null)
+        {
+            currentCam = FindFirstObjectByType<CinemachineCamera>();
+            virtualCamera = currentCam;
+        }
+
+        if (currentCam != null)
         {
             if (isOrthographic)
             {
-                virtualCamera.Lens.OrthographicSize = Mathf.Lerp(virtualCamera.Lens.OrthographicSize, targetZoom, Time.deltaTime * smoothSpeed);
+                currentCam.Lens.OrthographicSize = Mathf.Lerp(currentCam.Lens.OrthographicSize, dynamicTargetZoom, Time.deltaTime * smoothSpeed);
             }
             else
             {
-                virtualCamera.Lens.FieldOfView = Mathf.Lerp(virtualCamera.Lens.FieldOfView, targetZoom, Time.deltaTime * smoothSpeed);
+                currentCam.Lens.FieldOfView = Mathf.Lerp(currentCam.Lens.FieldOfView, dynamicTargetZoom, Time.deltaTime * smoothSpeed);
             }
         }
         else if (cam != null)
         {
             if (isOrthographic)
             {
-                cam.orthographicSize = Mathf.Lerp(cam.orthographicSize, targetZoom, Time.deltaTime * smoothSpeed);
+                cam.orthographicSize = Mathf.Lerp(cam.orthographicSize, dynamicTargetZoom, Time.deltaTime * smoothSpeed);
             }
             else
             {
-                cam.fieldOfView = Mathf.Lerp(cam.fieldOfView, targetZoom, Time.deltaTime * smoothSpeed);
+                cam.fieldOfView = Mathf.Lerp(cam.fieldOfView, dynamicTargetZoom, Time.deltaTime * smoothSpeed);
             }
         }
+    }
+
+    private float GetDynamicZoomOffset()
+    {
+        if (!enableDynamicZoom) return 0f;
+
+        if (playerRigidbody == null)
+        {
+            playerJ player = FindFirstObjectByType<playerJ>();
+            if (player != null)
+            {
+                playerRigidbody = player.GetComponent<Rigidbody2D>();
+                Debug.Log($"[CameraZoom] Successfully linked player: {player.name}, Rigidbody2D: {playerRigidbody != null}");
+            }
+        }
+
+        if (playerRigidbody != null)
+        {
+            float verticalVelocity = Mathf.Abs(playerRigidbody.linearVelocity.y);
+            if (verticalVelocity > velocityThreshold)
+            {
+                float excess = verticalVelocity - velocityThreshold;
+                float offset = Mathf.Min(excess * zoomPerVelocityUnit, maxDynamicZoomOffset);
+                if (Time.frameCount % 15 == 0)
+                {
+                    Debug.Log($"[CameraZoom] Zooming out! Velocity: {verticalVelocity:0.00}, Zoom Offset: +{offset:0.00}");
+                }
+                return offset;
+            }
+        }
+
+        return 0f;
     }
 
     /// <summary>
