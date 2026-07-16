@@ -1,0 +1,642 @@
+fileFormatVersion: 2
+guid: 081bf9c2b5f19f14b80c62b6069b5dbf
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1507951055085192571
+    second: "Character_idle_unarmed_animation\u2026_2K_202607160553 3_0"
+  - first:
+      213: -7580390002184801273
+    second: "Character_idle_unarmed_animation\u2026_2K_202607160553 3_1"
+  - first:
+      213: -3742309097856444628
+    second: "Character_idle_unarmed_animation\u2026_2K_202607160553 3_2"
+  - first:
+      213: 3098597785918668515
+    second: "Character_idle_unarmed_animation\u2026_2K_202607160553 3_3"
+  - first:
+      213: 5084604247645506812
+    second: "Character_idle_unarmed_animation\u2026_2K_202607160553 3_4"
+  - first:
+      213: 4110280754433902205
+    second: "Character_idle_unarmed_animation\u2026_2K_202607160553 3_5"
+  - first:
+      213: -6340661422961790469
+    second: "Character_idle_unarmed_animation\u2026_2K_202607160553 3_6"
+  - first:
+      213: 5460436070116973669
+    second: "Character_idle_unarmed_animation\u2026_2K_202607160553 3_7"
+  - first:
+      213: 8189066143464999467
+    second: "Character_idle_unarmed_animation\u2026_2K_202607160553 3_8"
+  - first:
+      213: -7315418199482751442
+    second: "Character_idle_unarmed_animation\u2026_2K_202607160553 3_9"
+  - first:
+      213: 8916084777731691101
+    second: "Character_idle_unarmed_animation\u2026_2K_202607160553 3_10"
+  - first:
+      213: 7578048912808710702
+    second: "Character_idle_unarmed_animation\u2026_2K_202607160553 3_11"
+  - first:
+      213: -7097688574504075980
+    second: "Character_idle_unarmed_animation\u2026_2K_202607160553 3_12"
+  - first:
+      213: 8024358787404508106
+    second: "Character_idle_unarmed_animation\u2026_2K_202607160553 3_13"
+  - first:
+      213: 8737977744138239245
+    second: "Character_idle_unarmed_animation\u2026_2K_202607160553 3_14"
+  - first:
+      213: 5309651240736828312
+    second: "Character_idle_unarmed_animation\u2026_2K_202607160553 3_15"
+  - first:
+      213: -6958822887560323918
+    second: "Character_idle_unarmed_animation\u2026_2K_202607160553 3_16"
+  - first:
+      213: -3380068731037894916
+    second: "Character_idle_unarmed_animation\u2026_2K_202607160553 3_17"
+  - first:
+      213: -6438030321506715376
+    second: "Character_idle_unarmed_animation\u2026_2K_202607160553 3_18"
+  - first:
+      213: -2565478089752991999
+    second: "Character_idle_unarmed_animation\u2026_2K_202607160553 3_19"
+  - first:
+      213: -6899519374774062417
+    second: "Character_idle_unarmed_animation\u2026_2K_202607160553 3_20"
+  - first:
+      213: 4633270342432656717
+    second: "Character_idle_unarmed_animation\u2026_2K_202607160553 3_21"
+  - first:
+      213: 2651995220317186450
+    second: "Character_idle_unarmed_animation\u2026_2K_202607160553 3_22"
+  - first:
+      213: 2437437390049775568
+    second: "Character_idle_unarmed_animation\u2026_2K_202607160553 3_23"
+  - first:
+      213: -573785197615905357
+    second: "Character_idle_unarmed_animation\u2026_2K_202607160553 3_24"
+  - first:
+      213: 845610619926755634
+    second: "Character_idle_unarmed_animation\u2026_2K_202607160553 3_25"
+  - first:
+      213: 3756851597952536899
+    second: "Character_idle_unarmed_animation\u2026_2K_202607160553 3_26"
+  - first:
+      213: -7166824152446785896
+    second: "Character_idle_unarmed_animation\u2026_2K_202607160553 3_27"
+  - first:
+      213: 256360835300080167
+    second: "Character_idle_unarmed_animation\u2026_2K_202607160553 3_28"
+  - first:
+      213: -3329606634924627927
+    second: "Character_idle_unarmed_animation\u2026_2K_202607160553 3_29"
+  - first:
+      213: -641165527858537562
+    second: "Character_idle_unarmed_animation\u2026_2K_202607160553 3_30"
+  - first:
+      213: -246028952190981656
+    second: "Character_idle_unarmed_animation\u2026_2K_202607160553 3_31"
+  - first:
+      213: 3266777470811345698
+    second: "Character_idle_unarmed_animation\u2026_2K_202607160553 3_32"
+  - first:
+      213: 6056121994725175439
+    second: "Character_idle_unarmed_animation\u2026_2K_202607160553 3_33"
+  - first:
+      213: -1503148362637621304
+    second: "Character_idle_unarmed_animation\u2026_2K_202607160553 3_34"
+  - first:
+      213: 4774299985640419195
+    second: "Character_idle_unarmed_animation\u2026_2K_202607160553 3_35"
+  - first:
+      213: 2137077111598515949
+    second: "Character_idle_unarmed_animation\u2026_2K_202607160553 3_36"
+  - first:
+      213: 5209305419239265291
+    second: "Character_idle_unarmed_animation\u2026_2K_202607160553 3_37"
+  - first:
+      213: 8679355059592708818
+    second: "Character_idle_unarmed_animation\u2026_2K_202607160553 3_38"
+  - first:
+      213: 1275134065446436266
+    second: "Character_idle_unarmed_animation\u2026_2K_202607160553 3_39"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "Character_idle_unarmed_animation\u2026_2K_202607160553 3_0"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 990
+        width: 167
+        height: 327
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58ab8fe318ea21be0800000000000000
+      internalID: -1507951055085192571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Character_idle_unarmed_animation\u2026_2K_202607160553 3_2"
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 990
+        width: 150
+        height: 327
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c27dd8ef3b5a01cc0800000000000000
+      internalID: -3742309097856444628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Character_idle_unarmed_animation\u2026_2K_202607160553 3_4"
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 990
+        width: 133
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfc4a54bf94209640800000000000000
+      internalID: 5084604247645506812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Character_idle_unarmed_animation\u2026_2K_202607160553 3_6"
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 990
+        width: 130
+        height: 327
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf1f653b7027108a0800000000000000
+      internalID: -6340661422961790469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Character_idle_unarmed_animation\u2026_2K_202607160553 3_8"
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 675
+        width: 169
+        height: 314
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2ac86b154865a170800000000000000
+      internalID: 8189066143464999467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Character_idle_unarmed_animation\u2026_2K_202607160553 3_10"
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 673
+        width: 133
+        height: 316
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5217fbaddb4cbb70800000000000000
+      internalID: 8916084777731691101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Character_idle_unarmed_animation\u2026_2K_202607160553 3_13"
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 675
+        width: 131
+        height: 314
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acba7816dcf3c5f60800000000000000
+      internalID: 8024358787404508106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Character_idle_unarmed_animation\u2026_2K_202607160553 3_16"
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 674
+        width: 127
+        height: 313
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bcdb14047b4d6f90800000000000000
+      internalID: -6958822887560323918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Character_idle_unarmed_animation\u2026_2K_202607160553 3_18"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 345
+        width: 153
+        height: 331
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 019f561688587a6a0800000000000000
+      internalID: -6438030321506715376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Character_idle_unarmed_animation\u2026_2K_202607160553 3_19"
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 345
+        width: 119
+        height: 330
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 107a9351547956cd0800000000000000
+      internalID: -2565478089752991999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Character_idle_unarmed_animation\u2026_2K_202607160553 3_23"
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 345
+        width: 138
+        height: 331
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0df0c24646483d120800000000000000
+      internalID: 2437437390049775568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Character_idle_unarmed_animation\u2026_2K_202607160553 3_26"
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 345
+        width: 151
+        height: 331
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 341d1d9af94032430800000000000000
+      internalID: 3756851597952536899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Character_idle_unarmed_animation\u2026_2K_202607160553 3_28"
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 0
+        width: 107
+        height: 343
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72a326a42d6ce8300800000000000000
+      internalID: 256360835300080167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Character_idle_unarmed_animation\u2026_2K_202607160553 3_29"
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 0
+        width: 121
+        height: 343
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 928a883186cdac1d0800000000000000
+      internalID: -3329606634924627927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Character_idle_unarmed_animation\u2026_2K_202607160553 3_33"
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 0
+        width: 111
+        height: 345
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8036041edaab0450800000000000000
+      internalID: 6056121994725175439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Character_idle_unarmed_animation\u2026_2K_202607160553 3_37"
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 0
+        width: 113
+        height: 343
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b041640cdab2b4840800000000000000
+      internalID: 5209305419239265291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 7e9cee6b3c1af214f8227df17653966b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      "Character_idle_unarmed_animation\u2026_2K_202607160553 3_0": -1507951055085192571
+      "Character_idle_unarmed_animation\u2026_2K_202607160553 3_1": -7580390002184801273
+      "Character_idle_unarmed_animation\u2026_2K_202607160553 3_10": 8916084777731691101
+      "Character_idle_unarmed_animation\u2026_2K_202607160553 3_11": 7578048912808710702
+      "Character_idle_unarmed_animation\u2026_2K_202607160553 3_12": -7097688574504075980
+      "Character_idle_unarmed_animation\u2026_2K_202607160553 3_13": 8024358787404508106
+      "Character_idle_unarmed_animation\u2026_2K_202607160553 3_14": 8737977744138239245
+      "Character_idle_unarmed_animation\u2026_2K_202607160553 3_15": 5309651240736828312
+      "Character_idle_unarmed_animation\u2026_2K_202607160553 3_16": -6958822887560323918
+      "Character_idle_unarmed_animation\u2026_2K_202607160553 3_17": -3380068731037894916
+      "Character_idle_unarmed_animation\u2026_2K_202607160553 3_18": -6438030321506715376
+      "Character_idle_unarmed_animation\u2026_2K_202607160553 3_19": -2565478089752991999
+      "Character_idle_unarmed_animation\u2026_2K_202607160553 3_2": -3742309097856444628
+      "Character_idle_unarmed_animation\u2026_2K_202607160553 3_20": -6899519374774062417
+      "Character_idle_unarmed_animation\u2026_2K_202607160553 3_21": 4633270342432656717
+      "Character_idle_unarmed_animation\u2026_2K_202607160553 3_22": 2651995220317186450
+      "Character_idle_unarmed_animation\u2026_2K_202607160553 3_23": 2437437390049775568
+      "Character_idle_unarmed_animation\u2026_2K_202607160553 3_24": -573785197615905357
+      "Character_idle_unarmed_animation\u2026_2K_202607160553 3_25": 845610619926755634
+      "Character_idle_unarmed_animation\u2026_2K_202607160553 3_26": 3756851597952536899
+      "Character_idle_unarmed_animation\u2026_2K_202607160553 3_27": -7166824152446785896
+      "Character_idle_unarmed_animation\u2026_2K_202607160553 3_28": 256360835300080167
+      "Character_idle_unarmed_animation\u2026_2K_202607160553 3_29": -3329606634924627927
+      "Character_idle_unarmed_animation\u2026_2K_202607160553 3_3": 3098597785918668515
+      "Character_idle_unarmed_animation\u2026_2K_202607160553 3_30": -641165527858537562
+      "Character_idle_unarmed_animation\u2026_2K_202607160553 3_31": -246028952190981656
+      "Character_idle_unarmed_animation\u2026_2K_202607160553 3_32": 3266777470811345698
+      "Character_idle_unarmed_animation\u2026_2K_202607160553 3_33": 6056121994725175439
+      "Character_idle_unarmed_animation\u2026_2K_202607160553 3_34": -1503148362637621304
+      "Character_idle_unarmed_animation\u2026_2K_202607160553 3_35": 4774299985640419195
+      "Character_idle_unarmed_animation\u2026_2K_202607160553 3_36": 2137077111598515949
+      "Character_idle_unarmed_animation\u2026_2K_202607160553 3_37": 5209305419239265291
+      "Character_idle_unarmed_animation\u2026_2K_202607160553 3_38": 8679355059592708818
+      "Character_idle_unarmed_animation\u2026_2K_202607160553 3_39": 1275134065446436266
+      "Character_idle_unarmed_animation\u2026_2K_202607160553 3_4": 5084604247645506812
+      "Character_idle_unarmed_animation\u2026_2K_202607160553 3_5": 4110280754433902205
+      "Character_idle_unarmed_animation\u2026_2K_202607160553 3_6": -6340661422961790469
+      "Character_idle_unarmed_animation\u2026_2K_202607160553 3_7": 5460436070116973669
+      "Character_idle_unarmed_animation\u2026_2K_202607160553 3_8": 8189066143464999467
+      "Character_idle_unarmed_animation\u2026_2K_202607160553 3_9": -7315418199482751442
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

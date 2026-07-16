@@ -17,18 +17,29 @@ public class BookCollectible : MonoBehaviour
         playerJ player = collision.GetComponent<playerJ>();
         if (player == null) return;
 
-        // Tambahkan ke hitungan buku
+        // Tambahkan ke hitungan buku/halaman
         player.AddBook(bookValue);
 
-        // Tandai buku nomor ini sudah dikumpulkan di sesi ini
+        // Tandai buku/halaman nomor ini sudah dikumpulkan di sesi ini
         player.MarkBookCollected(bookNumber);
 
-        // Efek suara
+        // Efek suara pengambilan (legacy)
         if (player.coinSound != null)
             player.PlaySFX(player.coinSound, 0.8f);
 
-        Debug.Log($"Pemain mengambil Buku #{bookNumber:D2}. Total buku sekarang: {player.bookCount}");
+        Debug.Log($"Pemain mengambil Halaman #{bookNumber:D2}. Total halaman sekarang: {player.bookCount}");
+
+        // Tampilkan halaman di panel pembaca halaman in-game
+        InGamePageReader reader = InGamePageReader.Instance;
+        if (reader == null) 
+            reader = FindFirstObjectByType<InGamePageReader>();
+            
+        if (reader != null)
+        {
+            reader.ShowPage(bookNumber, player);
+        }
 
         Destroy(gameObject);
     }
+
 }

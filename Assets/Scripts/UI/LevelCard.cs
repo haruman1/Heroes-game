@@ -31,19 +31,19 @@ public class LevelCard : MonoBehaviour
     [Tooltip("Gambar thumbnail unik per level")]
     [SerializeField] private Sprite thumbnail;
 
-    [Header("Book Data — 10 buku per level (isi judul & deskripsi)")]
+    [Header("Page Data — 10 halaman per level (isi judul & deskripsi)")]
     [SerializeField] private BookData[] books = new BookData[10]
     {
-        new BookData { bookTitle = "Buku #01", bookDescription = "Deskripsi buku pertama." },
-        new BookData { bookTitle = "Buku #02", bookDescription = "Deskripsi buku kedua." },
-        new BookData { bookTitle = "Buku #03", bookDescription = "Deskripsi buku ketiga." },
-        new BookData { bookTitle = "Buku #04", bookDescription = "Deskripsi buku keempat." },
-        new BookData { bookTitle = "Buku #05", bookDescription = "Deskripsi buku kelima." },
-        new BookData { bookTitle = "Buku #06", bookDescription = "Deskripsi buku keenam." },
-        new BookData { bookTitle = "Buku #07", bookDescription = "Deskripsi buku ketujuh." },
-        new BookData { bookTitle = "Buku #08", bookDescription = "Deskripsi buku kedelapan." },
-        new BookData { bookTitle = "Buku #09", bookDescription = "Deskripsi buku kesembilan." },
-        new BookData { bookTitle = "Buku #10", bookDescription = "Deskripsi buku kesepuluh." },
+        new BookData { bookTitle = "Halaman #01", bookDescription = "Deskripsi halaman pertama." },
+        new BookData { bookTitle = "Halaman #02", bookDescription = "Deskripsi halaman kedua." },
+        new BookData { bookTitle = "Halaman #03", bookDescription = "Deskripsi halaman ketiga." },
+        new BookData { bookTitle = "Halaman #04", bookDescription = "Deskripsi halaman keempat." },
+        new BookData { bookTitle = "Halaman #05", bookDescription = "Deskripsi halaman kelima." },
+        new BookData { bookTitle = "Halaman #06", bookDescription = "Deskripsi halaman keenam." },
+        new BookData { bookTitle = "Halaman #07", bookDescription = "Deskripsi halaman ketujuh." },
+        new BookData { bookTitle = "Halaman #08", bookDescription = "Deskripsi halaman kedelapan." },
+        new BookData { bookTitle = "Halaman #09", bookDescription = "Deskripsi halaman kesembilan." },
+        new BookData { bookTitle = "Halaman #10", bookDescription = "Deskripsi halaman kesepuluh." },
     };
 
     // ----------------------------------------------------------------

@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: cf782a0982ffa2b4eb5f0a6d3408227b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5324308428384310830
+    second: Professional_Unity_2D_sprite_sheet_202607160746 1_0
+  - first:
+      213: 2124942900743060034
+    second: Professional_Unity_2D_sprite_sheet_202607160746 1_1
+  - first:
+      213: -2066707114234876121
+    second: Professional_Unity_2D_sprite_sheet_202607160746 1_2
+  - first:
+      213: 3263226981951229232
+    second: Professional_Unity_2D_sprite_sheet_202607160746 1_3
+  - first:
+      213: 2483574225075268508
+    second: Professional_Unity_2D_sprite_sheet_202607160746 1_4
+  - first:
+      213: -3220734193433581749
+    second: Professional_Unity_2D_sprite_sheet_202607160746 1_5
+  - first:
+      213: -2232520219652407199
+    second: Professional_Unity_2D_sprite_sheet_202607160746 1_6
+  - first:
+      213: -9190682557671354239
+    second: Professional_Unity_2D_sprite_sheet_202607160746 1_7
+  - first:
+      213: -8473709349883437799
+    second: Professional_Unity_2D_sprite_sheet_202607160746 1_8
+  - first:
+      213: 7100898936286188660
+    second: Professional_Unity_2D_sprite_sheet_202607160746 1_9
+  - first:
+      213: -3667522954646680318
+    second: Professional_Unity_2D_sprite_sheet_202607160746 1_10
+  - first:
+      213: 7407477172050417480
+    second: Professional_Unity_2D_sprite_sheet_202607160746 1_11
+  - first:
+      213: -8063263565520286983
+    second: Professional_Unity_2D_sprite_sheet_202607160746 1_12
+  - first:
+      213: -6248690876105408520
+    second: Professional_Unity_2D_sprite_sheet_202607160746 1_13
+  - first:
+      213: 9208287066399038103
+    second: Professional_Unity_2D_sprite_sheet_202607160746 1_14
+  - first:
+      213: -5376294894837450078
+    second: Professional_Unity_2D_sprite_sheet_202607160746 1_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Professional_Unity_2D_sprite_sheet_202607160746 1_0
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 1024
+        width: 140
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d9e88b91b14c16b0800000000000000
+      internalID: -5324308428384310830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Professional_Unity_2D_sprite_sheet_202607160746 1_1
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 1024
+        width: 140
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24a37ce4f405d7d10800000000000000
+      internalID: 2124942900743060034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Professional_Unity_2D_sprite_sheet_202607160746 1_2
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 1024
+        width: 140
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72fe14954d49153e0800000000000000
+      internalID: -2066707114234876121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Professional_Unity_2D_sprite_sheet_202607160746 1_3
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 1024
+        width: 140
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03d4ca896af494d20800000000000000
+      internalID: 3263226981951229232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Professional_Unity_2D_sprite_sheet_202607160746 1_4
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 685
+        width: 139
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9b6de2699d677220800000000000000
+      internalID: 2483574225075268508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Professional_Unity_2D_sprite_sheet_202607160746 1_5
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 685
+        width: 139
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b47ef64b057ad43d0800000000000000
+      internalID: -3220734193433581749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Professional_Unity_2D_sprite_sheet_202607160746 1_6
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 684
+        width: 139
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 160cdb940be7401e0800000000000000
+      internalID: -2232520219652407199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Professional_Unity_2D_sprite_sheet_202607160746 1_7
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 685
+        width: 139
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 180de9a78e2247080800000000000000
+      internalID: -9190682557671354239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Professional_Unity_2D_sprite_sheet_202607160746 1_8
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 340
+        width: 140
+        height: 335
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91d9a4eed36576a80800000000000000
+      internalID: -8473709349883437799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Professional_Unity_2D_sprite_sheet_202607160746 1_9
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 340
+        width: 140
+        height: 335
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 474994bd5f57b8260800000000000000
+      internalID: 7100898936286188660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Professional_Unity_2D_sprite_sheet_202607160746 1_10
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 341
+        width: 139
+        height: 333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20d81badd475a1dc0800000000000000
+      internalID: -3667522954646680318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Professional_Unity_2D_sprite_sheet_202607160746 1_11
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 340
+        width: 141
+        height: 335
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84751e1dd35acc660800000000000000
+      internalID: 7407477172050417480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Professional_Unity_2D_sprite_sheet_202607160746 1_12
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 0
+        width: 140
+        height: 336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fa40d61288891090800000000000000
+      internalID: -8063263565520286983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Professional_Unity_2D_sprite_sheet_202607160746 1_13
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 0
+        width: 140
+        height: 336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ff338251c03849a0800000000000000
+      internalID: -6248690876105408520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Professional_Unity_2D_sprite_sheet_202607160746 1_14
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 0
+        width: 140
+        height: 336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79ad98e9c486acf70800000000000000
+      internalID: 9208287066399038103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Professional_Unity_2D_sprite_sheet_202607160746 1_15
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 0
+        width: 141
+        height: 336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2aab77927409365b0800000000000000
+      internalID: -5376294894837450078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Professional_Unity_2D_sprite_sheet_202607160746 1_0: -5324308428384310830
+      Professional_Unity_2D_sprite_sheet_202607160746 1_1: 2124942900743060034
+      Professional_Unity_2D_sprite_sheet_202607160746 1_10: -3667522954646680318
+      Professional_Unity_2D_sprite_sheet_202607160746 1_11: 7407477172050417480
+      Professional_Unity_2D_sprite_sheet_202607160746 1_12: -8063263565520286983
+      Professional_Unity_2D_sprite_sheet_202607160746 1_13: -6248690876105408520
+      Professional_Unity_2D_sprite_sheet_202607160746 1_14: 9208287066399038103
+      Professional_Unity_2D_sprite_sheet_202607160746 1_15: -5376294894837450078
+      Professional_Unity_2D_sprite_sheet_202607160746 1_2: -2066707114234876121
+      Professional_Unity_2D_sprite_sheet_202607160746 1_3: 3263226981951229232
+      Professional_Unity_2D_sprite_sheet_202607160746 1_4: 2483574225075268508
+      Professional_Unity_2D_sprite_sheet_202607160746 1_5: -3220734193433581749
+      Professional_Unity_2D_sprite_sheet_202607160746 1_6: -2232520219652407199
+      Professional_Unity_2D_sprite_sheet_202607160746 1_7: -9190682557671354239
+      Professional_Unity_2D_sprite_sheet_202607160746 1_8: -8473709349883437799
+      Professional_Unity_2D_sprite_sheet_202607160746 1_9: 7100898936286188660
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

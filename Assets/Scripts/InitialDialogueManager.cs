@@ -53,16 +53,16 @@ public class InitialDialogueManager : MonoBehaviour
 
     [Header("Dynamic Dialogues (Age/Gender Overrides)")]
     [Header("Raka (Male) - Age Groups")]
-    [TextArea(3, 5)] public string maleDialogue18_24 = "Halo {name}! Di usiamu yang ke-{age} tahun ini (Dewasa Awal), kamu baru saja memulai langkahmu di dunia IT. Kumpulkan 10 buku dasar IT di level ini untuk mengasah kemampuan teknismu!";
-    [TextArea(3, 5)] public string maleDialogue25_34 = "Salam {name}! Di usiamu yang ke-{age} tahun ini (Fokus Karier), kamu sedang fokus membangun kariermu. Kumpulkan 10 buku referensi sistem di level ini agar bisa menyelesaikan proyek server tepat waktu!";
-    [TextArea(3, 5)] public string maleDialogue35_44 = "Halo {name}! Di usiamu yang ke-{age} tahun (Karier & Keluarga), kariermu mulai stabil dan kini fokus mengurus keluarga. Kumpulkan 10 buku manajemen waktu di level ini demi keseimbangan kerja dan keluarga!";
-    [TextArea(3, 5)] public string maleDialogue45_59 = "Selamat datang, {name}! Di usiamu yang ke-{age} tahun (Dewasa Madya), kamu adalah senior IT dengan segudang pengalaman. Kumpulkan 10 buku arsip legendaris di level ini untuk mewariskan ilmumu!";
+    [TextArea(3, 5)] public string maleDialogue18_24 = "Halo {name}! Di usiamu yang ke-{age} tahun ini (Dewasa Awal), kamu baru saja memulai langkahmu di dunia IT. Kumpulkan 10 halaman buku dasar IT di level ini untuk mengasah kemampuan teknismu!";
+    [TextArea(3, 5)] public string maleDialogue25_34 = "Salam {name}! Di usiamu yang ke-{age} tahun ini (Fokus Karier), kamu sedang fokus membangun kariermu. Kumpulkan 10 halaman buku referensi sistem di level ini agar bisa menyelesaikan proyek server tepat waktu!";
+    [TextArea(3, 5)] public string maleDialogue35_44 = "Halo {name}! Di usiamu yang ke-{age} tahun (Karier & Keluarga), kariermu mulai stabil dan kini fokus mengurus keluarga. Kumpulkan 10 halaman buku manajemen waktu di level ini demi keseimbangan kerja dan keluarga!";
+    [TextArea(3, 5)] public string maleDialogue45_59 = "Selamat datang, {name}! Di usiamu yang ke-{age} tahun (Dewasa Madya), kamu adalah senior IT dengan segudang pengalaman. Kumpulkan 10 halaman buku arsip legendaris di level ini untuk mewariskan ilmumu!";
 
     [Header("Rini (Female) - Age Groups")]
-    [TextArea(3, 5)] public string femaleDialogue18_24 = "Halo {name}! Di usiamu yang ke-{age} tahun ini (Dewasa Awal), langkah pertamamu di administrasi kantor baru saja dimulai. Kumpulkan 10 buku panduan admin di level ini untuk membiasakan dirimu!";
-    [TextArea(3, 5)] public string femaleDialogue25_34 = "Salam {name}! Di usiamu yang ke-{age} tahun ini (Fokus Karier), kamu berfokus penuh membangun kariermu. Kumpulkan 10 buku berkas arsip di level ini agar efisiensi kerja kantormu meningkat pesat!";
-    [TextArea(3, 5)] public string femaleDialogue35_44 = "Halo {name}! Di usiamu yang ke-{age} tahun (Karier & Keluarga), kariermu mulai stabil dan fokusmu beralih mengurus keluarga. Kumpulkan 10 buku panduan keluarga di level ini demi kebahagiaan di rumah!";
-    [TextArea(3, 5)] public string femaleDialogue45_59 = "Selamat datang, {name}! Di usiamu yang ke-{age} tahun (Dewasa Madya), pengalaman adminmu sangat berharga bagi perusahaan. Kumpulkan 10 buku dokumen bersejarah di level ini untuk diselesaikan!";
+    [TextArea(3, 5)] public string femaleDialogue18_24 = "Halo {name}! Di usiamu yang ke-{age} tahun ini (Dewasa Awal), langkah pertamamu di administrasi kantor baru saja dimulai. Kumpulkan 10 halaman buku panduan admin di level ini untuk membiasakan dirimu!";
+    [TextArea(3, 5)] public string femaleDialogue25_34 = "Salam {name}! Di usiamu yang ke-{age} tahun ini (Fokus Karier), kamu berfokus penuh membangun kariermu. Kumpulkan 10 halaman buku berkas arsip di level ini agar efisiensi kerja kantormu meningkat pesat!";
+    [TextArea(3, 5)] public string femaleDialogue35_44 = "Halo {name}! Di usiamu yang ke-{age} tahun (Karier & Keluarga), kariermu mulai stabil dan fokusmu beralih mengurus keluarga. Kumpulkan 10 halaman buku panduan keluarga di level ini demi kebahagiaan di rumah!";
+    [TextArea(3, 5)] public string femaleDialogue45_59 = "Selamat datang, {name}! Di usiamu yang ke-{age} tahun (Dewasa Madya), pengalaman adminmu sangat berharga bagi perusahaan. Kumpulkan 10 halaman buku dokumen bersejarah di level ini untuk diselesaikan!";
 
     private int currentIndex = 0;
     private string playerName = "Karakter";

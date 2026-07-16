@@ -1,0 +1,550 @@
+fileFormatVersion: 2
+guid: d34787286de34a740b937d93684ba127
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4403433994260215938
+    second: Character_Idle_Unarmed_loop_2K_202607160406 1 (1)_0
+  - first:
+      213: 8845064381005018124
+    second: Character_Idle_Unarmed_loop_2K_202607160406 1 (1)_1
+  - first:
+      213: 620942219111392647
+    second: Character_Idle_Unarmed_loop_2K_202607160406 1 (1)_2
+  - first:
+      213: -3411340883977989942
+    second: Character_Idle_Unarmed_loop_2K_202607160406 1 (1)_3
+  - first:
+      213: 5257099304308700501
+    second: Character_Idle_Unarmed_loop_2K_202607160406 1 (1)_4
+  - first:
+      213: 6296100671368297463
+    second: Character_Idle_Unarmed_loop_2K_202607160406 1 (1)_5
+  - first:
+      213: -6526481070646094384
+    second: Character_Idle_Unarmed_loop_2K_202607160406 1 (1)_6
+  - first:
+      213: 2009273349316691829
+    second: Character_Idle_Unarmed_loop_2K_202607160406 1 (1)_7
+  - first:
+      213: 1100332612839071391
+    second: Character_Idle_Unarmed_loop_2K_202607160406 1 (1)_8
+  - first:
+      213: 5105061046498145157
+    second: Character_Idle_Unarmed_loop_2K_202607160406 1 (1)_9
+  - first:
+      213: -1990418979643206530
+    second: Character_Idle_Unarmed_loop_2K_202607160406 1 (1)_10
+  - first:
+      213: -672588935752899077
+    second: Character_Idle_Unarmed_loop_2K_202607160406 1 (1)_11
+  - first:
+      213: 3264374979435984005
+    second: Character_Idle_Unarmed_loop_2K_202607160406 1 (1)_12
+  - first:
+      213: 4858849342302921770
+    second: Character_Idle_Unarmed_loop_2K_202607160406 1 (1)_13
+  - first:
+      213: 5956303804110335923
+    second: Character_Idle_Unarmed_loop_2K_202607160406 1 (1)_14
+  - first:
+      213: -5003430413174500372
+    second: Character_Idle_Unarmed_loop_2K_202607160406 1 (1)_15
+  - first:
+      213: 9135849529665331909
+    second: Character_Idle_Unarmed_loop_2K_202607160406 1 (1)_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Character_Idle_Unarmed_loop_2K_202607160406 1 (1)_0
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 1147
+        width: 128
+        height: 345
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28872cb23e32c1d30800000000000000
+      internalID: 4403433994260215938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Idle_Unarmed_loop_2K_202607160406 1 (1)_1
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 1147
+        width: 128
+        height: 345
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c04b34df03bffba70800000000000000
+      internalID: 8845064381005018124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Idle_Unarmed_loop_2K_202607160406 1 (1)_2
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 1149
+        width: 128
+        height: 343
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7856d2c88a70e9800800000000000000
+      internalID: 620942219111392647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Idle_Unarmed_loop_2K_202607160406 1 (1)_4
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 1144
+        width: 128
+        height: 348
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 555f546c6f7f4f840800000000000000
+      internalID: 5257099304308700501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Idle_Unarmed_loop_2K_202607160406 1 (1)_5
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 782
+        width: 129
+        height: 341
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fb7103d33e306750800000000000000
+      internalID: 6296100671368297463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Idle_Unarmed_loop_2K_202607160406 1 (1)_6
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 782
+        width: 129
+        height: 341
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d514d68b084d65a0800000000000000
+      internalID: -6526481070646094384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Idle_Unarmed_loop_2K_202607160406 1 (1)_7
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 782
+        width: 129
+        height: 341
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5774ea2377f52eb10800000000000000
+      internalID: 2009273349316691829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Idle_Unarmed_loop_2K_202607160406 1 (1)_8
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 782
+        width: 129
+        height: 342
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9edc0b7eaa254f00800000000000000
+      internalID: 1100332612839071391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Idle_Unarmed_loop_2K_202607160406 1 (1)_9
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 410
+        width: 129
+        height: 341
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 583b43959f1d8d640800000000000000
+      internalID: 5105061046498145157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Idle_Unarmed_loop_2K_202607160406 1 (1)_10
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 410
+        width: 130
+        height: 341
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e74db24db7c9064e0800000000000000
+      internalID: -1990418979643206530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Idle_Unarmed_loop_2K_202607160406 1 (1)_11
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 410
+        width: 130
+        height: 341
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf5279c2deb7aa6f0800000000000000
+      internalID: -672588935752899077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Idle_Unarmed_loop_2K_202607160406 1 (1)_12
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 410
+        width: 131
+        height: 340
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58474f69fb36d4d20800000000000000
+      internalID: 3264374979435984005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Idle_Unarmed_loop_2K_202607160406 1 (1)_13
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 38
+        width: 131
+        height: 340
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a242b19cbb91e6340800000000000000
+      internalID: 4858849342302921770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Idle_Unarmed_loop_2K_202607160406 1 (1)_14
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 38
+        width: 131
+        height: 340
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bfed4280ca09a250800000000000000
+      internalID: 5956303804110335923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Idle_Unarmed_loop_2K_202607160406 1 (1)_15
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 38
+        width: 132
+        height: 341
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce3195c6c8e309ab0800000000000000
+      internalID: -5003430413174500372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Idle_Unarmed_loop_2K_202607160406 1 (1)_16
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 38
+        width: 132
+        height: 340
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c22f115ebe09ce70800000000000000
+      internalID: 9135849529665331909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a195bce30e8da03439de3a1254474917
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Character_Idle_Unarmed_loop_2K_202607160406 1 (1)_0: 4403433994260215938
+      Character_Idle_Unarmed_loop_2K_202607160406 1 (1)_1: 8845064381005018124
+      Character_Idle_Unarmed_loop_2K_202607160406 1 (1)_10: -1990418979643206530
+      Character_Idle_Unarmed_loop_2K_202607160406 1 (1)_11: -672588935752899077
+      Character_Idle_Unarmed_loop_2K_202607160406 1 (1)_12: 3264374979435984005
+      Character_Idle_Unarmed_loop_2K_202607160406 1 (1)_13: 4858849342302921770
+      Character_Idle_Unarmed_loop_2K_202607160406 1 (1)_14: 5956303804110335923
+      Character_Idle_Unarmed_loop_2K_202607160406 1 (1)_15: -5003430413174500372
+      Character_Idle_Unarmed_loop_2K_202607160406 1 (1)_16: 9135849529665331909
+      Character_Idle_Unarmed_loop_2K_202607160406 1 (1)_2: 620942219111392647
+      Character_Idle_Unarmed_loop_2K_202607160406 1 (1)_3: -3411340883977989942
+      Character_Idle_Unarmed_loop_2K_202607160406 1 (1)_4: 5257099304308700501
+      Character_Idle_Unarmed_loop_2K_202607160406 1 (1)_5: 6296100671368297463
+      Character_Idle_Unarmed_loop_2K_202607160406 1 (1)_6: -6526481070646094384
+      Character_Idle_Unarmed_loop_2K_202607160406 1 (1)_7: 2009273349316691829
+      Character_Idle_Unarmed_loop_2K_202607160406 1 (1)_8: 1100332612839071391
+      Character_Idle_Unarmed_loop_2K_202607160406 1 (1)_9: 5105061046498145157
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

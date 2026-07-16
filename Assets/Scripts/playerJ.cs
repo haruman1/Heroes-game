@@ -334,6 +334,18 @@ public class playerJ : MonoBehaviour
         SaveProgress();
     }
 
+    /// <summary>
+    /// Dipanggil oleh BossController / KerocoBoss saat player kena damage dari musuh arena.
+    /// Menggunakan logika TakeDamage yang sama (health, lives, blink).
+    /// </summary>
+    public void TakeDamageFromBoss(int damage)
+    {
+        if (damage <= 0) return;
+        PlaySFX(damageSound);
+        StartCoroutine(BlinkRed());
+        TakeDamage(damage);
+    }
+
     private void UpdateUI()
     {
         if (healthImage != null)
@@ -343,7 +355,7 @@ public class playerJ : MonoBehaviour
 
         if (bookText != null)
         {
-            bookText.text = "Buku: " + bookCount + " / " + booksRequiredPerLevel;
+            bookText.text = "Halaman: " + bookCount + " / " + booksRequiredPerLevel;
         }
 
         if (lifeImages == null)

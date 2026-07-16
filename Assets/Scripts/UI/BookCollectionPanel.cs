@@ -140,14 +140,14 @@ public class BookCollectionPanel : MonoBehaviour
         int required  = currentData?.BooksRequired > 0 ? currentData.BooksRequired : 10;
         int collected = currentData?.BooksCollected ?? 0;
         if (progressText != null)
-            progressText.text = $"Progress : {collected} / {required} Buku";
+            progressText.text = $"Progress : {collected} / {required} Halaman";
 
         // Petunjuk
         if (hintText != null)
         {
             hintText.text = collected >= required
-                ? "Selamat! Kamu sudah mengumpulkan semua buku! ⭐⭐⭐"
-                : "Kumpulkan semua buku untuk mendapatkan Bintang 3 di level ini!";
+                ? "Selamat! Kamu sudah mengumpulkan semua halaman dan membentuk Buku! ⭐⭐⭐"
+                : "Kumpulkan semua halaman untuk membentuk Buku dan mendapatkan Bintang 3!";
         }
 
         BuildBookSlots(required);
@@ -197,7 +197,7 @@ public class BookCollectionPanel : MonoBehaviour
 
         // Header
         if (bookDetailHeaderText != null)
-            bookDetailHeaderText.text = $"BUKU #{bookNumber:D2}";
+            bookDetailHeaderText.text = $"HALAMAN #{bookNumber:D2}";
 
         // Konten dari BookData (dikonfigurasi di Inspector LevelCard)
         int idx = bookNumber - 1;

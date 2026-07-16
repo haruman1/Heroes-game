@@ -14,4 +14,8 @@ public class BookData
     [TextArea(3, 6)]
     [Tooltip("Isi / deskripsi buku")]
     public string bookDescription = "Deskripsi isi buku ini...";
+
+    [Tooltip("Suara narasi tambahan untuk halaman ini")]
+    public AudioClip narrationAudio;
 }
+

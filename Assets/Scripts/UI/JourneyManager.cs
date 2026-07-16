@@ -107,7 +107,7 @@ public class JourneyManager : MonoBehaviour
 
         // Update header
         if (overallProgressText  != null)
-            overallProgressText.text  = $"{totalBooks} / {maxBooks} Buku";
+            overallProgressText.text  = $"{totalBooks} / {maxBooks} Halaman";
         if (levelsCompletedText  != null)
             levelsCompletedText.text  = $"{levelsCompleted} / {levelCards.Length}";
         if (totalTimeText        != null)
