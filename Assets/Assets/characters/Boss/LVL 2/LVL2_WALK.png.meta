@@ -1,0 +1,494 @@
+fileFormatVersion: 2
+guid: 3762e0987fb66fb46a7d01b5c1bf7705
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6167572616685739535
+    second: Create_walking_animation_frames_2K_202607191010 1_0
+  - first:
+      213: 4997247462019718633
+    second: Create_walking_animation_frames_2K_202607191010 1_1
+  - first:
+      213: 946212818893757763
+    second: Create_walking_animation_frames_2K_202607191010 1_2
+  - first:
+      213: -4529535666327786127
+    second: Create_walking_animation_frames_2K_202607191010 1_3
+  - first:
+      213: 2428912668395477926
+    second: Create_walking_animation_frames_2K_202607191010 1_4
+  - first:
+      213: 3422512616369254657
+    second: Create_walking_animation_frames_2K_202607191010 1_5
+  - first:
+      213: 1297155049647868174
+    second: Create_walking_animation_frames_2K_202607191010 1_6
+  - first:
+      213: 9059102341288804058
+    second: Create_walking_animation_frames_2K_202607191010 1_7
+  - first:
+      213: 5065153815632157041
+    second: Create_walking_animation_frames_2K_202607191010 1_8
+  - first:
+      213: -5505677761201181397
+    second: Create_walking_animation_frames_2K_202607191010 1_9
+  - first:
+      213: -1186222845647502884
+    second: Create_walking_animation_frames_2K_202607191010 1_10
+  - first:
+      213: 3960968865178030295
+    second: Create_walking_animation_frames_2K_202607191010 1_11
+  - first:
+      213: 2411297202514856856
+    second: Create_walking_animation_frames_2K_202607191010 1_12
+  - first:
+      213: 697721130960444029
+    second: Create_walking_animation_frames_2K_202607191010 1_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Create_walking_animation_frames_2K_202607191010 1_0
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 2378
+        width: 524
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f12500e161686aa0800000000000000
+      internalID: -6167572616685739535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Create_walking_animation_frames_2K_202607191010 1_1
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 2378
+        width: 526
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ed5864171ac95540800000000000000
+      internalID: 4997247462019718633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Create_walking_animation_frames_2K_202607191010 1_2
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 2016
+        width: 503
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34d5518ab8f912d00800000000000000
+      internalID: 946212818893757763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Create_walking_animation_frames_2K_202607191010 1_3
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 2018
+        width: 504
+        height: 293
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17de11b5f4bd321c0800000000000000
+      internalID: -4529535666327786127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Create_walking_animation_frames_2K_202607191010 1_4
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 1649
+        width: 508
+        height: 294
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ab9826f33b35b120800000000000000
+      internalID: 2428912668395477926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Create_walking_animation_frames_2K_202607191010 1_5
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 1647
+        width: 543
+        height: 296
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1017bf167153f7f20800000000000000
+      internalID: 3422512616369254657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Create_walking_animation_frames_2K_202607191010 1_6
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 1280
+        width: 525
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e098dd025ab600210800000000000000
+      internalID: 1297155049647868174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Create_walking_animation_frames_2K_202607191010 1_7
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 1280
+        width: 527
+        height: 305
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adebd6c059568bd70800000000000000
+      internalID: 9059102341288804058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Create_walking_animation_frames_2K_202607191010 1_8
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 900
+        width: 527
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17918791f8a0b4640800000000000000
+      internalID: 5065153815632157041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Create_walking_animation_frames_2K_202607191010 1_9
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 902
+        width: 527
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2de5db1f37e793b0800000000000000
+      internalID: -5505677761201181397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Create_walking_animation_frames_2K_202607191010 1_10
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 519
+        width: 550
+        height: 286
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd14ab45b90b98fe0800000000000000
+      internalID: -1186222845647502884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Create_walking_animation_frames_2K_202607191010 1_11
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 497
+        width: 511
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d0915f523038f630800000000000000
+      internalID: 3960968865178030295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Create_walking_animation_frames_2K_202607191010 1_12
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 101
+        width: 514
+        height: 289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89b8ac3b706a67120800000000000000
+      internalID: 2411297202514856856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Create_walking_animation_frames_2K_202607191010 1_13
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 0
+        width: 624
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7a5e230cadcea900800000000000000
+      internalID: 697721130960444029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Create_walking_animation_frames_2K_202607191010 1_0: -6167572616685739535
+      Create_walking_animation_frames_2K_202607191010 1_1: 4997247462019718633
+      Create_walking_animation_frames_2K_202607191010 1_10: -1186222845647502884
+      Create_walking_animation_frames_2K_202607191010 1_11: 3960968865178030295
+      Create_walking_animation_frames_2K_202607191010 1_12: 2411297202514856856
+      Create_walking_animation_frames_2K_202607191010 1_13: 697721130960444029
+      Create_walking_animation_frames_2K_202607191010 1_2: 946212818893757763
+      Create_walking_animation_frames_2K_202607191010 1_3: -4529535666327786127
+      Create_walking_animation_frames_2K_202607191010 1_4: 2428912668395477926
+      Create_walking_animation_frames_2K_202607191010 1_5: 3422512616369254657
+      Create_walking_animation_frames_2K_202607191010 1_6: 1297155049647868174
+      Create_walking_animation_frames_2K_202607191010 1_7: 9059102341288804058
+      Create_walking_animation_frames_2K_202607191010 1_8: 5065153815632157041
+      Create_walking_animation_frames_2K_202607191010 1_9: -5505677761201181397
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

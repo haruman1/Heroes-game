@@ -91,10 +91,25 @@ public class DatabaseManager : MonoBehaviour
         db.CreateTable<PlayerData>();
         db.CreateTable<GameSettingsData>();
         db.CreateTable<LevelProgressData>();
+        MigrasiDatabase();
         CreateDefaultPlayer();
         CreateDefaultSettings();
         InitializeDefaultLevels();
         LogShort($"INIT path={dbPath}");
+    }
+
+    /// <summary>
+    /// Menambah kolom baru ke tabel yang sudah ada secara aman.
+    /// SQLite-net tidak otomatis menambah kolom baru pada tabel yang sudah ada,
+    /// sehingga perlu ALTER TABLE manual. Exception diabaikan jika kolom sudah ada.
+    /// </summary>
+    private void MigrasiDatabase()
+    {
+        // PlayerData — kolom baru sistem baru
+        try { db.Execute("ALTER TABLE PlayerData ADD COLUMN Gender TEXT DEFAULT ''"); } catch { }
+        try { db.Execute("ALTER TABLE PlayerData ADD COLUMN JumlahBooster INTEGER DEFAULT 0"); } catch { }
+        try { db.Execute("ALTER TABLE PlayerData ADD COLUMN NamaSceneTerakhir TEXT DEFAULT ''"); } catch { }
+        LogShort("MIGRATE database columns applied");
     }
 
     private void CreateDefaultPlayer()

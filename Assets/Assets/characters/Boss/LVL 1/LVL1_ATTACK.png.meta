@@ -1,0 +1,650 @@
+fileFormatVersion: 2
+guid: 36d358a29aea5834bb409211b210d5f7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7810036380760161263
+    second: buatlah_16_frame_Attack_only_202607190940 1_0
+  - first:
+      213: 8608421808371143787
+    second: buatlah_16_frame_Attack_only_202607190940 1_1
+  - first:
+      213: 1167236000562794653
+    second: buatlah_16_frame_Attack_only_202607190940 1_2
+  - first:
+      213: -1499870445521312285
+    second: buatlah_16_frame_Attack_only_202607190940 1_3
+  - first:
+      213: -4136592801579282137
+    second: buatlah_16_frame_Attack_only_202607190940 1_4
+  - first:
+      213: 6992264162362502678
+    second: buatlah_16_frame_Attack_only_202607190940 1_5
+  - first:
+      213: 4910340584107458878
+    second: buatlah_16_frame_Attack_only_202607190940 1_6
+  - first:
+      213: 3412644331545482589
+    second: buatlah_16_frame_Attack_only_202607190940 1_7
+  - first:
+      213: -7274535879594251500
+    second: buatlah_16_frame_Attack_only_202607190940 1_8
+  - first:
+      213: -3022147957654631333
+    second: buatlah_16_frame_Attack_only_202607190940 1_9
+  - first:
+      213: 316998982335086710
+    second: buatlah_16_frame_Attack_only_202607190940 1_10
+  - first:
+      213: -5299193502353474392
+    second: buatlah_16_frame_Attack_only_202607190940 1_11
+  - first:
+      213: 5907875587423497742
+    second: buatlah_16_frame_Attack_only_202607190940 1_12
+  - first:
+      213: -6561731455543835807
+    second: buatlah_16_frame_Attack_only_202607190940 1_13
+  - first:
+      213: -3361864772867033568
+    second: buatlah_16_frame_Attack_only_202607190940 1_14
+  - first:
+      213: -26314925581141218
+    second: buatlah_16_frame_Attack_only_202607190940 1_15
+  - first:
+      213: 8521282439401476394
+    second: buatlah_16_frame_Attack_only_202607190940 1_16
+  - first:
+      213: -1299320066999617676
+    second: buatlah_16_frame_Attack_only_202607190940 1_17
+  - first:
+      213: 7140402458474002232
+    second: buatlah_16_frame_Attack_only_202607190940 1_18
+  - first:
+      213: 8819232453569196743
+    second: buatlah_16_frame_Attack_only_202607190940 1_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: buatlah_16_frame_Attack_only_202607190940 1_0
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 2109
+        width: 324
+        height: 389
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feb361e75b2d26c60800000000000000
+      internalID: 7810036380760161263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buatlah_16_frame_Attack_only_202607190940 1_1
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 2109
+        width: 220
+        height: 456
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6410bc7602477770800000000000000
+      internalID: 8608421808371143787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buatlah_16_frame_Attack_only_202607190940 1_2
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 2112
+        width: 343
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d90d79e45fad23010800000000000000
+      internalID: 1167236000562794653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buatlah_16_frame_Attack_only_202607190940 1_3
+      rect:
+        serializedVersion: 2
+        x: 1187
+        y: 2112
+        width: 289
+        height: 432
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e56895c6c36f2be0800000000000000
+      internalID: -1499870445521312285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buatlah_16_frame_Attack_only_202607190940 1_4
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 1617
+        width: 228
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 721dd6973ced796c0800000000000000
+      internalID: -4136592801579282137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buatlah_16_frame_Attack_only_202607190940 1_5
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 1617
+        width: 251
+        height: 451
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61eaf458533890160800000000000000
+      internalID: 6992264162362502678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buatlah_16_frame_Attack_only_202607190940 1_6
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 1617
+        width: 291
+        height: 361
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e31c8e1ceb8052440800000000000000
+      internalID: 4910340584107458878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buatlah_16_frame_Attack_only_202607190940 1_7
+      rect:
+        serializedVersion: 2
+        x: 1162
+        y: 1615
+        width: 296
+        height: 429
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d55d48640f52c5f20800000000000000
+      internalID: 3412644331545482589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buatlah_16_frame_Attack_only_202607190940 1_8
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 1118
+        width: 308
+        height: 451
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41b63fed828ab0b90800000000000000
+      internalID: -7274535879594251500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buatlah_16_frame_Attack_only_202607190940 1_9
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 1116
+        width: 478
+        height: 363
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5cc25dc17c2f06d0800000000000000
+      internalID: -3022147957654631333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buatlah_16_frame_Attack_only_202607190940 1_10
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 1118
+        width: 506
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6704e3815e4366400800000000000000
+      internalID: 316998982335086710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buatlah_16_frame_Attack_only_202607190940 1_11
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 582
+        width: 403
+        height: 376
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8acb920069b7576b0800000000000000
+      internalID: -5299193502353474392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buatlah_16_frame_Attack_only_202607190940 1_12
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 582
+        width: 279
+        height: 408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0e6495ab8dfcf150800000000000000
+      internalID: 5907875587423497742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buatlah_16_frame_Attack_only_202607190940 1_13
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 582
+        width: 222
+        height: 431
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1638dc8b10c00f4a0800000000000000
+      internalID: -6561731455543835807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buatlah_16_frame_Attack_only_202607190940 1_14
+      rect:
+        serializedVersion: 2
+        x: 1209
+        y: 582
+        width: 291
+        height: 446
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0267c5e0dc14851d0800000000000000
+      internalID: -3361864772867033568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buatlah_16_frame_Attack_only_202607190940 1_15
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 66
+        width: 331
+        height: 361
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1bf170f6b282aff0800000000000000
+      internalID: -26314925581141218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buatlah_16_frame_Attack_only_202607190940 1_16
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 48
+        width: 248
+        height: 482
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a219c4f1b3da14670800000000000000
+      internalID: 8521282439401476394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buatlah_16_frame_Attack_only_202607190940 1_17
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 64
+        width: 237
+        height: 381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47773fc7843e7fde0800000000000000
+      internalID: -1299320066999617676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buatlah_16_frame_Attack_only_202607190940 1_18
+      rect:
+        serializedVersion: 2
+        x: 1122
+        y: 64
+        width: 335
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8373baa543ec71360800000000000000
+      internalID: 7140402458474002232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buatlah_16_frame_Attack_only_202607190940 1_19
+      rect:
+        serializedVersion: 2
+        x: 1409
+        y: 66
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c2b692b035346a70800000000000000
+      internalID: 8819232453569196743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      buatlah_16_frame_Attack_only_202607190940 1_0: 7810036380760161263
+      buatlah_16_frame_Attack_only_202607190940 1_1: 8608421808371143787
+      buatlah_16_frame_Attack_only_202607190940 1_10: 316998982335086710
+      buatlah_16_frame_Attack_only_202607190940 1_11: -5299193502353474392
+      buatlah_16_frame_Attack_only_202607190940 1_12: 5907875587423497742
+      buatlah_16_frame_Attack_only_202607190940 1_13: -6561731455543835807
+      buatlah_16_frame_Attack_only_202607190940 1_14: -3361864772867033568
+      buatlah_16_frame_Attack_only_202607190940 1_15: -26314925581141218
+      buatlah_16_frame_Attack_only_202607190940 1_16: 8521282439401476394
+      buatlah_16_frame_Attack_only_202607190940 1_17: -1299320066999617676
+      buatlah_16_frame_Attack_only_202607190940 1_18: 7140402458474002232
+      buatlah_16_frame_Attack_only_202607190940 1_19: 8819232453569196743
+      buatlah_16_frame_Attack_only_202607190940 1_2: 1167236000562794653
+      buatlah_16_frame_Attack_only_202607190940 1_3: -1499870445521312285
+      buatlah_16_frame_Attack_only_202607190940 1_4: -4136592801579282137
+      buatlah_16_frame_Attack_only_202607190940 1_5: 6992264162362502678
+      buatlah_16_frame_Attack_only_202607190940 1_6: 4910340584107458878
+      buatlah_16_frame_Attack_only_202607190940 1_7: 3412644331545482589
+      buatlah_16_frame_Attack_only_202607190940 1_8: -7274535879594251500
+      buatlah_16_frame_Attack_only_202607190940 1_9: -3022147957654631333
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: 9ab69967563ccd3418452e70c4c77dd6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6314095725788765038
+    second: "Woman_performs_machete_slash_ani\u2026_202607161033 1 (1)_0"
+  - first:
+      213: 9435100081251304
+    second: "Woman_performs_machete_slash_ani\u2026_202607161033 1 (1)_1"
+  - first:
+      213: -8747914006065386083
+    second: "Woman_performs_machete_slash_ani\u2026_202607161033 1 (1)_2"
+  - first:
+      213: 616435792823546062
+    second: "Woman_performs_machete_slash_ani\u2026_202607161033 1 (1)_3"
+  - first:
+      213: -3823025148771817197
+    second: "Woman_performs_machete_slash_ani\u2026_202607161033 1 (1)_4"
+  - first:
+      213: -1019969333141790387
+    second: "Woman_performs_machete_slash_ani\u2026_202607161033 1 (1)_5"
+  - first:
+      213: -1730133393042293201
+    second: "Woman_performs_machete_slash_ani\u2026_202607161033 1 (1)_6"
+  - first:
+      213: -1244173850868775765
+    second: "Woman_performs_machete_slash_ani\u2026_202607161033 1 (1)_7"
+  - first:
+      213: 272746783534098238
+    second: "Woman_performs_machete_slash_ani\u2026_202607161033 1 (1)_8"
+  - first:
+      213: -7937630120287437273
+    second: "Woman_performs_machete_slash_ani\u2026_202607161033 1 (1)_9"
+  - first:
+      213: 8579523910560317648
+    second: "Woman_performs_machete_slash_ani\u2026_202607161033 1 (1)_10"
+  - first:
+      213: -7999176497996848647
+    second: "Woman_performs_machete_slash_ani\u2026_202607161033 1 (1)_11"
+  - first:
+      213: -1597431229605857881
+    second: "Woman_performs_machete_slash_ani\u2026_202607161033 1 (1)_12"
+  - first:
+      213: 1844575754329710787
+    second: "Woman_performs_machete_slash_ani\u2026_202607161033 1 (1)_13"
+  - first:
+      213: -8511443990288432122
+    second: "Woman_performs_machete_slash_ani\u2026_202607161033 1 (1)_14"
+  - first:
+      213: 8426027602601403881
+    second: "Woman_performs_machete_slash_ani\u2026_202607161033 1 (1)_15"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "Woman_performs_machete_slash_ani\u2026_202607161033 1 (1)_0"
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 1038
+        width: 123
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6b937deb9c20a750800000000000000
+      internalID: 6314095725788765038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Woman_performs_machete_slash_ani\u2026_202607161033 1 (1)_1"
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1041
+        width: 191
+        height: 311
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e363cc6c25812000800000000000000
+      internalID: 9435100081251304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Woman_performs_machete_slash_ani\u2026_202607161033 1 (1)_2"
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 1042
+        width: 198
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9deec65f8a299680800000000000000
+      internalID: -8747914006065386083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Woman_performs_machete_slash_ani\u2026_202607161033 1 (1)_3"
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 1041
+        width: 186
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec0751a66150e8800800000000000000
+      internalID: 616435792823546062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Woman_performs_machete_slash_ani\u2026_202607161033 1 (1)_4"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 692
+        width: 199
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3192218e1e2e1fac0800000000000000
+      internalID: -3823025148771817197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Woman_performs_machete_slash_ani\u2026_202607161033 1 (1)_5"
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 692
+        width: 240
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d41aa48ab4758d1f0800000000000000
+      internalID: -1019969333141790387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Woman_performs_machete_slash_ani\u2026_202607161033 1 (1)_6"
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 693
+        width: 191
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2e3cad78d45df7e0800000000000000
+      internalID: -1730133393042293201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Woman_performs_machete_slash_ani\u2026_202607161033 1 (1)_7"
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 693
+        width: 187
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba4032c797ecbbee0800000000000000
+      internalID: -1244173850868775765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Woman_performs_machete_slash_ani\u2026_202607161033 1 (1)_8"
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 342
+        width: 177
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e372e2a21cdf8c300800000000000000
+      internalID: 272746783534098238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Woman_performs_machete_slash_ani\u2026_202607161033 1 (1)_9"
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 343
+        width: 169
+        height: 323
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72e73d1067fd7d190800000000000000
+      internalID: -7937630120287437273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Woman_performs_machete_slash_ani\u2026_202607161033 1 (1)_10"
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 343
+        width: 193
+        height: 323
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d00be65a87901770800000000000000
+      internalID: 8579523910560317648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Woman_performs_machete_slash_ani\u2026_202607161033 1 (1)_11"
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 342
+        width: 167
+        height: 323
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f1ae354b573df090800000000000000
+      internalID: -7999176497996848647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Woman_performs_machete_slash_ani\u2026_202607161033 1 (1)_12"
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 1
+        width: 159
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a53a3e92c8c4d9e0800000000000000
+      internalID: -1597431229605857881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Woman_performs_machete_slash_ani\u2026_202607161033 1 (1)_13"
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 0
+        width: 160
+        height: 325
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c0ee1620ef399910800000000000000
+      internalID: 1844575754329710787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Woman_performs_machete_slash_ani\u2026_202607161033 1 (1)_14"
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 1
+        width: 168
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 604893159c641e980800000000000000
+      internalID: -8511443990288432122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Woman_performs_machete_slash_ani\u2026_202607161033 1 (1)_15"
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 0
+        width: 119
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e561b826734fe470800000000000000
+      internalID: 8426027602601403881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      "Woman_performs_machete_slash_ani\u2026_202607161033 1 (1)_0": 6314095725788765038
+      "Woman_performs_machete_slash_ani\u2026_202607161033 1 (1)_1": 9435100081251304
+      "Woman_performs_machete_slash_ani\u2026_202607161033 1 (1)_10": 8579523910560317648
+      "Woman_performs_machete_slash_ani\u2026_202607161033 1 (1)_11": -7999176497996848647
+      "Woman_performs_machete_slash_ani\u2026_202607161033 1 (1)_12": -1597431229605857881
+      "Woman_performs_machete_slash_ani\u2026_202607161033 1 (1)_13": 1844575754329710787
+      "Woman_performs_machete_slash_ani\u2026_202607161033 1 (1)_14": -8511443990288432122
+      "Woman_performs_machete_slash_ani\u2026_202607161033 1 (1)_15": 8426027602601403881
+      "Woman_performs_machete_slash_ani\u2026_202607161033 1 (1)_2": -8747914006065386083
+      "Woman_performs_machete_slash_ani\u2026_202607161033 1 (1)_3": 616435792823546062
+      "Woman_performs_machete_slash_ani\u2026_202607161033 1 (1)_4": -3823025148771817197
+      "Woman_performs_machete_slash_ani\u2026_202607161033 1 (1)_5": -1019969333141790387
+      "Woman_performs_machete_slash_ani\u2026_202607161033 1 (1)_6": -1730133393042293201
+      "Woman_performs_machete_slash_ani\u2026_202607161033 1 (1)_7": -1244173850868775765
+      "Woman_performs_machete_slash_ani\u2026_202607161033 1 (1)_8": 272746783534098238
+      "Woman_performs_machete_slash_ani\u2026_202607161033 1 (1)_9": -7937630120287437273
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: 060246f3440ef5e49b6e29640f78461b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4699062489281845177
+    second: Create_16-frame_slash_animation_2K_202607191013 1_0
+  - first:
+      213: 4563298616463210922
+    second: Create_16-frame_slash_animation_2K_202607191013 1_1
+  - first:
+      213: 9035105473869683295
+    second: Create_16-frame_slash_animation_2K_202607191013 1_2
+  - first:
+      213: -9217209320461277693
+    second: Create_16-frame_slash_animation_2K_202607191013 1_3
+  - first:
+      213: -4539128688121805799
+    second: Create_16-frame_slash_animation_2K_202607191013 1_4
+  - first:
+      213: 2422385656571986026
+    second: Create_16-frame_slash_animation_2K_202607191013 1_5
+  - first:
+      213: 4625058778683758012
+    second: Create_16-frame_slash_animation_2K_202607191013 1_6
+  - first:
+      213: 1041917578317582060
+    second: Create_16-frame_slash_animation_2K_202607191013 1_7
+  - first:
+      213: 4831425911382522194
+    second: Create_16-frame_slash_animation_2K_202607191013 1_8
+  - first:
+      213: 5194605529562655148
+    second: Create_16-frame_slash_animation_2K_202607191013 1_9
+  - first:
+      213: -4191472952659548418
+    second: Create_16-frame_slash_animation_2K_202607191013 1_10
+  - first:
+      213: -7407565720514916720
+    second: Create_16-frame_slash_animation_2K_202607191013 1_11
+  - first:
+      213: 2736034858757774304
+    second: Create_16-frame_slash_animation_2K_202607191013 1_12
+  - first:
+      213: -3992042688430303320
+    second: Create_16-frame_slash_animation_2K_202607191013 1_13
+  - first:
+      213: 8772722994568310482
+    second: Create_16-frame_slash_animation_2K_202607191013 1_14
+  - first:
+      213: 5414222469514779006
+    second: Create_16-frame_slash_animation_2K_202607191013 1_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Create_16-frame_slash_animation_2K_202607191013 1_0
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 2389
+        width: 187
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b7d103ff6c663140800000000000000
+      internalID: 4699062489281845177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Create_16-frame_slash_animation_2K_202607191013 1_1
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 2387
+        width: 510
+        height: 293
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa9325e0ae7145f30800000000000000
+      internalID: 4563298616463210922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Create_16-frame_slash_animation_2K_202607191013 1_2
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 2387
+        width: 498
+        height: 291
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5a9036fe84236d70800000000000000
+      internalID: 9035105473869683295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Create_16-frame_slash_animation_2K_202607191013 1_3
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 2023
+        width: 530
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3066c7935f4e51080800000000000000
+      internalID: -9217209320461277693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Create_16-frame_slash_animation_2K_202607191013 1_4
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 2016
+        width: 525
+        height: 293
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91407bae186c101c0800000000000000
+      internalID: -4539128688121805799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Create_16-frame_slash_animation_2K_202607191013 1_5
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 1649
+        width: 543
+        height: 291
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6089f89bea0e9120800000000000000
+      internalID: 2422385656571986026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Create_16-frame_slash_animation_2K_202607191013 1_6
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 1662
+        width: 526
+        height: 346
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb55fb064728f2040800000000000000
+      internalID: 4625058778683758012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Create_16-frame_slash_animation_2K_202607191013 1_7
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 1289
+        width: 526
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ceecad46482a57e00800000000000000
+      internalID: 1041917578317582060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Create_16-frame_slash_animation_2K_202607191013 1_8
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 1395
+        width: 30
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 259b296b44cac0340800000000000000
+      internalID: 4831425911382522194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Create_16-frame_slash_animation_2K_202607191013 1_9
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 1282
+        width: 524
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca9acd9f432f61840800000000000000
+      internalID: 5194605529562655148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Create_16-frame_slash_animation_2K_202607191013 1_10
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 913
+        width: 529
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef6e1139e85e4d5c0800000000000000
+      internalID: -4191472952659548418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Create_16-frame_slash_animation_2K_202607191013 1_11
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 898
+        width: 534
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09e0952693a033990800000000000000
+      internalID: -7407565720514916720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Create_16-frame_slash_animation_2K_202607191013 1_12
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 504
+        width: 535
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ebd759353958f520800000000000000
+      internalID: 2736034858757774304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Create_16-frame_slash_animation_2K_202607191013 1_13
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 499
+        width: 533
+        height: 289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a79aeb535a6998c0800000000000000
+      internalID: -3992042688430303320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Create_16-frame_slash_animation_2K_202607191013 1_14
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 89
+        width: 517
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2de252c6519feb970800000000000000
+      internalID: 8772722994568310482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Create_16-frame_slash_animation_2K_202607191013 1_15
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 0
+        width: 614
+        height: 397
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e79dd5676ae232b40800000000000000
+      internalID: 5414222469514779006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Create_16-frame_slash_animation_2K_202607191013 1_0: 4699062489281845177
+      Create_16-frame_slash_animation_2K_202607191013 1_1: 4563298616463210922
+      Create_16-frame_slash_animation_2K_202607191013 1_10: -4191472952659548418
+      Create_16-frame_slash_animation_2K_202607191013 1_11: -7407565720514916720
+      Create_16-frame_slash_animation_2K_202607191013 1_12: 2736034858757774304
+      Create_16-frame_slash_animation_2K_202607191013 1_13: -3992042688430303320
+      Create_16-frame_slash_animation_2K_202607191013 1_14: 8772722994568310482
+      Create_16-frame_slash_animation_2K_202607191013 1_15: 5414222469514779006
+      Create_16-frame_slash_animation_2K_202607191013 1_2: 9035105473869683295
+      Create_16-frame_slash_animation_2K_202607191013 1_3: -9217209320461277693
+      Create_16-frame_slash_animation_2K_202607191013 1_4: -4539128688121805799
+      Create_16-frame_slash_animation_2K_202607191013 1_5: 2422385656571986026
+      Create_16-frame_slash_animation_2K_202607191013 1_6: 4625058778683758012
+      Create_16-frame_slash_animation_2K_202607191013 1_7: 1041917578317582060
+      Create_16-frame_slash_animation_2K_202607191013 1_8: 4831425911382522194
+      Create_16-frame_slash_animation_2K_202607191013 1_9: 5194605529562655148
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

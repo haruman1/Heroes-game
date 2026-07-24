@@ -700,6 +700,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 59187768}
   m_CullTransparentMesh: 1
+--- !u!1 &60125110
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 60125111}
+  m_Layer: 0
+  m_Name: SaveManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &60125111
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60125110}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2061710611}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &63218813
 GameObject:
   m_ObjectHideFlags: 0
@@ -987,6 +1018,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 88140829}
   m_CullTransparentMesh: 1
+--- !u!1 &98945474
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 98945475}
+  m_Layer: 0
+  m_Name: UIManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &98945475
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 98945474}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2061710611}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &108022315
 GameObject:
   m_ObjectHideFlags: 0
@@ -2806,24 +2868,34 @@ MonoBehaviour:
   books:
   - bookTitle: Buku #01
     bookDescription: Deskripsi buku pertama.
+    narrationAudio: {fileID: 0}
   - bookTitle: Buku #02
     bookDescription: Deskripsi buku kedua.
+    narrationAudio: {fileID: 0}
   - bookTitle: Buku #03
     bookDescription: Deskripsi buku ketiga.
+    narrationAudio: {fileID: 0}
   - bookTitle: Buku #04
     bookDescription: Deskripsi buku keempat.
+    narrationAudio: {fileID: 0}
   - bookTitle: Buku #05
     bookDescription: Deskripsi buku kelima.
+    narrationAudio: {fileID: 0}
   - bookTitle: Buku #06
     bookDescription: Deskripsi buku keenam.
+    narrationAudio: {fileID: 0}
   - bookTitle: Buku #07
     bookDescription: Deskripsi buku ketujuh.
+    narrationAudio: {fileID: 0}
   - bookTitle: Buku #08
     bookDescription: Deskripsi buku kedelapan.
+    narrationAudio: {fileID: 0}
   - bookTitle: Buku #09
     bookDescription: Deskripsi buku kesembilan.
+    narrationAudio: {fileID: 0}
   - bookTitle: Buku #10
     bookDescription: Deskripsi buku kesepuluh.
+    narrationAudio: {fileID: 0}
   thumbnailImage: {fileID: 0}
   levelNumberText: {fileID: 0}
   levelNameText: {fileID: 0}
@@ -6020,6 +6092,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 507078635}
   m_CullTransparentMesh: 1
+--- !u!1 &531987717
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 531987718}
+  m_Layer: 0
+  m_Name: DialogueManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &531987718
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 531987717}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2061710611}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &539527568
 GameObject:
   m_ObjectHideFlags: 0
@@ -7193,6 +7296,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 594727332}
   m_CullTransparentMesh: 1
+--- !u!1 &599480130
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 599480131}
+  m_Layer: 0
+  m_Name: JourneyBookManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &599480131
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 599480130}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2061710611}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &601510350
 GameObject:
   m_ObjectHideFlags: 0
@@ -8413,24 +8547,34 @@ MonoBehaviour:
   books:
   - bookTitle: Buku #01
     bookDescription: Deskripsi buku pertama.
+    narrationAudio: {fileID: 0}
   - bookTitle: Buku #02
     bookDescription: Deskripsi buku kedua.
+    narrationAudio: {fileID: 0}
   - bookTitle: Buku #03
     bookDescription: Deskripsi buku ketiga.
+    narrationAudio: {fileID: 0}
   - bookTitle: Buku #04
     bookDescription: Deskripsi buku keempat.
+    narrationAudio: {fileID: 0}
   - bookTitle: Buku #05
     bookDescription: Deskripsi buku kelima.
+    narrationAudio: {fileID: 0}
   - bookTitle: Buku #06
     bookDescription: Deskripsi buku keenam.
+    narrationAudio: {fileID: 0}
   - bookTitle: Buku #07
     bookDescription: Deskripsi buku ketujuh.
+    narrationAudio: {fileID: 0}
   - bookTitle: Buku #08
     bookDescription: Deskripsi buku kedelapan.
+    narrationAudio: {fileID: 0}
   - bookTitle: Buku #09
     bookDescription: Deskripsi buku kesembilan.
+    narrationAudio: {fileID: 0}
   - bookTitle: Buku #10
     bookDescription: Deskripsi buku kesepuluh.
+    narrationAudio: {fileID: 0}
   thumbnailImage: {fileID: 0}
   levelNumberText: {fileID: 0}
   levelNameText: {fileID: 0}
@@ -10602,6 +10746,54 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 933968403}
   m_CullTransparentMesh: 1
+--- !u!1 &938822042
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 938822043}
+  - component: {fileID: 938822044}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &938822043
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 938822042}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2061710611}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &938822044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 938822042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3b3c26383edbee42a76c2bb61c2b798, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameManager
+  namaSceneMainMenu: MainMenu
+  namaSceneCharacterSelect: CharacterSelect
+  namaSceneOpeningStory: OpeningStory
+  namaSceneLevelPertama: LEVEL 1
 --- !u!1 &942797374
 GameObject:
   m_ObjectHideFlags: 0
@@ -11126,24 +11318,34 @@ MonoBehaviour:
   books:
   - bookTitle: Buku #01
     bookDescription: Deskripsi buku pertama.
+    narrationAudio: {fileID: 0}
   - bookTitle: Buku #02
     bookDescription: Deskripsi buku kedua.
+    narrationAudio: {fileID: 0}
   - bookTitle: Buku #03
     bookDescription: Deskripsi buku ketiga.
+    narrationAudio: {fileID: 0}
   - bookTitle: Buku #04
     bookDescription: Deskripsi buku keempat.
+    narrationAudio: {fileID: 0}
   - bookTitle: Buku #05
     bookDescription: Deskripsi buku kelima.
+    narrationAudio: {fileID: 0}
   - bookTitle: Buku #06
     bookDescription: Deskripsi buku keenam.
+    narrationAudio: {fileID: 0}
   - bookTitle: Buku #07
     bookDescription: Deskripsi buku ketujuh.
+    narrationAudio: {fileID: 0}
   - bookTitle: Buku #08
     bookDescription: Deskripsi buku kedelapan.
+    narrationAudio: {fileID: 0}
   - bookTitle: Buku #09
     bookDescription: Deskripsi buku kesembilan.
+    narrationAudio: {fileID: 0}
   - bookTitle: Buku #10
     bookDescription: Deskripsi buku kesepuluh.
+    narrationAudio: {fileID: 0}
   thumbnailImage: {fileID: 0}
   levelNumberText: {fileID: 0}
   levelNameText: {fileID: 0}
@@ -15936,24 +16138,34 @@ MonoBehaviour:
   books:
   - bookTitle: Buku #01
     bookDescription: Deskripsi buku pertama.
+    narrationAudio: {fileID: 0}
   - bookTitle: Buku #02
     bookDescription: Deskripsi buku kedua.
+    narrationAudio: {fileID: 0}
   - bookTitle: Buku #03
     bookDescription: Deskripsi buku ketiga.
+    narrationAudio: {fileID: 0}
   - bookTitle: Buku #04
     bookDescription: Deskripsi buku keempat.
+    narrationAudio: {fileID: 0}
   - bookTitle: Buku #05
     bookDescription: Deskripsi buku kelima.
+    narrationAudio: {fileID: 0}
   - bookTitle: Buku #06
     bookDescription: Deskripsi buku keenam.
+    narrationAudio: {fileID: 0}
   - bookTitle: Buku #07
     bookDescription: Deskripsi buku ketujuh.
+    narrationAudio: {fileID: 0}
   - bookTitle: Buku #08
     bookDescription: Deskripsi buku kedelapan.
+    narrationAudio: {fileID: 0}
   - bookTitle: Buku #09
     bookDescription: Deskripsi buku kesembilan.
+    narrationAudio: {fileID: 0}
   - bookTitle: Buku #10
     bookDescription: Deskripsi buku kesepuluh.
+    narrationAudio: {fileID: 0}
   thumbnailImage: {fileID: 0}
   levelNumberText: {fileID: 0}
   levelNameText: {fileID: 0}
@@ -17540,24 +17752,34 @@ MonoBehaviour:
   books:
   - bookTitle: Buku #01
     bookDescription: Deskripsi buku pertama.
+    narrationAudio: {fileID: 0}
   - bookTitle: Buku #02
     bookDescription: Deskripsi buku kedua.
+    narrationAudio: {fileID: 0}
   - bookTitle: Buku #03
     bookDescription: Deskripsi buku ketiga.
+    narrationAudio: {fileID: 0}
   - bookTitle: Buku #04
     bookDescription: Deskripsi buku keempat.
+    narrationAudio: {fileID: 0}
   - bookTitle: Buku #05
     bookDescription: Deskripsi buku kelima.
+    narrationAudio: {fileID: 0}
   - bookTitle: Buku #06
     bookDescription: Deskripsi buku keenam.
+    narrationAudio: {fileID: 0}
   - bookTitle: Buku #07
     bookDescription: Deskripsi buku ketujuh.
+    narrationAudio: {fileID: 0}
   - bookTitle: Buku #08
     bookDescription: Deskripsi buku kedelapan.
+    narrationAudio: {fileID: 0}
   - bookTitle: Buku #09
     bookDescription: Deskripsi buku kesembilan.
+    narrationAudio: {fileID: 0}
   - bookTitle: Buku #10
     bookDescription: Deskripsi buku kesepuluh.
+    narrationAudio: {fileID: 0}
   thumbnailImage: {fileID: 0}
   levelNumberText: {fileID: 111829724}
   levelNameText: {fileID: 873018448}
@@ -17941,6 +18163,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1703478343}
   m_CullTransparentMesh: 1
+--- !u!1 &1716332489
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1716332490}
+  m_Layer: 0
+  m_Name: VideoManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1716332490
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1716332489}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2061710611}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1719986659
 GameObject:
   m_ObjectHideFlags: 0
@@ -19050,24 +19303,34 @@ MonoBehaviour:
   books:
   - bookTitle: Buku #01
     bookDescription: Deskripsi buku pertama.
+    narrationAudio: {fileID: 0}
   - bookTitle: Buku #02
     bookDescription: Deskripsi buku kedua.
+    narrationAudio: {fileID: 0}
   - bookTitle: Buku #03
     bookDescription: Deskripsi buku ketiga.
+    narrationAudio: {fileID: 0}
   - bookTitle: Buku #04
     bookDescription: Deskripsi buku keempat.
+    narrationAudio: {fileID: 0}
   - bookTitle: Buku #05
     bookDescription: Deskripsi buku kelima.
+    narrationAudio: {fileID: 0}
   - bookTitle: Buku #06
     bookDescription: Deskripsi buku keenam.
+    narrationAudio: {fileID: 0}
   - bookTitle: Buku #07
     bookDescription: Deskripsi buku ketujuh.
+    narrationAudio: {fileID: 0}
   - bookTitle: Buku #08
     bookDescription: Deskripsi buku kedelapan.
+    narrationAudio: {fileID: 0}
   - bookTitle: Buku #09
     bookDescription: Deskripsi buku kesembilan.
+    narrationAudio: {fileID: 0}
   - bookTitle: Buku #10
     bookDescription: Deskripsi buku kesepuluh.
+    narrationAudio: {fileID: 0}
   thumbnailImage: {fileID: 0}
   levelNumberText: {fileID: 0}
   levelNameText: {fileID: 0}
@@ -21252,6 +21515,44 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!1 &2061710610
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2061710611}
+  m_Layer: 0
+  m_Name: _Managers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2061710611
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2061710610}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 920.4786, y: 489.652, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 938822043}
+  - {fileID: 531987718}
+  - {fileID: 1716332490}
+  - {fileID: 5491356706026500816}
+  - {fileID: 98945475}
+  - {fileID: 60125111}
+  - {fileID: 599480131}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2068056265
 GameObject:
   m_ObjectHideFlags: 0
@@ -22314,15 +22615,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 2061710611}
     m_Modifications:
     - target: {fileID: 7931917525281062577, guid: edc132ee2a484af4eb3431adec0b9f78, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -920.4786
       objectReference: {fileID: 0}
     - target: {fileID: 7931917525281062577, guid: edc132ee2a484af4eb3431adec0b9f78, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -489.652
       objectReference: {fileID: 0}
     - target: {fileID: 7931917525281062577, guid: edc132ee2a484af4eb3431adec0b9f78, type: 3}
       propertyPath: m_LocalPosition.z
@@ -22365,6 +22666,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: edc132ee2a484af4eb3431adec0b9f78, type: 3}
+--- !u!4 &5491356706026500816 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7931917525281062577, guid: edc132ee2a484af4eb3431adec0b9f78, type: 3}
+  m_PrefabInstance: {fileID: 5491356706026500815}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5917352970140895312
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23063,6 +23369,6 @@ SceneRoots:
   - {fileID: 1092527494}
   - {fileID: 920105447}
   - {fileID: 7282294064290127787}
-  - {fileID: 5491356706026500815}
   - {fileID: 6091995519858334132}
   - {fileID: 427710364}
+  - {fileID: 2061710611}

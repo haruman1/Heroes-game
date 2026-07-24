@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: 9148254bb223de34887adc5c7bc2222a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2334008632339462058
+    second: Woman_draws_machete_combat_stance_202607161033 (3) 2_0
+  - first:
+      213: 6107014483557430627
+    second: Woman_draws_machete_combat_stance_202607161033 (3) 2_1
+  - first:
+      213: 4538366646399671390
+    second: Woman_draws_machete_combat_stance_202607161033 (3) 2_2
+  - first:
+      213: 2659610828935428180
+    second: Woman_draws_machete_combat_stance_202607161033 (3) 2_3
+  - first:
+      213: 7744977033648636789
+    second: Woman_draws_machete_combat_stance_202607161033 (3) 2_4
+  - first:
+      213: 4932121634964218881
+    second: Woman_draws_machete_combat_stance_202607161033 (3) 2_5
+  - first:
+      213: -1944066349239490291
+    second: Woman_draws_machete_combat_stance_202607161033 (3) 2_6
+  - first:
+      213: -8804345552358665538
+    second: Woman_draws_machete_combat_stance_202607161033 (3) 2_7
+  - first:
+      213: 8517231124730406516
+    second: Woman_draws_machete_combat_stance_202607161033 (3) 2_8
+  - first:
+      213: 7214912092814141499
+    second: Woman_draws_machete_combat_stance_202607161033 (3) 2_9
+  - first:
+      213: -4696304980859622397
+    second: Woman_draws_machete_combat_stance_202607161033 (3) 2_10
+  - first:
+      213: 4044681285571322949
+    second: Woman_draws_machete_combat_stance_202607161033 (3) 2_11
+  - first:
+      213: -7264361071514656354
+    second: Woman_draws_machete_combat_stance_202607161033 (3) 2_12
+  - first:
+      213: 7184849527075730736
+    second: Woman_draws_machete_combat_stance_202607161033 (3) 2_13
+  - first:
+      213: -6890553539737620739
+    second: Woman_draws_machete_combat_stance_202607161033 (3) 2_14
+  - first:
+      213: 4413214136559145227
+    second: Woman_draws_machete_combat_stance_202607161033 (3) 2_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Woman_draws_machete_combat_stance_202607161033 (3) 2_0
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 1035
+        width: 117
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa7f9492c70146020800000000000000
+      internalID: 2334008632339462058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woman_draws_machete_combat_stance_202607161033 (3) 2_1
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 1035
+        width: 143
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3653b92015970c450800000000000000
+      internalID: 6107014483557430627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woman_draws_machete_combat_stance_202607161033 (3) 2_2
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 1035
+        width: 129
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5c122b6b648bfe30800000000000000
+      internalID: 4538366646399671390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woman_draws_machete_combat_stance_202607161033 (3) 2_3
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 1035
+        width: 119
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4587a7b25f5d8e420800000000000000
+      internalID: 2659610828935428180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woman_draws_machete_combat_stance_202607161033 (3) 2_4
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 692
+        width: 126
+        height: 311
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5738f24d39fab7b60800000000000000
+      internalID: 7744977033648636789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woman_draws_machete_combat_stance_202607161033 (3) 2_5
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 692
+        width: 124
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 104af09de7a627440800000000000000
+      internalID: 4932121634964218881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woman_draws_machete_combat_stance_202607161033 (3) 2_6
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 693
+        width: 138
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d092ac994f94505e0800000000000000
+      internalID: -1944066349239490291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woman_draws_machete_combat_stance_202607161033 (3) 2_7
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 693
+        width: 142
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb21fd71e5ea0d580800000000000000
+      internalID: -8804345552358665538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woman_draws_machete_combat_stance_202607161033 (3) 2_8
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 357
+        width: 196
+        height: 299
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 476e47be498433670800000000000000
+      internalID: 8517231124730406516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woman_draws_machete_combat_stance_202607161033 (3) 2_9
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 354
+        width: 144
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b386bd97254802460800000000000000
+      internalID: 7214912092814141499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woman_draws_machete_combat_stance_202607161033 (3) 2_10
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 354
+        width: 192
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30ce6f2808f53deb0800000000000000
+      internalID: -4696304980859622397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woman_draws_machete_combat_stance_202607161033 (3) 2_11
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 355
+        width: 163
+        height: 289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54426281338912830800000000000000
+      internalID: 4044681285571322949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woman_draws_machete_combat_stance_202607161033 (3) 2_12
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 6
+        width: 156
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e91613cf71ecf2b90800000000000000
+      internalID: -7264361071514656354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woman_draws_machete_combat_stance_202607161033 (3) 2_13
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 5
+        width: 181
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0357bf1f396b5b360800000000000000
+      internalID: 7184849527075730736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woman_draws_machete_combat_stance_202607161033 (3) 2_14
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 4
+        width: 185
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfee0263016df50a0800000000000000
+      internalID: -6890553539737620739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woman_draws_machete_combat_stance_202607161033 (3) 2_15
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 3
+        width: 190
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b01175fffd2ee3d30800000000000000
+      internalID: 4413214136559145227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Woman_draws_machete_combat_stance_202607161033 (3) 2_0: 2334008632339462058
+      Woman_draws_machete_combat_stance_202607161033 (3) 2_1: 6107014483557430627
+      Woman_draws_machete_combat_stance_202607161033 (3) 2_10: -4696304980859622397
+      Woman_draws_machete_combat_stance_202607161033 (3) 2_11: 4044681285571322949
+      Woman_draws_machete_combat_stance_202607161033 (3) 2_12: -7264361071514656354
+      Woman_draws_machete_combat_stance_202607161033 (3) 2_13: 7184849527075730736
+      Woman_draws_machete_combat_stance_202607161033 (3) 2_14: -6890553539737620739
+      Woman_draws_machete_combat_stance_202607161033 (3) 2_15: 4413214136559145227
+      Woman_draws_machete_combat_stance_202607161033 (3) 2_2: 4538366646399671390
+      Woman_draws_machete_combat_stance_202607161033 (3) 2_3: 2659610828935428180
+      Woman_draws_machete_combat_stance_202607161033 (3) 2_4: 7744977033648636789
+      Woman_draws_machete_combat_stance_202607161033 (3) 2_5: 4932121634964218881
+      Woman_draws_machete_combat_stance_202607161033 (3) 2_6: -1944066349239490291
+      Woman_draws_machete_combat_stance_202607161033 (3) 2_7: -8804345552358665538
+      Woman_draws_machete_combat_stance_202607161033 (3) 2_8: 8517231124730406516
+      Woman_draws_machete_combat_stance_202607161033 (3) 2_9: 7214912092814141499
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

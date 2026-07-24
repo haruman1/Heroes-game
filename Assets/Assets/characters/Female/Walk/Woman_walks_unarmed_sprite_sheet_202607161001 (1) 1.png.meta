@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: 0f52390f032d7604098dcf70d1db8921
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8650430878413465563
+    second: Woman_walks_unarmed_sprite_sheet_202607161001 (1) 1_0
+  - first:
+      213: -4131140296712508577
+    second: Woman_walks_unarmed_sprite_sheet_202607161001 (1) 1_1
+  - first:
+      213: -1933783145252035382
+    second: Woman_walks_unarmed_sprite_sheet_202607161001 (1) 1_2
+  - first:
+      213: -5175018977891493020
+    second: Woman_walks_unarmed_sprite_sheet_202607161001 (1) 1_3
+  - first:
+      213: 4243642252575230538
+    second: Woman_walks_unarmed_sprite_sheet_202607161001 (1) 1_4
+  - first:
+      213: -2209799384068075672
+    second: Woman_walks_unarmed_sprite_sheet_202607161001 (1) 1_5
+  - first:
+      213: 4823651790090099755
+    second: Woman_walks_unarmed_sprite_sheet_202607161001 (1) 1_6
+  - first:
+      213: 5262609985316122823
+    second: Woman_walks_unarmed_sprite_sheet_202607161001 (1) 1_7
+  - first:
+      213: 3982370697609115412
+    second: Woman_walks_unarmed_sprite_sheet_202607161001 (1) 1_8
+  - first:
+      213: -1040071827909654760
+    second: Woman_walks_unarmed_sprite_sheet_202607161001 (1) 1_9
+  - first:
+      213: -2836857214970432739
+    second: Woman_walks_unarmed_sprite_sheet_202607161001 (1) 1_10
+  - first:
+      213: 2713768752459604497
+    second: Woman_walks_unarmed_sprite_sheet_202607161001 (1) 1_11
+  - first:
+      213: 3422588146009557940
+    second: Woman_walks_unarmed_sprite_sheet_202607161001 (1) 1_12
+  - first:
+      213: -9050414907842365411
+    second: Woman_walks_unarmed_sprite_sheet_202607161001 (1) 1_13
+  - first:
+      213: 5513621693463261031
+    second: Woman_walks_unarmed_sprite_sheet_202607161001 (1) 1_14
+  - first:
+      213: -8687746757100469733
+    second: Woman_walks_unarmed_sprite_sheet_202607161001 (1) 1_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Woman_walks_unarmed_sprite_sheet_202607161001 (1) 1_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 801
+        width: 134
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5285812b2fe73f780800000000000000
+      internalID: -8650430878413465563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woman_walks_unarmed_sprite_sheet_202607161001 (1) 1_1
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 801
+        width: 128
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5b2621b9cd3ba6c0800000000000000
+      internalID: -4131140296712508577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woman_walks_unarmed_sprite_sheet_202607161001 (1) 1_2
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 800
+        width: 130
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac46d9a9972d925e0800000000000000
+      internalID: -1933783145252035382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woman_walks_unarmed_sprite_sheet_202607161001 (1) 1_3
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 800
+        width: 134
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46b5fd478a3ae28b0800000000000000
+      internalID: -5175018977891493020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woman_walks_unarmed_sprite_sheet_202607161001 (1) 1_4
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 534
+        width: 129
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4ac59a152274ea30800000000000000
+      internalID: 4243642252575230538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woman_walks_unarmed_sprite_sheet_202607161001 (1) 1_5
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 532
+        width: 96
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86fcebf0b273551e0800000000000000
+      internalID: -2209799384068075672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woman_walks_unarmed_sprite_sheet_202607161001 (1) 1_6
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 533
+        width: 120
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2c5f7c0fbd01f240800000000000000
+      internalID: 4823651790090099755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woman_walks_unarmed_sprite_sheet_202607161001 (1) 1_7
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 532
+        width: 107
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c0f03e26eb880940800000000000000
+      internalID: 5262609985316122823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woman_walks_unarmed_sprite_sheet_202607161001 (1) 1_8
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 267
+        width: 120
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4177aeacc09344730800000000000000
+      internalID: 3982370697609115412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woman_walks_unarmed_sprite_sheet_202607161001 (1) 1_9
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 266
+        width: 108
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 817cd8cde2ce091f0800000000000000
+      internalID: -1040071827909654760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woman_walks_unarmed_sprite_sheet_202607161001 (1) 1_10
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 266
+        width: 120
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d13fe2fa46571a8d0800000000000000
+      internalID: -2836857214970432739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woman_walks_unarmed_sprite_sheet_202607161001 (1) 1_11
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 266
+        width: 133
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 112e8ec5d4e39a520800000000000000
+      internalID: 2713768752459604497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woman_walks_unarmed_sprite_sheet_202607161001 (1) 1_12
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 0
+        width: 129
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bbcc5ff8c97f7f20800000000000000
+      internalID: 3422588146009557940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woman_walks_unarmed_sprite_sheet_202607161001 (1) 1_13
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 0
+        width: 109
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d18f72ca797766280800000000000000
+      internalID: -9050414907842365411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woman_walks_unarmed_sprite_sheet_202607161001 (1) 1_14
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 0
+        width: 133
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76fe3c0c7b1548c40800000000000000
+      internalID: 5513621693463261031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woman_walks_unarmed_sprite_sheet_202607161001 (1) 1_15
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 0
+        width: 135
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b128974aa5cee6780800000000000000
+      internalID: -8687746757100469733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Woman_walks_unarmed_sprite_sheet_202607161001 (1) 1_0: -8650430878413465563
+      Woman_walks_unarmed_sprite_sheet_202607161001 (1) 1_1: -4131140296712508577
+      Woman_walks_unarmed_sprite_sheet_202607161001 (1) 1_10: -2836857214970432739
+      Woman_walks_unarmed_sprite_sheet_202607161001 (1) 1_11: 2713768752459604497
+      Woman_walks_unarmed_sprite_sheet_202607161001 (1) 1_12: 3422588146009557940
+      Woman_walks_unarmed_sprite_sheet_202607161001 (1) 1_13: -9050414907842365411
+      Woman_walks_unarmed_sprite_sheet_202607161001 (1) 1_14: 5513621693463261031
+      Woman_walks_unarmed_sprite_sheet_202607161001 (1) 1_15: -8687746757100469733
+      Woman_walks_unarmed_sprite_sheet_202607161001 (1) 1_2: -1933783145252035382
+      Woman_walks_unarmed_sprite_sheet_202607161001 (1) 1_3: -5175018977891493020
+      Woman_walks_unarmed_sprite_sheet_202607161001 (1) 1_4: 4243642252575230538
+      Woman_walks_unarmed_sprite_sheet_202607161001 (1) 1_5: -2209799384068075672
+      Woman_walks_unarmed_sprite_sheet_202607161001 (1) 1_6: 4823651790090099755
+      Woman_walks_unarmed_sprite_sheet_202607161001 (1) 1_7: 5262609985316122823
+      Woman_walks_unarmed_sprite_sheet_202607161001 (1) 1_8: 3982370697609115412
+      Woman_walks_unarmed_sprite_sheet_202607161001 (1) 1_9: -1040071827909654760
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

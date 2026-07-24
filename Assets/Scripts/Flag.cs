@@ -31,9 +31,6 @@ public class Flag : MonoBehaviour
         }
 
         // ---- Hitung bintang ----
-        // ⭐   = selesai level (buku boleh tidak lengkap)
-        // ⭐⭐  = kumpul buku tapi kurang ≤ 2 (8 atau 9 dari 10)
-        // ⭐⭐⭐ = kumpul semua buku (10/10)
         int stars = CalculateStars(booksCollected, booksRequired);
 
         // ---- Simpan ke database ----
@@ -47,14 +44,22 @@ public class Flag : MonoBehaviour
             dbManager.UnlockLevelProgress(nextLevelNumber);
 
             // Tetap update PlayerData.Level (kompatibilitas sistem lama)
-            int nextBuildIdx = SceneManager.GetActiveScene().buildIndex + 2;
+            int nextBuildIdx = UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex + 2;
             dbManager.UnlockLevel(nextBuildIdx);
         }
 
         Debug.Log($"[Flag] Level {levelNumber} selesai! Buku:{booksCollected}/{booksRequired} " +
                   $"Bintang:{stars} Waktu:{sessionTime:F1}s Kematian:{sessionDeaths}");
 
-        // ---- Tampilkan dialog atau layar menang ----
+        // ---- Sistem Baru: delegasikan ke LevelManager ----
+        if (LevelManager.Instance != null)
+        {
+            LevelManager.Instance.TriggerLevelSelesai();
+            onFinishLevel?.Invoke();
+            return; // LevelManager menangani selebihnya (dialog, muat scene)
+        }
+
+        // ---- Fallback: sistem lama (jika tidak ada LevelManager) ----
         if (finishLineDialogue != null)
         {
             finishLineDialogue.TriggerFinishLineDialogue();

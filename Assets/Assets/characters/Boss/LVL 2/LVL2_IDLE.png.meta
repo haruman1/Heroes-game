@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: ed123d26dc858c24db4d0f9530f4f44b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -431981536331147555
+    second: Create_16-frame_idle_animation_2K_202607191019 1_0
+  - first:
+      213: -6787631715142368935
+    second: Create_16-frame_idle_animation_2K_202607191019 1_1
+  - first:
+      213: -4205281948869588355
+    second: Create_16-frame_idle_animation_2K_202607191019 1_2
+  - first:
+      213: 7182548192061084720
+    second: Create_16-frame_idle_animation_2K_202607191019 1_3
+  - first:
+      213: -5717814519279088290
+    second: Create_16-frame_idle_animation_2K_202607191019 1_4
+  - first:
+      213: -5886720852941249394
+    second: Create_16-frame_idle_animation_2K_202607191019 1_5
+  - first:
+      213: 8131176502056138413
+    second: Create_16-frame_idle_animation_2K_202607191019 1_6
+  - first:
+      213: 7586286329442117194
+    second: Create_16-frame_idle_animation_2K_202607191019 1_7
+  - first:
+      213: 7217637798981432078
+    second: Create_16-frame_idle_animation_2K_202607191019 1_8
+  - first:
+      213: 2905886729750791093
+    second: Create_16-frame_idle_animation_2K_202607191019 1_9
+  - first:
+      213: 6384409318633460551
+    second: Create_16-frame_idle_animation_2K_202607191019 1_10
+  - first:
+      213: -5328547113712014523
+    second: Create_16-frame_idle_animation_2K_202607191019 1_11
+  - first:
+      213: -1111490923744475476
+    second: Create_16-frame_idle_animation_2K_202607191019 1_12
+  - first:
+      213: 6615018845856560555
+    second: Create_16-frame_idle_animation_2K_202607191019 1_13
+  - first:
+      213: 5776028063054071921
+    second: Create_16-frame_idle_animation_2K_202607191019 1_14
+  - first:
+      213: 7080001537450149344
+    second: Create_16-frame_idle_animation_2K_202607191019 1_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Create_16-frame_idle_animation_2K_202607191019 1_0
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 2389
+        width: 187
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd65479d41b410af0800000000000000
+      internalID: -431981536331147555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Create_16-frame_idle_animation_2K_202607191019 1_1
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 2389
+        width: 274
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95183c0eaec7dc1a0800000000000000
+      internalID: -6787631715142368935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Create_16-frame_idle_animation_2K_202607191019 1_2
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 2387
+        width: 192
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7a04491956d3a5c0800000000000000
+      internalID: -4205281948869588355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Create_16-frame_idle_animation_2K_202607191019 1_3
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 2389
+        width: 209
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 034dce1a6898da360800000000000000
+      internalID: 7182548192061084720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Create_16-frame_idle_animation_2K_202607191019 1_4
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 2020
+        width: 500
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5d8cce2dfd36a0b0800000000000000
+      internalID: -5717814519279088290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Create_16-frame_idle_animation_2K_202607191019 1_5
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 2013
+        width: 505
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e846d8cc29a2e4ea0800000000000000
+      internalID: -5886720852941249394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Create_16-frame_idle_animation_2K_202607191019 1_6
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 1649
+        width: 551
+        height: 291
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da63f03a2fdb7d070800000000000000
+      internalID: 8131176502056138413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Create_16-frame_idle_animation_2K_202607191019 1_7
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 1647
+        width: 524
+        height: 298
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a46acc60937e74960800000000000000
+      internalID: 7586286329442117194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Create_16-frame_idle_animation_2K_202607191019 1_8
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 1280
+        width: 525
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0378b566533a2460800000000000000
+      internalID: 7217637798981432078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Create_16-frame_idle_animation_2K_202607191019 1_9
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 1280
+        width: 524
+        height: 305
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b3415ca598c35820800000000000000
+      internalID: 2905886729750791093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Create_16-frame_idle_animation_2K_202607191019 1_10
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 900
+        width: 524
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74357d1037af99850800000000000000
+      internalID: 6384409318633460551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Create_16-frame_idle_animation_2K_202607191019 1_11
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 902
+        width: 527
+        height: 298
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54b2346c1a23d06b0800000000000000
+      internalID: -5328547113712014523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Create_16-frame_idle_animation_2K_202607191019 1_12
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 520
+        width: 545
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca6c32fc4e03390f0800000000000000
+      internalID: -1111490923744475476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Create_16-frame_idle_animation_2K_202607191019 1_13
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 499
+        width: 512
+        height: 296
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba57bc9a7944dcb50800000000000000
+      internalID: 6615018845856560555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Create_16-frame_idle_animation_2K_202607191019 1_14
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 94
+        width: 527
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 178860fabe2982050800000000000000
+      internalID: 5776028063054071921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Create_16-frame_idle_animation_2K_202607191019 1_15
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 94
+        width: 517
+        height: 298
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e58fe803e7314260800000000000000
+      internalID: 7080001537450149344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Create_16-frame_idle_animation_2K_202607191019 1_0: -431981536331147555
+      Create_16-frame_idle_animation_2K_202607191019 1_1: -6787631715142368935
+      Create_16-frame_idle_animation_2K_202607191019 1_10: 6384409318633460551
+      Create_16-frame_idle_animation_2K_202607191019 1_11: -5328547113712014523
+      Create_16-frame_idle_animation_2K_202607191019 1_12: -1111490923744475476
+      Create_16-frame_idle_animation_2K_202607191019 1_13: 6615018845856560555
+      Create_16-frame_idle_animation_2K_202607191019 1_14: 5776028063054071921
+      Create_16-frame_idle_animation_2K_202607191019 1_15: 7080001537450149344
+      Create_16-frame_idle_animation_2K_202607191019 1_2: -4205281948869588355
+      Create_16-frame_idle_animation_2K_202607191019 1_3: 7182548192061084720
+      Create_16-frame_idle_animation_2K_202607191019 1_4: -5717814519279088290
+      Create_16-frame_idle_animation_2K_202607191019 1_5: -5886720852941249394
+      Create_16-frame_idle_animation_2K_202607191019 1_6: 8131176502056138413
+      Create_16-frame_idle_animation_2K_202607191019 1_7: 7586286329442117194
+      Create_16-frame_idle_animation_2K_202607191019 1_8: 7217637798981432078
+      Create_16-frame_idle_animation_2K_202607191019 1_9: 2905886729750791093
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
