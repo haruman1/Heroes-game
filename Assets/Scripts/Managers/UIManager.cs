@@ -23,6 +23,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject panelJourneyBook;
     [SerializeField] private GameObject panelSettings;
     [SerializeField] private GameObject panelLoadingScreen;
+    [SerializeField] private GameObject panelToko;
 
     [Header("Loading Screen")]
     [SerializeField] private Slider     sliderProgressLoading;
@@ -72,6 +73,11 @@ public class UIManager : MonoBehaviour
     public void TampilkanSettings(bool aktif)
     {
         if (panelSettings != null) panelSettings.SetActive(aktif);
+    }
+
+    public void TampilkanToko(bool aktif)
+    {
+        if (panelToko != null) panelToko.SetActive(aktif);
     }
 
     public void TampilkanLoadingScreen(bool aktif)

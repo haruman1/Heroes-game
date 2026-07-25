@@ -93,12 +93,17 @@ public class CharacterSelectController : MonoBehaviour
     [SerializeField] private TMP_Text teksDetailKelompokUmur;
     [SerializeField] private TMP_Text teksDetailIdentitasProfesi;
     [SerializeField] private TMP_Text teksDetailDeskripsiCerita;
-    [SerializeField] private TMP_Text teksDetailQuote;
+
 
     [Header("Statistik Sliders / Progress Bars")]
     [SerializeField] private Slider sliderStatFisik;
+    [SerializeField] private TMP_Text teksAngkaStatFisik;
+
     [SerializeField] private Slider sliderStatFokus;
+    [SerializeField] private TMP_Text teksAngkaStatFokus;
+
     [SerializeField] private Slider sliderStatPengalaman;
+    [SerializeField] private TMP_Text teksAngkaStatPengalaman;
 
     [Header("Tombol Action Detail")]
     [SerializeField] private Button tombolMulaiPetualangan;
@@ -250,12 +255,17 @@ public class CharacterSelectController : MonoBehaviour
         if (teksDetailKelompokUmur != null) teksDetailKelompokUmur.text = data.labelKelompokUmur;
         if (teksDetailIdentitasProfesi != null) teksDetailIdentitasProfesi.text = data.identitasProfesi;
         if (teksDetailDeskripsiCerita != null) teksDetailDeskripsiCerita.text = data.deskripsiCerita;
-        if (teksDetailQuote != null) teksDetailQuote.text = data.kataMutiaraQuote;
+      
 
         // Isi Progress Bar Statistik
         if (sliderStatFisik != null) sliderStatFisik.value = data.statFisik / 100f;
+        if (teksAngkaStatFisik != null) teksAngkaStatFisik.text = data.statFisik.ToString();
+
         if (sliderStatFokus != null) sliderStatFokus.value = data.statFokus / 100f;
+        if (teksAngkaStatFokus != null) teksAngkaStatFokus.text = data.statFokus.ToString();
+
         if (sliderStatPengalaman != null) sliderStatPengalaman.value = data.statPengalaman / 100f;
+        if (teksAngkaStatPengalaman != null) teksAngkaStatPengalaman.text = data.statPengalaman.ToString();
     }
 
     private void TutupDetailLanjutan()

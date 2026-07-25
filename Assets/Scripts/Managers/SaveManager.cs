@@ -118,6 +118,40 @@ public class SaveManager : MonoBehaviour
         }
     }
 
+    // ─── Koin & Mata Uang ─────────────────────────────────────────────
+
+    /// <summary>Tambah koin ke dompet pemain.</summary>
+    public void TambahCoin(int jumlah)
+    {
+        if (DB == null) return;
+
+        PlayerData data = DB.GetPlayerData();
+        if (data == null) return;
+
+        data.Coin = Mathf.Max(0, data.Coin + jumlah);
+        DB.Connection?.Update(data);
+
+        Debug.Log($"[SaveManager] Koin +{jumlah} → Total Koin: {data.Coin}");
+    }
+
+    /// <summary>Kurangi koin dari dompet pemain. Mengembalikan true jika koin cukup.</summary>
+    public bool KurangiCoin(int jumlah)
+    {
+        if (DB == null) return false;
+
+        PlayerData data = DB.GetPlayerData();
+        if (data == null || data.Coin < jumlah) return false;
+
+        data.Coin -= jumlah;
+        DB.Connection?.Update(data);
+
+        Debug.Log($"[SaveManager] Koin -{jumlah} → Sisa Koin: {data.Coin}");
+        return true;
+    }
+
+    /// <summary>Muat jumlah koin yang dimiliki pemain saat ini.</summary>
+    public int MuatCoin() => DB?.GetPlayerData()?.Coin ?? 0;
+
     // ─── Booster ─────────────────────────────────────────────────────
 
     /// <summary>Tambah booster ke inventory pemain.</summary>

@@ -89,11 +89,12 @@ public class LevelManager : MonoBehaviour
         if (dataLevel?.bgmLevel != null)
             AudioManager.Instance?.PutarBGM(dataLevel.bgmLevel);
 
-        // Dialog intro
-        if (dataLevel?.dialogIntro != null && DialogueManager.Instance != null)
+        // Dialog intro / Light Novel Monolog
+        DialogueDataSO introTerpilih = GetDialogIntroTerpilih();
+        if (introTerpilih != null && DialogueManager.Instance != null)
         {
             DialogueManager.OnDialogSelesaiStatic += OnDialogIntroSelesai;
-            DialogueManager.Instance.MulaiDialog(dataLevel.dialogIntro);
+            DialogueManager.Instance.MulaiDialog(introTerpilih);
         }
         else
         {
@@ -101,6 +102,40 @@ public class LevelManager : MonoBehaviour
         }
 
         OnLevelMulai?.Invoke();
+    }
+
+    /// <summary>Memilih dialog intro berdasarkan karakter (Awan/Rena) atau fallback umum.</summary>
+    private DialogueDataSO GetDialogIntroTerpilih()
+    {
+        if (dataLevel == null) return null;
+
+        PlayerData player = SaveManager.Instance?.MuatPlayerData();
+        string karakter = player?.SelectedCharacter ?? "";
+
+        if (karakter.Equals("Rena", System.StringComparison.OrdinalIgnoreCase) && dataLevel.dialogIntroRena != null)
+            return dataLevel.dialogIntroRena;
+
+        if (karakter.Equals("Awan", System.StringComparison.OrdinalIgnoreCase) && dataLevel.dialogIntroAwan != null)
+            return dataLevel.dialogIntroAwan;
+
+        return dataLevel.dialogIntro;
+    }
+
+    /// <summary>Memilih dialog outro berdasarkan karakter (Awan/Rena) atau fallback umum.</summary>
+    private DialogueDataSO GetDialogOutroTerpilih()
+    {
+        if (dataLevel == null) return null;
+
+        PlayerData player = SaveManager.Instance?.MuatPlayerData();
+        string karakter = player?.SelectedCharacter ?? "";
+
+        if (karakter.Equals("Rena", System.StringComparison.OrdinalIgnoreCase) && dataLevel.dialogOutroRena != null)
+            return dataLevel.dialogOutroRena;
+
+        if (karakter.Equals("Awan", System.StringComparison.OrdinalIgnoreCase) && dataLevel.dialogOutroAwan != null)
+            return dataLevel.dialogOutroAwan;
+
+        return dataLevel.dialogOutro;
     }
 
     private void OnDialogIntroSelesai()
@@ -151,10 +186,11 @@ public class LevelManager : MonoBehaviour
             SaveManager.Instance?.SimpanNamaSceneTerakhir(dataLevel.levelBerikutnya.namaScene);
 
         // Dialog outro
-        if (dataLevel?.dialogOutro != null && DialogueManager.Instance != null)
+        DialogueDataSO outroTerpilih = GetDialogOutroTerpilih();
+        if (outroTerpilih != null && DialogueManager.Instance != null)
         {
             DialogueManager.OnDialogSelesaiStatic += OnDialogOutroSelesai;
-            DialogueManager.Instance.MulaiDialog(dataLevel.dialogOutro);
+            DialogueManager.Instance.MulaiDialog(outroTerpilih);
         }
         else
         {

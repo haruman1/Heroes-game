@@ -20,6 +20,7 @@ public class MainMenuController : MonoBehaviour
     [Header("Tombol Utama")]
     [SerializeField] private Button tombolGameBaru;
     [SerializeField] private Button tombolLanjutkan;
+    [SerializeField] private Button tombolToko; // Tombol Toko Item Boost
     [SerializeField] private Button tombolSettings;
     [SerializeField] private Button tombolJourneyBook;
     [SerializeField] private Button tombolKeluar;
@@ -50,6 +51,7 @@ public class MainMenuController : MonoBehaviour
         // Pasang listener tombol
         tombolGameBaru  ?.onClick.AddListener(OnKlikGameBaru);
         tombolLanjutkan ?.onClick.AddListener(OnKlikLanjutkan);
+        tombolToko      ?.onClick.AddListener(OnKlikToko);
         tombolSettings  ?.onClick.AddListener(OnKlikSettings);
         tombolJourneyBook?.onClick.AddListener(OnKlikJourneyBook);
         tombolKeluar    ?.onClick.AddListener(OnKlikKeluar);
@@ -67,6 +69,19 @@ public class MainMenuController : MonoBehaviour
     private void OnKlikLanjutkan()
     {
         GameManager.Instance?.Lanjutkan();
+    }
+
+    private void OnKlikToko()
+    {
+        ShopUIController shopUI = FindFirstObjectByType<ShopUIController>(FindObjectsInactive.Include);
+        if (shopUI != null)
+        {
+            shopUI.BukaToko();
+        }
+        else
+        {
+            Debug.LogWarning("[MainMenu] ShopUIController tidak ditemukan di scene!");
+        }
     }
 
     private void OnKlikSettings()

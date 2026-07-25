@@ -15,11 +15,24 @@ public class LevelDataSO : ScriptableObject
     [Tooltip("Nama scene Unity yang persis (harus sama dengan nama file .unity).")]
     public string namaScene = "LEVEL 1";
 
-    [Header("Dialog Level")]
-    [Tooltip("Dialog yang tampil di awal level sebelum gameplay dimulai. Null = langsung mulai.")]
+    [Header("Dialog / Light Novel Intro Level")]
+    [Tooltip("Dialog/Monolog intro khusus untuk Awan (Pria). Jika diisi, akan mengutamakan dialog ini saat player memilih Awan.")]
+    public DialogueDataSO dialogIntroAwan;
+
+    [Tooltip("Dialog/Monolog intro khusus untuk Rena (Wanita). Jika diisi, akan mengutamakan dialog ini saat player memilih Rena.")]
+    public DialogueDataSO dialogIntroRena;
+
+    [Tooltip("Dialog/Monolog intro umum (fallback). Dipakai jika dialog khusus Awan/Rena kosong.")]
     public DialogueDataSO dialogIntro;
 
-    [Tooltip("Dialog yang tampil setelah player menyentuh Flag / finish point. Null = langsung muat level berikutnya.")]
+    [Header("Dialog / Light Novel Outro Level")]
+    [Tooltip("Dialog outro khusus Awan.")]
+    public DialogueDataSO dialogOutroAwan;
+
+    [Tooltip("Dialog outro khusus Rena.")]
+    public DialogueDataSO dialogOutroRena;
+
+    [Tooltip("Dialog outro umum (fallback).")]
     public DialogueDataSO dialogOutro;
 
     [Header("Kolektibel")]
