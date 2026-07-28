@@ -21,7 +21,19 @@ using UnityEngine.Events;
 /// </summary>
 public class DialogueManager : MonoBehaviour
 {
-    public static DialogueManager Instance { get; private set; }
+    private static DialogueManager _instance;
+    public static DialogueManager Instance
+    {
+        get
+        {
+            if (_instance == null)
+            {
+                _instance = FindFirstObjectByType<DialogueManager>();
+            }
+            return _instance;
+        }
+        private set => _instance = value;
+    }
 
     [Header("Referensi UI Dialog")]
     [SerializeField] private DialogueUI dialogueUI;
@@ -35,11 +47,17 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private bool autoPlay = false;
     [SerializeField] private float jedaAutoPlay = 2f;
 
-    [Header("Portrait Default Pemain")]
-    [Tooltip("Portrait Awan (Laki-laki) yang dipakai jika tidak ada portrait di BarisDialog.")]
+    [Header("Portrait Default Pemain (Fallback Satu Sprite)")]
+    [Tooltip("Portrait Awan (Laki-laki) default jika sprite usia belum di-assign.")]
     [SerializeField] private Sprite portraitAwan;
-    [Tooltip("Portrait Rena (Perempuan) yang dipakai jika tidak ada portrait di BarisDialog.")]
+    [Tooltip("Portrait Rena (Perempuan) default jika sprite usia belum di-assign.")]
     [SerializeField] private Sprite portraitRena;
+
+    [Header("Portrait Pemain Berdasarkan Rentang Usia (Remaja - Tua)")]
+    [Tooltip("Sprite portrait Awan/Pria untuk rentang usia 18-24, 25-34, 35-44, 45+")]
+    [SerializeField] private PlayerAgePortraits portraitAwanAgeSet;
+    [Tooltip("Sprite portrait Rena/Wanita untuk rentang usia 18-24, 25-34, 35-44, 45+")]
+    [SerializeField] private PlayerAgePortraits portraitRenaAgeSet;
 
     [Header("Events")]
     public UnityEvent OnDialogSelesai;
@@ -56,17 +74,21 @@ public class DialogueManager : MonoBehaviour
     // Info pemain (dari save)
     private string _namaPemain = "Awan";
     private bool   _isMale     = true;
+    private int    _umurPemain = 18;
 
     // ─── Lifecycle ───────────────────────────────────────────────────
     private void Awake()
     {
-        if (Instance != null && Instance != this)
+        if (_instance != null && _instance != this)
         {
             Destroy(gameObject);
             return;
         }
-        Instance = this;
-        DontDestroyOnLoad(gameObject);
+        _instance = this;
+        // DontDestroyOnLoad(gameObject); // Diganti dengan arsitektur Additive CoreScene
+
+        if (dialogueUI == null)
+            dialogueUI = FindFirstObjectByType<DialogueUI>();
     }
 
     // ─── Public API ──────────────────────────────────────────────────
@@ -79,6 +101,12 @@ public class DialogueManager : MonoBehaviour
             Debug.LogWarning("[DialogueManager] MulaiDialog dipanggil dengan data null/kosong.");
             SelesaikanDialog();
             return;
+        }
+
+        // Jika UI belum ada, coba cari lagi di scene (untuk antisipasi UI lokal di tiap scene)
+        if (dialogueUI == null)
+        {
+            dialogueUI = FindFirstObjectByType<DialogueUI>();
         }
 
         MuatInfoPemain();
@@ -130,6 +158,12 @@ public class DialogueManager : MonoBehaviour
     /// <summary>Cek apakah dialog sedang berjalan.</summary>
     public bool SedangDialog => dialogueUI != null && dialogueUI.PanelAktif;
 
+    /// <summary>Mendaftarkan UI Dialog baru dari scene yang sedang aktif.</summary>
+    public void SetDialogueUI(DialogueUI ui)
+    {
+        dialogueUI = ui;
+    }
+
     // ─── Internal ────────────────────────────────────────────────────
     private void MuatInfoPemain()
     {
@@ -137,12 +171,29 @@ public class DialogueManager : MonoBehaviour
         if (data != null && !string.IsNullOrEmpty(data.SelectedCharacter))
         {
             _namaPemain = data.SelectedCharacter;
-            _isMale     = data.Gender != "Perempuan";
+            _isMale     = data.Gender != "Perempuan" && !_namaPemain.Equals("Rena", StringComparison.OrdinalIgnoreCase);
+            _umurPemain = data.SelectedAge > 0 ? data.SelectedAge : 18;
         }
         else
         {
             _namaPemain = "Awan";
             _isMale     = true;
+            _umurPemain = 18;
+        }
+    }
+
+    /// <summary>
+    /// Mengambil sprite portrait pemain berdasarkan gender dan kelompok usia (18-24, 25-34, 35-44, 45+).
+    /// </summary>
+    public Sprite GetPortraitPemainByAge(bool isMale, int age)
+    {
+        if (isMale)
+        {
+            return portraitAwanAgeSet.GetSpriteForAge(age, portraitAwan);
+        }
+        else
+        {
+            return portraitRenaAgeSet.GetSpriteForAge(age, portraitRena);
         }
     }
 
@@ -162,10 +213,10 @@ public class DialogueManager : MonoBehaviour
 
         // Portrait
         Sprite portrait = baris.portrait;
-        if (portrait == null && string.IsNullOrEmpty(baris.namaSpeaker))
+        if (portrait == null && (string.IsNullOrEmpty(baris.namaSpeaker) || baris.namaSpeaker == _namaPemain || baris.namaSpeaker == "{nama}"))
         {
-            // Speaker adalah pemain → pakai portrait default
-            portrait = _isMale ? portraitAwan : portraitRena;
+            // Speaker adalah pemain → pakai portrait dinamis berdasarkan kelompok usia
+            portrait = GetPortraitPemainByAge(_isMale, _umurPemain);
         }
         dialogueUI?.SetPortrait(portrait, baris.sisiKanan);
 

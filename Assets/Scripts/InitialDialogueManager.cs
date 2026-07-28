@@ -32,9 +32,13 @@ public class InitialDialogueManager : MonoBehaviour
     [Tooltip("GameObject tempat posisi gambar NPC (Dokter) muncul.")]
     public GameObject npcPortraitPosition;
 
-    [Header("Player Sprites (Gambar)")]
+    [Header("Player Sprites Default (Fallback)")]
     public Sprite malePlayerSprite;
     public Sprite femalePlayerSprite;
+
+    [Header("Player Sprites Berdasarkan Usia (Remaja - Tua)")]
+    public PlayerAgePortraits malePlayerPortraits;
+    public PlayerAgePortraits femalePlayerPortraits;
 
     [Header("Dialogue Speed")]
     public float typeSpeed = 0.03f;
@@ -160,8 +164,10 @@ public class InitialDialogueManager : MonoBehaviour
             if (playerPortraitPosition != null)
             {
                 playerPortraitPosition.SetActive(true);
-                bool isMale = (playerName == "Raka" || playerName == "Satria");
-                Sprite chosenSprite = isMale ? malePlayerSprite : femalePlayerSprite;
+                bool isMale = (playerName == "Raka" || playerName == "Satria" || playerName == "Awan");
+                Sprite chosenSprite = isMale 
+                    ? malePlayerPortraits.GetSpriteForAge(playerAge, malePlayerSprite)
+                    : femalePlayerPortraits.GetSpriteForAge(playerAge, femalePlayerSprite);
                 
                 SpriteRenderer sr = playerPortraitPosition.GetComponent<SpriteRenderer>();
                 if (sr != null) sr.sprite = chosenSprite;

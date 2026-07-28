@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50553eac20dee7c46a58d7b97df8e7ac, type: 3}
+  m_Name: HalamanBuku_L1_H3
+  m_EditorClassIdentifier: Assembly-CSharp::HalamanBukuSO
+  idHalaman: 3
+  nomorLevel: 1
+  judulHalaman: Lorem Ipsum 3
+  kontenEdukasi: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+    sit amet diam lacinia, dictum ligula consectetur, commodo dolor. Vestibulum egestas
+    pellentesque justo vitae ultricies. Quisque sem dolor, porttitor non felis ac,
+    suscipit tempor ipsum. Aenean viverra diam a lacus aliquet, eu fermentum turpis
+    efficitur. Integer velit ipsum, mattis vitae molestie ac, sodales suscipit ligula.
+    Fusce dapibus tempus lacus, at sagittis elit condimentum eu. Vestibulum dapibus
+    ipsum mauris, a sodales odio consectetur in. In interdum id ligula et vehicula.
+    Proin malesuada sodales tellus.
+  gambarHalaman: {fileID: 6996898487684301049, guid: 79628f59df2a69b4dbc8d3cc6073eebe, type: 3}
+  judulBuku: Buku 1
+  sampulBuku: {fileID: -7100507728561787758, guid: 5a4c67fad936ca34fbaf42e0d9fdaea8, type: 3}
+  deskrpsiBuku: Ini buku cincai

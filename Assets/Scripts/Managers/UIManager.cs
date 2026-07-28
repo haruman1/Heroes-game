@@ -42,7 +42,7 @@ public class UIManager : MonoBehaviour
             return;
         }
         Instance = this;
-        DontDestroyOnLoad(gameObject);
+        // DontDestroyOnLoad(gameObject); // Diganti dengan arsitektur Additive CoreScene
 
         // Pastikan overlay fade tersembunyi di awal
         if (imageOverlayFade != null)

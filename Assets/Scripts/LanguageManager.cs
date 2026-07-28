@@ -35,7 +35,7 @@ public class LanguageManager : MonoBehaviour
         }
 
         Instance = this;
-        DontDestroyOnLoad(gameObject);
+        // DontDestroyOnLoad(gameObject); // Diganti dengan arsitektur Additive CoreScene
         
         // Load default language on start
         LoadTranslations(currentLanguage);

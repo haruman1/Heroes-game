@@ -20,7 +20,7 @@ public class SettingManager : MonoBehaviour
         }
 
         Instance = this;
-        DontDestroyOnLoad(gameObject);
+        // DontDestroyOnLoad(gameObject); // Diganti dengan arsitektur Additive CoreScene
     }
 
     void Start()

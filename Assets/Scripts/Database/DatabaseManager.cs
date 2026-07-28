@@ -63,7 +63,7 @@ public class DatabaseManager : MonoBehaviour
         {
             Instance = this;
             gameObject.name = ManagerObjectName;
-            DontDestroyOnLoad(gameObject);
+            // DontDestroyOnLoad(gameObject); // Diganti dengan arsitektur Additive CoreScene
             EnsureDatabaseReady();
         }
         else if (Instance == this)

@@ -15,7 +15,7 @@ public class Fps : MonoBehaviour
         }
 
         Instance = this;
-        DontDestroyOnLoad(gameObject);
+        // DontDestroyOnLoad(gameObject); // Diganti dengan arsitektur Additive CoreScene
     }
     public void NextFPS()
     {

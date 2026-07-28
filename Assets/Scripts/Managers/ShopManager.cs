@@ -39,7 +39,7 @@ public class ShopManager : MonoBehaviour
             return;
         }
         Instance = this;
-        DontDestroyOnLoad(gameObject);
+        // DontDestroyOnLoad(gameObject); // Diganti dengan arsitektur Additive CoreScene
     }
 
     // ─── 1. TRANSAKSI MENGGUNAKAN KOIN ────────────────────────────────

@@ -46,6 +46,15 @@ public class DialogueUI : MonoBehaviour
     [SerializeField] private string labelSelesai = "Selesai ✓";
 
     // ─── Lifecycle ───────────────────────────────────────────────────
+    private void Awake()
+    {
+        // Daftarkan UI ini ke DialogueManager global jika ada
+        if (DialogueManager.Instance != null)
+        {
+            DialogueManager.Instance.SetDialogueUI(this);
+        }
+    }
+
     private void Start()
     {
         tombolLanjut?.onClick.AddListener(OnKlikLanjut);
@@ -121,6 +130,6 @@ public class DialogueUI : MonoBehaviour
         if (portraitKanan != null) portraitKanan.gameObject.SetActive(false);
     }
 
-    private void OnKlikLanjut() => DialogueManager.Instance?.Lanjut();
-    private void OnKlikLewati() => DialogueManager.Instance?.Lewati();
+    public void OnKlikLanjut() => DialogueManager.Instance?.Lanjut();
+    public void OnKlikLewati() => DialogueManager.Instance?.Lewati();
 }

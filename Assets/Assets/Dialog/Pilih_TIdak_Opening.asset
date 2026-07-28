@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b7aa04b0cf51674ab16f9102377441f, type: 3}
+  m_Name: Pilih_TIdak_Opening
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueDataSO
+  barisDialog:
+  - namaSpeaker: 
+    teks: '{nama} Aku belum yakin'
+    portrait: {fileID: 0}
+    audioVoice: {fileID: 0}
+    sisiKanan: 0
+  - namaSpeaker: Ujang
+    teks: 'Tidak apa-apa, semua perjalanan dimulai saat seseorang siap melangkah. '
+    portrait: {fileID: -1940738496428130850, guid: dbc980e73400d7f44a043461904478f7, type: 3}
+    audioVoice: {fileID: 8300000, guid: 0e3b332ae9032024e8102eaea55f375e, type: 3}
+    sisiKanan: 1

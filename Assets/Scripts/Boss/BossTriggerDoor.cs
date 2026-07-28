@@ -143,10 +143,19 @@ public class BossTriggerDoor : MonoBehaviour
         BossArenaBridge.SourceLevelNumber    = GetCurrentLevelNumber();
         BossArenaBridge.ArenaResult          = BossArenaBridge.Result.None;
 
+        // Tandai state ke BossFight
+        GameManager.Instance?.SetBossFightState();
+
         onArenaEntered?.Invoke();
 
         Debug.Log($"[BossTriggerDoor] Masuk arena: {arenaSceneName}");
-        SceneManager.LoadScene(arenaSceneName);
+
+        // ✅ Gunakan GameManager.MuatScene agar PersistentScene (CoreScene) tidak ikut di-unload!
+        // AudioManager, SaveManager, dll tetap hidup saat boss fight.
+        if (GameManager.Instance != null)
+            GameManager.Instance.MuatScene(arenaSceneName);
+        else
+            SceneManager.LoadScene(arenaSceneName); // Fallback jika Bootstrapper belum jalan
     }
 
     /// <summary>Dipanggil oleh tombol "Batal" di prompt UI.</summary>

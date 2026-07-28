@@ -48,7 +48,7 @@ public class VideoManager : MonoBehaviour
             return;
         }
         Instance = this;
-        DontDestroyOnLoad(gameObject);
+        // DontDestroyOnLoad(gameObject); // Diganti dengan arsitektur Additive CoreScene
 
         if (videoPlayer == null)
             videoPlayer = GetComponent<VideoPlayer>();

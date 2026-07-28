@@ -103,7 +103,7 @@ public class ShopUIController : MonoBehaviour
     {
         int koin = SaveManager.Instance?.MuatCoin() ?? 0;
         int booster = SaveManager.Instance?.MuatJumlahBooster() ?? 0;
-
+       
         if (teksSaldoKoin != null) teksSaldoKoin.text = koin.ToString("N0");
         if (teksJumlahBooster != null) teksJumlahBooster.text = $"x{booster}";
     }

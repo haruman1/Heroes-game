@@ -34,7 +34,7 @@ public class JourneyBookManager : MonoBehaviour
             return;
         }
         Instance = this;
-        DontDestroyOnLoad(gameObject);
+        // DontDestroyOnLoad(gameObject); // Diganti dengan arsitektur Additive CoreScene
     }
 
     // ─── Public API ──────────────────────────────────────────────────

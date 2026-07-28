@@ -18,7 +18,7 @@ public class SaveManager : MonoBehaviour
             return;
         }
         Instance = this;
-        DontDestroyOnLoad(gameObject);
+        // DontDestroyOnLoad(gameObject); // Diganti dengan arsitektur Additive CoreScene
     }
 
     // ─── Helper Akses DB ─────────────────────────────────────────────
@@ -151,7 +151,8 @@ public class SaveManager : MonoBehaviour
 
     /// <summary>Muat jumlah koin yang dimiliki pemain saat ini.</summary>
     public int MuatCoin() => DB?.GetPlayerData()?.Coin ?? 0;
-
+   // ─── Health ─────────────────────────────────────────────────────
+   
     // ─── Booster ─────────────────────────────────────────────────────
 
     /// <summary>Tambah booster ke inventory pemain.</summary>

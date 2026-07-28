@@ -24,7 +24,7 @@ public class AudioManager : MonoBehaviour
         }
 
         Instance = this;
-        DontDestroyOnLoad(gameObject);
+        // DontDestroyOnLoad(gameObject); // Diganti dengan arsitektur Additive CoreScene
     }
 
     // ─── Volume Mixer ─────────────────────────────────────────────────
@@ -68,9 +68,23 @@ public class AudioManager : MonoBehaviour
     /// <summary>Putar Voice Over / Dubbing untuk baris dialog.</summary>
     public void PutarVoiceOver(AudioClip clip)
     {
-        if (voiceOverSource == null || clip == null) return;
-        voiceOverSource.clip = clip;
-        voiceOverSource.Play();
+        if (clip == null) return;
+
+        if (voiceOverSource != null)
+        {
+            voiceOverSource.clip = clip;
+            voiceOverSource.Play();
+        }
+        else if (sfxSource != null)
+        {
+            sfxSource.PlayOneShot(clip);
+        }
+        else
+        {
+            AudioSource tempSource = GetComponent<AudioSource>();
+            if (tempSource == null) tempSource = gameObject.AddComponent<AudioSource>();
+            tempSource.PlayOneShot(clip);
+        }
     }
 
     /// <summary>Hentikan Voice Over yang sedang diputar.</summary>
@@ -87,4 +101,4 @@ public class AudioManager : MonoBehaviour
         if (sfxSource == null || clip == null) return;
         sfxSource.PlayOneShot(clip, volume);
     }
-}
+}

@@ -213,11 +213,18 @@ public class BossArenaController : MonoBehaviour
     {
         yield return new WaitForSeconds(delay);
 
+        string targetScene;
         if (!string.IsNullOrEmpty(winSceneName) && arenaState == ArenaState.Won)
-            SceneManager.LoadScene(winSceneName);
+            targetScene = winSceneName;
         else if (!string.IsNullOrEmpty(returnSceneName))
-            SceneManager.LoadScene(returnSceneName);
+            targetScene = returnSceneName;
         else
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+            targetScene = "Main Menu";
+
+        // ✅ Gunakan GameManager.MuatScene agar PersistentScene (CoreScene) tidak ikut di-unload!
+        if (GameManager.Instance != null)
+            GameManager.Instance.MuatScene(targetScene);
+        else
+            SceneManager.LoadScene(targetScene); // Fallback
     }
 }

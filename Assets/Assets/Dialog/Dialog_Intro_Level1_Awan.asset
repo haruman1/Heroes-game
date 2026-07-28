@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b7aa04b0cf51674ab16f9102377441f, type: 3}
+  m_Name: Dialog_Intro_Level1_Awan
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueDataSO
+  barisDialog:
+  - namaSpeaker: 
+    teks: "Setiap orang memiliki perjalanan hidupnya masing-masing \r\nTidak semua
+      perjalanan berjalan dengam mudah \r\nNamun selalu ada kesempatan untuk terus
+      melangkah "
+    portrait: {fileID: 0}
+    audioVoice: {fileID: 0}
+    sisiKanan: 0
+  - namaSpeaker: 
+    teks: "Sejak mengetahui kondisiku\u2026 \r\nAku masih berusaha menjalani hidup
+      seperti biasa... \r\nTapi kadang, aku masih bingung mulai dari mana. \r\nAku
+      ingin belajar menerima ini mengenai bagaimana menjaga diriku. "
+    portrait: {fileID: 0}
+    audioVoice: {fileID: 0}
+    sisiKanan: 0
